@@ -1,0 +1,9 @@
+[build]
+  # No hay comando de build - es HTML estático
+  command = ""
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

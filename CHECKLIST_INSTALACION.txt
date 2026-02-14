@@ -1,0 +1,332 @@
+================================================================================
+                   CHECKLIST DE INSTALACIÓN Y VERIFICACIÓN
+================================================================================
+
+Usa este checklist para asegurar que todo está instalado correctamente.
+
+================================================================================
+FASE 1: PREPARACIÓN PREVIA (Antes de ejecutar setup.py)
+================================================================================
+
+□ Tengo Python 3.7+ instalado
+  Verificar: Abre cmd y escribe: python --version
+
+□ Tengo una cuenta de Gmail activa
+  Verificar: Accede a gmail.com
+
+□ He creado una "Contraseña de Aplicación" en Gmail
+  Verificar: https://myaccount.google.com/apppasswords
+  (No usar contraseña personal de Gmail)
+
+□ Tengo los 6 archivos principales:
+  ✓ sales_extractor_v2.py
+  ✓ automation_service_v2.py
+  ✓ config.json
+  ✓ live_dashboard_v2.html
+  ✓ setup.py
+  ✓ requirements.txt
+
+□ Todos los archivos están en la MISMA carpeta
+  (No en subcarpetas)
+
+================================================================================
+FASE 2: INSTALACIÓN (Ejecutar setup.py)
+================================================================================
+
+□ He ejecutado: python setup.py
+  En Símbolo del Sistema (cmd) desde la carpeta del proyecto
+
+□ El setup instaló las dependencias correctamente
+  Buscar en pantalla: "✅ Dependencias instaladas correctamente"
+
+□ El setup creó los directorios:
+  ✓ temp_pdfs/
+  ✓ logs/
+  ✓ data/
+
+□ He ingresado mi email de Gmail cuando se pidió
+
+□ He ingresado mi contraseña de aplicación (16 caracteres) correctamente
+
+□ El setup guardó la configuración en config.json
+  Verificar: Abre config.json y verifica que tu email esté ahí
+
+□ El setup creó la base de datos sales_data.db
+  Verificar: Ves el archivo sales_data.db en la carpeta
+
+================================================================================
+FASE 3: VERIFICACIÓN MANUAL (Prueba antes de automatizar)
+================================================================================
+
+□ He ejecutado una extracción manual:
+  Comando: python -c "from sales_extractor_v2 import SalesDataExtractor; SalesDataExtractor().run_extraction_cycle()"
+
+□ La extracción mostró mensajes de éxito:
+  Buscar: "Extracción automática iniciada"
+  Buscar: "Extracción completada"
+
+□ Se creó el archivo dashboard_data.json
+  Verificar: Existe en la carpeta
+
+□ Se creó/actualó el archivo sales_extractor.log
+  Verificar: Existe en la carpeta
+
+□ Los logs muestran:
+  ✓ "Emails extraídos: X"
+  ✓ "Datos guardados: [ubicación] - [fecha]"
+  ✓ "Extracción completada"
+
+□ Abrí live_dashboard_v2.html en el navegador
+  Verificar: El dashboard carga sin errores
+
+□ El dashboard muestra los 5 locales:
+  ✓ 🏪 GG Vol 4
+  ✓ 🍺 GG Vol 2
+  ✓ 🎓 COLEGIO
+  ✓ ☕ GROWLER CAFE (con ⭐ para 2 turnos)
+  ✓ 🛣️ GROWLER VIA VIEJA
+
+□ El dashboard muestra datos:
+  ✓ Gráficos con líneas
+  ✓ Tarjetas con números
+  ✓ Secciones de alertas
+
+================================================================================
+FASE 4: CONFIGURACIÓN DE AUTOMATIZACIÓN (Scheduler 4:00 AM)
+================================================================================
+
+SOLO PARA WINDOWS:
+
+□ Abrí "Programador de tareas" (taskschd.msc)
+
+□ Creé una "Tarea básica" con estos datos:
+  ✓ Nombre: "Extracción Ventas 4AM"
+  ✓ Descripción: "Extrae datos de MaxiREST automáticamente"
+
+□ Configuré el "Desencadenador":
+  ✓ Tipo: Diariamente
+  ✓ Hora: 04:00 (4:00 AM)
+
+□ Configuré la "Acción":
+  ✓ Programa: python
+  ✓ Argumentos: -m automation_service_v2
+  ✓ Directorio: Carpeta del proyecto (C:\ruta\del\proyecto)
+
+□ En "Condiciones":
+  ✓ DESACTIVADA: "Iniciar solo si está enchufado"
+
+□ La tarea aparece en "Biblioteca del Programador"
+  Verificar: Ves "Extracción Ventas 4AM" en la lista
+
+□ La tarea está "Habilitada" (no desactivada)
+  Verificar: No tiene una X roja
+
+---
+
+SOLO PARA macOS:
+
+□ Creé el archivo launchd en: ~/Library/LaunchAgents/com.ventas.extractor.plist
+
+□ El archivo contiene la configuración correcta:
+  ✓ Label: com.ventas.extractor
+  ✓ Hour: 4
+  ✓ Minute: 0
+
+□ Ejecuté: launchctl load ~/Library/LaunchAgents/com.ventas.extractor.plist
+
+□ No hubo errores en la ejecución
+
+---
+
+SOLO PARA LINUX:
+
+□ Ejecuté: crontab -e
+
+□ Agregué la línea:
+  0 4 * * * cd /ruta/proyecto && python3 -m automation_service_v2
+
+□ La línea está correctamente indentada (sin # al inicio)
+
+□ Guardé el archivo (Ctrl+O, Enter, Ctrl+X)
+
+□ El cron se guardó exitosamente
+
+================================================================================
+FASE 5: VERIFICACIÓN FINAL
+================================================================================
+
+□ Verifica los archivos de configuración:
+
+  config.json:
+  ✓ email.username = tu email de Gmail
+  ✓ email.password = tu contraseña de aplicación (NO contraseña personal)
+  ✓ scheduler.extraction_time = "04:00"
+  ✓ 5 locales listados en "locations"
+
+  sales_extractor_v2.py:
+  ✓ Contiene "Sucursal:" en el código
+  ✓ Contiene mappeo de los 5 locales
+
+  automation_service_v2.py:
+  ✓ Contiene ".at("04:00").do"
+  ✓ NO contiene ".hour.do"
+
+  live_dashboard_v2.html:
+  ✓ Contiene 5 tarjetas (GG Vol 4, GG Vol 2, COLEGIO, GROWLER, VIEJA)
+  ✓ Contiene líneas "GROWLER CAFE" con ⭐
+
+□ Verifica los logs:
+
+  sales_extractor.log:
+  ✓ Muestra extracciones recientes
+  ✓ No muestra errores de autenticación
+  ✓ Identifica correctamente "Sucursal:"
+
+  automation_service.log:
+  ✓ Muestra "Servicio de automatización inicializado"
+  ✓ Muestra horario: "04:00"
+
+================================================================================
+FASE 6: PRUEBAS ESPECÍFICAS DE FUNCIONAMIENTO
+================================================================================
+
+PRUEBA 1: Identificación de Locales
+
+□ Tengo un PDF de cada local (5 PDFs totales)
+
+□ Cada PDF contiene el campo "Sucursal:" correctamente:
+  ✓ PDF 1: Sucursal: GG Vol 4
+  ✓ PDF 2: Sucursal: GG
+  ✓ PDF 3: Sucursal: COLEGIO
+  ✓ PDF 4: Sucursal: GROWLER
+  ✓ PDF 5: Sucursal: GROWLER VV
+
+□ Ejecuté extracción manual y todos los locales fueron identificados:
+  ✓ Log muestra "Ubicación identificada por Sucursal: XXX"
+  ✓ 5 registros en la BD (uno por local)
+
+---
+
+PRUEBA 2: Manejo de 2 Turnos
+
+□ Tengo 2 PDFs de GROWLER CAFE (uno Tarde, uno Noche)
+
+□ Ejecuté extracción y ambos se guardaron en la BD:
+  ✓ Mismo local, misma fecha, DISTINTO shift
+  ✓ BD tiene: GROWLER CAFE - Tarde
+  ✓ BD tiene: GROWLER CAFE - Noche
+
+□ El dashboard muestra ambos turnos combinados
+
+---
+
+PRUEBA 3: Datos Completos
+
+□ La BD contiene todos estos campos por cada reporte:
+  ✓ date
+  ✓ location
+  ✓ shift
+  ✓ total_sales
+  ✓ total_tickets
+  ✓ cash_sales, card_sales, transfer_sales, mercadopago_sales
+  ✓ salon_sales, counter_sales
+  ✓ opening_time, closing_time
+  ✓ closure_number
+
+---
+
+PRUEBA 4: Dashboard Dinámico
+
+□ Abrí live_dashboard_v2.html múltiples veces
+
+□ El dashboard carga datos de dashboard_data.json
+
+□ Los gráficos se renderean correctamente:
+  ✓ Gráfico de líneas (Tendencia)
+  ✓ Gráfico de anillo (Formas de pago)
+  ✓ Gráfico de barras (Comparativa por local)
+
+□ Las tarjetas de los 5 locales muestran datos correctos
+
+□ El timestamp "Última actualización" es reciente
+
+================================================================================
+FASE 7: VERIFICACIÓN A LARGO PLAZO
+================================================================================
+
+(Estas pruebas se hacen DESPUÉS de que el sistema funcione por unos días)
+
+□ La BD contiene histórico de múltiples días
+  Verificar: SELECT COUNT(*) FROM sales_data; (múltiples registros)
+
+□ El scheduler ejecutó automáticamente el 2024-02-11 a las 4:00 AM
+  Verificar: Logs muestran timestamp 04:00
+
+□ El dashboard muestra datos de múltiples días
+  Verificar: Gráficos tienen 7+ puntos
+
+□ Las alertas se generan automáticamente
+  Verificar: dashboard_data.json contiene alertas
+
+□ Sin errores en los logs después de múltiples ejecuciones
+  Verificar: sales_extractor.log es limpio
+
+================================================================================
+SOLUCIÓN DE PROBLEMAS - QUÉ HACER SI ALGO FALLA
+================================================================================
+
+❌ "ERROR: No se encuentran emails"
+   → Verifica que tengas emails de MaxiREST en Gmail
+   → Verifica que el asunto contenga "MaxiREST" o "FINTURNO"
+   → Revisa logs: sales_extractor.log
+
+❌ "ERROR: Ubicación no identificada"
+   → Abre el PDF en editor de texto
+   → Busca "Sucursal:"
+   → Verifica que coincida con tabla en CAMBIOS_v2.0.txt
+   → Agrega mapeo manual en config.json si es necesario
+
+❌ "ERROR: No se puede conectar a Gmail"
+   → Verifica contraseña de aplicación (no contraseña personal)
+   → Verifica que el email esté correcto
+   → Habilita "Acceso de aplicaciones" en Gmail
+
+❌ "Dashboard vacío"
+   → Ejecuta extracción manual primero
+   → Verifica que dashboard_data.json exista
+   → Abre consola F12 para ver errores JavaScript
+
+❌ "Tarea programada no ejecuta"
+   → Windows: Abre Task Scheduler, haz clic derecho en tarea, "Ejecutar"
+   → Verifica que la ruta de la carpeta sea correcta
+   → Revisa "Historial" en Task Scheduler para ver errores
+
+================================================================================
+CHECKLIST FINAL
+================================================================================
+
+Si todos los puntos anteriores tienen ✓:
+
+✅ Sistema completamente instalado
+✅ Configuración verificada
+✅ Automatización funcionando
+✅ Dashboard operativo
+✅ Datos siendo extraídos
+
+🎉 ¡LISTO PARA PRODUCCIÓN!
+
+El sistema extraerá automáticamente datos a las 4:00 AM cada día,
+y tu dashboard se actualizará en tiempo real.
+
+================================================================================
+
+Fecha de instalación: ______________
+Responsable: ______________
+Estado final: ✅ OK / ❌ Revisar
+
+Notas:
+_____________________________________________________________________________
+_____________________________________________________________________________
+_____________________________________________________________________________
+
+================================================================================

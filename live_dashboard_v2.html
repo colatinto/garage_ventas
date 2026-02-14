@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Ventas - 5 Locales</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/date-fns@2.29.3/index.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+        :root {
+            --primary: #ff6b35;
+            --primary-dark: #e55a2b;
+            --secondary: #2c5f41;
+            --secondary-light: #4a7c59;
+            --success: #00d084;
+            --warning: #ffa726;
+            --danger: #ff5722;
+            --bg: #0a0f0a;
+            --surface: #1a1f1a;
+            --surface-light: #252a25;
+            --text: #e8f5e8;
+            --text-secondary: #a0b3a0;
+            --border: #334d33;
+            --accent: #64ffda;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .dashboard-container {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0a0f0a 0%, #1a2f1a 50%, #0a0f0a 100%);
+            position: relative;
+        }
+
+        .dashboard-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(100, 255, 218, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .header {
+            padding: 2rem 2rem 1rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 1.75rem;
+            color: var(--primary);
+            text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+        }
+
+        .date-selector {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        .date-selector select {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            color: var(--text);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .date-selector select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+        }
+
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem 2rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary), var(--accent));
+        }
+
+        .stat-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--primary);
+            box-shadow: 0 8px 32px rgba(255, 107, 53, 0.2);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .stat-change {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .positive { color: var(--success); }
+        .negative { color: var(--danger); }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-container {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            height: 400px;
+            position: relative;
+        }
+
+        .chart-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .chart-icon {
+            width: 20px;
+            height: 20px;
+            background: var(--primary);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .location-card {
+            background: var(--surface);
+            border: 2px solid var(--border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .location-card:hover {
+            border-color: var(--secondary);
+            transform: translateY(-2px);
+        }
+
+        .location-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .location-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .location-status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .status-good { background: rgba(0, 208, 132, 0.2); color: var(--success); }
+        .status-warning { background: rgba(255, 167, 38, 0.2); color: var(--warning); }
+
+        .location-info {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .location-metrics {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .metric {
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .alert-panel {
+            background: linear-gradient(135deg, var(--surface) 0%, var(--surface-light) 100%);
+            border: 2px solid var(--warning);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .alert-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--warning);
+            margin-bottom: 1rem;
+        }
+
+        .alert-item {
+            background: rgba(255, 167, 38, 0.1);
+            border: 1px solid rgba(255, 167, 38, 0.3);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .alert-success {
+            background: rgba(0, 208, 132, 0.1);
+            border: 1px solid rgba(0, 208, 132, 0.3);
+            color: var(--success);
+        }
+
+        @media (max-width: 768px) {
+            .charts-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        .loading {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .animate-in {
+            animation: slideInUp 0.6s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .last-update {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            text-align: right;
+            margin-top: 1rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">📊 Dashboard Ventas 5 Locales</div>
+                <div class="date-selector">
+                    <label for="dateRange">Período:</label>
+                    <select id="dateRange">
+                        <option value="7">Últimos 7 días</option>
+                        <option value="30" selected>Últimos 30 días</option>
+                        <option value="90">Últimos 90 días</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Stats Overview -->
+            <div class="stats-grid animate-in">
+                <div class="stat-card">
+                    <div class="stat-label">Ventas Hoy (Total)</div>
+                    <div class="stat-value" id="totalSalesHoy">$0</div>
+                    <div class="stat-change positive">↗ Todos los locales</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Tickets Vendidos</div>
+                    <div class="stat-value" id="ticketsSold">0</div>
+                    <div class="stat-change positive">↗ Transacciones</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Ticket Promedio</div>
+                    <div class="stat-value" id="avgTicket">$0</div>
+                    <div class="stat-change positive">💰 Monto medio</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Mejor Local</div>
+                    <div class="stat-value" id="bestLocation">-</div>
+                    <div class="stat-change positive">🏆 Top del día</div>
+                </div>
+            </div>
+
+            <!-- Charts Section -->
+            <div class="charts-grid animate-in">
+                <div class="chart-container">
+                    <div class="chart-title">
+                        <div class="chart-icon">📈</div>
+                        Tendencia de Ventas - Últimos 30 días
+                    </div>
+                    <canvas id="salesTrendChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <div class="chart-title">
+                        <div class="chart-icon">💳</div>
+                        Formas de Pago Hoy
+                    </div>
+                    <canvas id="paymentMethodsChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Comparison Chart -->
+            <div class="chart-container animate-in" style="margin-bottom: 2rem;">
+                <div class="chart-title">
+                    <div class="chart-icon">🏪</div>
+                    Comparativa por Local - Últimos 7 días
+                </div>
+                <canvas id="locationsChart"></canvas>
+            </div>
+
+            <!-- Individual Location Cards - 5 LOCALES -->
+            <div class="locations-grid animate-in">
+                <!-- GG Vol 4 -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-name">🏪 GG Vol 4</div>
+                        <div class="location-status status-good">Activo</div>
+                    </div>
+                    <div class="location-info">Galpón Pasco SAS · Pte Roca 1898</div>
+                    <div class="location-metrics">
+                        <div class="metric">
+                            <div class="metric-value" id="gg4-sales">$0</div>
+                            <div class="metric-label">Ventas Hoy</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg4-tickets">0</div>
+                            <div class="metric-label">Tickets</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg4-cash">0%</div>
+                            <div class="metric-label">Efectivo</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg4-salon">0%</div>
+                            <div class="metric-label">Salón</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GG Vol 2 -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-name">🍺 GG Vol 2</div>
+                        <div class="location-status status-good">Activo</div>
+                    </div>
+                    <div class="location-info">Garage de Sabores SAS · Alvear 51 bis</div>
+                    <div class="location-metrics">
+                        <div class="metric">
+                            <div class="metric-value" id="gg2-sales">$0</div>
+                            <div class="metric-label">Ventas Hoy</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg2-tickets">0</div>
+                            <div class="metric-label">Tickets</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg2-cash">0%</div>
+                            <div class="metric-label">Tarjetas</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="gg2-salon">0%</div>
+                            <div class="metric-label">Mostrador</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLEGIO -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-name">🎓 COLEGIO</div>
+                        <div class="location-status status-good">Activo</div>
+                    </div>
+                    <div class="location-info">Garage de Sabores SAS · Belgrano 646</div>
+                    <div class="location-metrics">
+                        <div class="metric">
+                            <div class="metric-value" id="colegio-sales">$0</div>
+                            <div class="metric-label">Ventas Hoy</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="colegio-tickets">0</div>
+                            <div class="metric-label">Tickets</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="colegio-cash">0%</div>
+                            <div class="metric-label">Efectivo</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="colegio-salon">0%</div>
+                            <div class="metric-label">Salón</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GROWLER CAFE -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-name">☕ GROWLER CAFE</div>
+                        <div class="location-status status-good">2 Turnos</div>
+                    </div>
+                    <div class="location-info">Growler Garage SAS · Moreno 1835</div>
+                    <div class="location-metrics">
+                        <div class="metric">
+                            <div class="metric-value" id="growler-sales">$0</div>
+                            <div class="metric-label">Ventas Hoy</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="growler-tickets">0</div>
+                            <div class="metric-label">Tickets</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="growler-cash">0%</div>
+                            <div class="metric-label">Tarjetas</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="growler-salon">0%</div>
+                            <div class="metric-label">Salón</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GROWLER VIA VIEJA -->
+                <div class="location-card">
+                    <div class="location-header">
+                        <div class="location-name">🛣️ GROWLER VIA VIEJA</div>
+                        <div class="location-status status-good">Activo</div>
+                    </div>
+                    <div class="location-info">Garage de Sabores SAS · Santa Fe 3329</div>
+                    <div class="location-metrics">
+                        <div class="metric">
+                            <div class="metric-value" id="vieja-sales">$0</div>
+                            <div class="metric-label">Ventas Hoy</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="vieja-tickets">0</div>
+                            <div class="metric-label">Tickets</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="vieja-cash">0%</div>
+                            <div class="metric-label">Efectivo</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-value" id="vieja-salon">0%</div>
+                            <div class="metric-label">Salón</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alerts Panel -->
+            <div class="alert-panel animate-in">
+                <div class="alert-title">
+                    🚨 Alertas y Recomendaciones
+                </div>
+                <div id="alertsContainer">
+                    <div class="alert-item">
+                        <strong>Sistema:</strong> Cargando datos desde dashboard_data.json
+                    </div>
+                </div>
+                <div class="last-update">
+                    Última actualización: <span id="lastUpdate">-</span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Configuración global de Chart.js
+        Chart.defaults.color = '#a0b3a0';
+        Chart.defaults.backgroundColor = 'rgba(255, 107, 53, 0.1)';
+        Chart.defaults.borderColor = '#ff6b35';
+
+        let dashboardData = null;
+
+        // Cargar datos del dashboard
+        async function loadDashboardData() {
+            try {
+                const response = await fetch('dashboard_data.json');
+                if (!response.ok) {
+                    throw new Error('No se puede cargar dashboard_data.json');
+                }
+                dashboardData = await response.json();
+                updateDashboard();
+            } catch (error) {
+                console.error('Error cargando datos:', error);
+                // Usar datos de demostración
+                loadDemoData();
+            }
+        }
+
+        function loadDemoData() {
+            console.log('Usando datos de demostración...');
+            dashboardData = {
+                sales_data: [
+                    // Datos de ejemplo para demostración
+                ],
+                alerts: [],
+                last_updated: new Date().toISOString(),
+                locations: {}
+            };
+            updateDashboard();
+        }
+
+        function updateDashboard() {
+            if (!dashboardData || !dashboardData.sales_data) return;
+
+            // Obtener datos de hoy
+            const today = new Date().toISOString().split('T')[0];
+            const todayData = dashboardData.sales_data.filter(d => d.date === today);
+
+            // Calcular totales
+            const totalSales = todayData.reduce((sum, d) => sum + (d.total_sales || 0), 0);
+            const totalTickets = todayData.reduce((sum, d) => sum + (d.total_tickets || 0), 0);
+            const avgTicket = totalTickets > 0 ? totalSales / totalTickets : 0;
+
+            // Actualizar tarjetas de estadísticas
+            document.getElementById('totalSalesHoy').textContent = formatCurrency(totalSales);
+            document.getElementById('ticketsSold').textContent = totalTickets;
+            document.getElementById('avgTicket').textContent = formatCurrency(avgTicket);
+
+            // Buscar mejor local
+            if (todayData.length > 0) {
+                const best = todayData.reduce((max, d) =>
+                    (d.total_sales > max.total_sales) ? d : max
+                );
+                document.getElementById('bestLocation').textContent = best.location || 'N/A';
+            }
+
+            // Actualizar tarjetas de locales
+            updateLocationCards(todayData);
+
+            // Actualizar gráficos
+            updateCharts();
+
+            // Actualizar alertas
+            updateAlerts();
+
+            // Actualizar timestamp
+            document.getElementById('lastUpdate').textContent =
+                new Date(dashboardData.last_updated).toLocaleString('es-AR');
+        }
+
+        function updateLocationCards(todayData) {
+            const locations = {
+                'GG Vol 4': 'gg4',
+                'GG Vol 2': 'gg2',
+                'COLEGIO': 'colegio',
+                'GROWLER CAFE': 'growler',
+                'GROWLER VIA VIEJA': 'vieja'
+            };
+
+            for (const [location, prefix] of Object.entries(locations)) {
+                const locData = todayData.find(d => d.location === location);
+                if (locData) {
+                    const totalSales = locData.total_sales || 0;
+                    const tickets = locData.total_tickets || 0;
+                    const cashPercent = totalSales > 0 ? ((locData.cash_sales || 0) / totalSales * 100) : 0;
+                    const salonPercent = totalSales > 0 ? ((locData.salon_sales || 0) / totalSales * 100) : 0;
+
+                    document.getElementById(`${prefix}-sales`).textContent = formatCurrency(totalSales);
+                    document.getElementById(`${prefix}-tickets`).textContent = tickets;
+                    document.getElementById(`${prefix}-cash`).textContent = Math.round(cashPercent) + '%';
+                    document.getElementById(`${prefix}-salon`).textContent = Math.round(salonPercent) + '%';
+                }
+            }
+        }
+
+        function updateCharts() {
+            if (!dashboardData || !dashboardData.sales_data) return;
+
+            // Agrupar datos por fecha para los últimos 30 días
+            const last30Days = dashboardData.sales_data.slice(0, 30);
+            const dateGroups = {};
+
+            last30Days.forEach(d => {
+                if (!dateGroups[d.date]) {
+                    dateGroups[d.date] = { locations: {} };
+                }
+                if (!dateGroups[d.date].locations[d.location]) {
+                    dateGroups[d.date].locations[d.location] = 0;
+                }
+                dateGroups[d.date].locations[d.location] += d.total_sales || 0;
+            });
+
+            const dates = Object.keys(dateGroups).sort().reverse();
+            const locations = ['GG Vol 4', 'GG Vol 2', 'COLEGIO', 'GROWLER CAFE', 'GROWLER VIA VIEJA'];
+            const colors = ['#ff6b35', '#64ffda', '#ffa726', '#4a7c59', '#9c27b0'];
+
+            // Gráfico de tendencia
+            const salesCtx = document.getElementById('salesTrendChart').getContext('2d');
+            new Chart(salesCtx, {
+                type: 'line',
+                data: {
+                    labels: dates.slice(0, 8).reverse(),
+                    datasets: locations.map((loc, i) => ({
+                        label: loc,
+                        data: dates.slice(0, 8).reverse().map(d =>
+                            dateGroups[d].locations[loc] || 0
+                        ),
+                        borderColor: colors[i],
+                        backgroundColor: colors[i] + '20',
+                        tension: 0.4,
+                        fill: true
+                    }))
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: '#334d33' },
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + (value / 1000).toFixed(0) + 'k';
+                                }
+                            }
+                        },
+                        x: {
+                            grid: { color: '#334d33' }
+                        }
+                    }
+                }
+            });
+
+            // Gráfico de formas de pago (hoy)
+            const today = new Date().toISOString().split('T')[0];
+            const todayTotal = dashboardData.sales_data.filter(d => d.date === today);
+            const cashTotal = todayTotal.reduce((sum, d) => sum + (d.cash_sales || 0), 0);
+            const cardTotal = todayTotal.reduce((sum, d) => sum + (d.card_sales || 0), 0);
+            const transferTotal = todayTotal.reduce((sum, d) => sum + (d.transfer_sales || 0), 0);
+            const mpTotal = todayTotal.reduce((sum, d) => sum + (d.mercadopago_sales || 0), 0);
+            const otherTotal = todayTotal.reduce((sum, d) => sum + (d.other_sales || 0), 0);
+
+            const paymentCtx = document.getElementById('paymentMethodsChart').getContext('2d');
+            new Chart(paymentCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Efectivo', 'Tarjetas', 'Transferencia', 'MercadoPago', 'Otros'],
+                    datasets: [{
+                        data: [cashTotal, cardTotal, transferTotal, mpTotal, otherTotal],
+                        backgroundColor: [
+                            '#ff6b35',
+                            '#64ffda',
+                            '#ffa726',
+                            '#4a7c59',
+                            '#9c27b0'
+                        ],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { padding: 15 }
+                        }
+                    }
+                }
+            });
+
+            // Gráfico comparativo por local
+            const locationsCtx = document.getElementById('locationsChart').getContext('2d');
+            new Chart(locationsCtx, {
+                type: 'bar',
+                data: {
+                    labels: dates.slice(0, 7).reverse(),
+                    datasets: locations.map((loc, i) => ({
+                        label: loc,
+                        data: dates.slice(0, 7).reverse().map(d =>
+                            dateGroups[d].locations[loc] || 0
+                        ),
+                        backgroundColor: colors[i] + 'cc'
+                    }))
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: { padding: 20 }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: '#334d33' },
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + (value / 1000).toFixed(0) + 'k';
+                                }
+                            }
+                        },
+                        x: {
+                            grid: { color: '#334d33' }
+                        }
+                    }
+                }
+            });
+        }
+
+        function updateAlerts() {
+            const container = document.getElementById('alertsContainer');
+            if (!dashboardData.alerts || dashboardData.alerts.length === 0) {
+                container.innerHTML = '<div class="alert-item alert-success"><strong>✅ Sistema operativo:</strong> Todos los locales con reportes actualizados</div>';
+                return;
+            }
+
+            const alertsHtml = dashboardData.alerts.map(alert => {
+                const isSuccess = alert.severity === 'success';
+                return `<div class="alert-item ${isSuccess ? 'alert-success' : ''}">
+                    <strong>${isSuccess ? '✅' : '⚠️'} ${alert.location}:</strong> ${alert.message}
+                </div>`;
+            }).join('');
+
+            container.innerHTML = alertsHtml;
+        }
+
+        function formatCurrency(value) {
+            return '$' + Math.round(value).toLocaleString('es-AR');
+        }
+
+        // Event listeners
+        document.getElementById('dateRange').addEventListener('change', function() {
+            console.log('Rango seleccionado:', this.value);
+            // TODO: Filtrar datos por rango
+        });
+
+        // Cargar datos al iniciar
+        window.addEventListener('load', function() {
+            loadDashboardData();
+
+            // Recargar datos cada 5 minutos
+            setInterval(loadDashboardData, 5 * 60 * 1000);
+        });
+
+        // Animaciones de carga
+        window.addEventListener('load', function() {
+            const elements = document.querySelectorAll('.animate-in');
+            elements.forEach((el, index) => {
+                setTimeout(() => {
+                    el.style.animationDelay = `${index * 0.1}s`;
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>

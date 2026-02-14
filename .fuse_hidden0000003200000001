@@ -1,0 +1,75 @@
+#!/bin/bash
+# Setup automático para Netlify
+
+echo "╔════════════════════════════════════════════════════════════╗"
+echo "║     🚀 CONFIGURACIÓN AUTOMÁTICA - NETLIFY                  ║"
+echo "╚════════════════════════════════════════════════════════════╝"
+echo ""
+
+# Verificar si npm está instalado
+if ! command -v npm &> /dev/null; then
+    echo "❌ npm no está instalado"
+    echo ""
+    echo "Instalá Node.js primero desde: https://nodejs.org/"
+    echo "O con Homebrew: brew install node"
+    exit 1
+fi
+
+echo "📦 Instalando Netlify CLI..."
+npm install -g netlify-cli
+
+echo ""
+echo "🔐 Ahora necesitás hacer login en Netlify..."
+echo "Se va a abrir tu navegador para autenticar."
+echo ""
+read -p "Presioná Enter para continuar..."
+
+netlify login
+
+echo ""
+echo "🔗 Conectando tu sitio existente..."
+echo ""
+cd dashboard_web
+
+# Link al sitio existente
+echo "📋 Copiá el Site ID de tu sitio:"
+echo "   1. Andá a: https://app.netlify.com"
+echo "   2. Click en tu sitio (snazzy-platypus-56587c)"
+echo "   3. Site settings → General"
+echo "   4. Copiá el 'Site ID' (algo como: 12345678-abcd-1234-abcd-123456789012)"
+echo ""
+read -p "Pegá tu Site ID acá: " site_id
+
+# Crear archivo de configuración
+cat > .netlify/state.json << EOF
+{
+  "siteId": "$site_id"
+}
+EOF
+
+mkdir -p .netlify
+echo "$site_id" > .netlify/site-id.txt
+
+echo ""
+echo "✅ Sitio conectado!"
+echo ""
+echo "🧪 Probando deploy..."
+netlify deploy --prod --dir .
+
+if [ $? -eq 0 ]; then
+    echo ""
+    echo "╔════════════════════════════════════════════════════════════╗"
+    echo "║  🎉 ¡CONFIGURACIÓN EXITOSA!                                ║"
+    echo "╚════════════════════════════════════════════════════════════╝"
+    echo ""
+    echo "✅ Tu sitio: https://snazzy-platypus-56587c.netlify.app/"
+    echo ""
+    echo "🔄 De ahora en adelante, cada vez que ejecutes:"
+    echo "   ./actualizar_web.sh"
+    echo ""
+    echo "   Se subirá automáticamente a Netlify"
+    echo ""
+else
+    echo "❌ Hubo un error con el deploy"
+    echo "Verificá el Site ID y tu conexión a internet"
+fi

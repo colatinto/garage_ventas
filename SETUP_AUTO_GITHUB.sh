@@ -1,0 +1,73 @@
+#!/bin/bash
+# Setup completo para actualización automática con GitHub Pages
+
+echo "🚀 CONFIGURACIÓN AUTOMÁTICA - GITHUB PAGES"
+echo "=========================================="
+echo ""
+
+# 1. Configurar repositorio Git
+echo "📁 Paso 1: Configurando repositorio..."
+cd ~/Documents/garage_ventas/dashboard_web
+
+# Inicializar git si no existe
+if [ ! -d .git ]; then
+    git init
+    echo "✅ Git inicializado"
+else
+    echo "✅ Git ya estaba inicializado"
+fi
+
+# Configurar usuario (cambiar estos valores)
+read -p "Tu nombre para Git (ej: Franco Toti): " git_name
+read -p "Tu email de GitHub: " git_email
+
+git config user.name "$git_name"
+git config user.email "$git_email"
+echo "✅ Usuario configurado"
+
+# Agregar archivos
+git add .
+git commit -m "Dashboard inicial" 2>/dev/null || echo "✅ Archivos ya commiteados"
+
+echo ""
+echo "📤 Paso 2: Conectar con GitHub"
+echo ""
+echo "AHORA necesitás hacer esto MANUALMENTE (solo una vez):"
+echo ""
+echo "1. Andá a https://github.com/new"
+echo "2. Repository name: dashboard"
+echo "3. Public ✅"
+echo "4. NO agregues README (desmarcá todo)"
+echo "5. Create repository"
+echo ""
+echo "6. En la página que aparece, copiá el comando que empieza con:"
+echo "   git remote add origin https://github.com/TU-USUARIO/dashboard.git"
+echo ""
+read -p "Pegá ese comando acá y presioná Enter: " git_remote_cmd
+eval $git_remote_cmd
+echo "✅ Repositorio remoto conectado"
+
+# Push inicial
+git branch -M main
+git push -u origin main
+
+echo ""
+echo "✅ SETUP COMPLETADO!"
+echo ""
+echo "Ahora activá GitHub Pages:"
+echo "1. Andá a tu repo: https://github.com/TU-USUARIO/dashboard"
+echo "2. Settings → Pages"
+echo "3. Source: main branch, / (root)"
+echo "4. Save"
+echo ""
+echo "Tu dashboard estará en: https://TU-USUARIO.github.io/dashboard/"
+echo ""
+read -p "Presioná Enter cuando hayas activado GitHub Pages..."
+
+echo ""
+echo "=========================================="
+echo "🎉 TODO LISTO!"
+echo ""
+echo "De ahora en adelante, el dashboard se actualizará"
+echo "automáticamente todos los días a las 4 AM"
+echo "=========================================="

@@ -1,0 +1,83 @@
+{
+    "email": {
+        "provider": "gmail",
+        "username": "growlergaragerosario@gmail.com",
+        "password": "iuen urxj iguw fkkr",
+        "imap_server": "imap.gmail.com",
+        "imap_port": 993
+    },
+    "filters": {
+        "subject_patterns": [
+            "MaxiREST - Fin de turno",
+            "FINTURNO"
+        ],
+        "sender_patterns": [
+            "maxi",
+            "resto",
+            "garage"
+        ]
+    },
+    "locations": {
+        "GG Vol 4": {
+            "display_name": "GG Vol 4",
+            "business_name": "Galpón Pasco SAS",
+            "address": "Pte Roca 1898",
+            "emoji": "🏪",
+            "shifts": 1
+        },
+        "GG Vol 2": {
+            "display_name": "GG Vol 2",
+            "business_name": "Garage de Sabores SAS",
+            "address": "Alvear 51 bis",
+            "emoji": "🍺",
+            "shifts": 1
+        },
+        "COLEGIO": {
+            "display_name": "COLEGIO",
+            "business_name": "Garage de Sabores SAS",
+            "address": "Belgrano 646",
+            "emoji": "🎓",
+            "shifts": 1
+        },
+        "GROWLER CAFE": {
+            "display_name": "GROWLER CAFE",
+            "business_name": "Growler Garage SAS",
+            "address": "Moreno 1835",
+            "emoji": "☕",
+            "shifts": 2,
+            "note": "2 TURNOS: Tarde (~17hs) y Noche (~00/01hs)"
+        },
+        "GROWLER VIA VIEJA": {
+            "display_name": "GROWLER VIA VIEJA",
+            "business_name": "Garage de Sabores SAS",
+            "address": "Santa Fe 3329",
+            "emoji": "🛣️",
+            "shifts": 1
+        }
+    },
+    "alerts": {
+        "low_sales_threshold": -15,
+        "high_sales_threshold": 25,
+        "email_alerts": true,
+        "whatsapp_alerts": false
+    },
+    "scheduler": {
+        "extraction_time": "04:00",
+        "extraction_frequency": "daily",
+        "note": "Extracción automática UNA VEZ POR DÍA a las 4:00 AM"
+    },
+    "dashboard": {
+        "auto_update": true,
+        "update_frequency_minutes": 60,
+        "host": "localhost",
+        "port": 8000
+    },
+    "reports": {
+        "daily_summary": true,
+        "weekly_report": true,
+        "monthly_report": true,
+        "send_to": [
+            "tu_email@gmail.com"
+        ]
+    }
+}

@@ -1,0 +1,261 @@
+================================================================================
+   🚀 INICIO RÁPIDO - Sistema Análisis Ventas 5 Locales v2.0
+================================================================================
+
+⏱️  TIEMPO ESTIMADO: 5 minutos
+
+================================================================================
+PASO 1: OBTENER CONTRASEÑA DE GMAIL (IMPORTANTE)
+================================================================================
+
+1. Abre en tu navegador: https://myaccount.google.com/apppasswords
+
+2. Si Google te lo pide:
+   - Ingresa tu usuario/contraseña de Gmail
+   - Selecciona "Dispositivo" = "Windows/Mac/Linux"
+   - Selecciona "Aplicación" = "Correo"
+
+3. Google te generará una contraseña de 16 caracteres tipo:
+   ➜ abcd efgh ijkl mnop (pero sin espacios, 16 caracteres)
+
+4. CÓPIALA (la necesitarás en 2 minutos)
+
+================================================================================
+PASO 2: INSTALAR SISTEMA (Windows)
+================================================================================
+
+1. Abre Símbolo del Sistema (Command Prompt):
+   - Presiona Windows + R
+   - Escribe: cmd
+   - Enter
+
+2. Navega a la carpeta del proyecto:
+   cd C:\tu\ruta\al\proyecto
+   (Por ejemplo: cd C:\Users\Toti\Desktop\VentasAnalyzer)
+
+3. Ejecuta instalación:
+   python setup.py
+
+4. El sistema te pedirá:
+   - Tu email de Gmail (ejemplo: tumail@gmail.com)
+   - Contraseña de aplicación (la que copiaste arriba - 16 caracteres)
+
+5. Espera a que termine (2-3 minutos)
+
+================================================================================
+PASO 3: CREAR TAREA PROGRAMADA (Para que corra a las 4:00 AM)
+================================================================================
+
+En Windows Task Scheduler:
+
+1. Abre "Programador de tareas":
+   - Presiona Windows + R
+   - Escribe: taskschd.msc
+   - Enter
+
+2. En el panel izquierdo, haz clic en "Biblioteca del Programador de tareas"
+
+3. Haz clic en "Crear tarea básica" (derecha superior)
+
+4. Completa los datos:
+   - Nombre: "Extracción Ventas 4AM"
+   - Descripción: "Extrae datos de MaxiREST a las 4:00 AM"
+   - Haz clic Siguiente
+
+5. En "Desencadenador":
+   - Selecciona "Diariamente"
+   - Establece hora: 04:00
+   - Haz clic Siguiente
+
+6. En "Acción":
+   - Selecciona "Iniciar un programa"
+   - Programa: python
+   - Argumentos: -m automation_service_v2
+   - Directorio inicio: (la carpeta del proyecto)
+   - Haz clic Siguiente
+
+7. En "Condiciones":
+   - DESACTIVA: "Iniciar la tarea solo si el equipo está enchufado"
+   - Haz clic Siguiente
+
+8. Haz clic "Finalizar"
+
+✅ ¡LISTO! El sistema correrá automáticamente a las 4:00 AM
+
+================================================================================
+PASO 4: ABRIR DASHBOARD
+================================================================================
+
+1. Busca el archivo: live_dashboard_v2.html
+
+2. Haz doble clic para abrir en tu navegador
+
+3. Verás el dashboard con 5 locales, pero vacío al principio
+
+4. Después que corra una extracción (espera a las 4:00 AM o prueba manual):
+   - Se poblarán los gráficos
+   - Se mostrarán datos de ventas
+   - Se verán alertas
+
+================================================================================
+PASO 5: PRUEBA MANUAL (Opcional - para no esperar a las 4:00 AM)
+================================================================================
+
+Si quieres probar ahora (SIN esperar a mañana a las 4:00 AM):
+
+1. Abre Símbolo del Sistema:
+   Windows + R → cmd → Enter
+
+2. Ve a tu carpeta:
+   cd C:\tu\ruta\al\proyecto
+
+3. Ejecuta:
+   python -c "from sales_extractor_v2 import SalesDataExtractor; SalesDataExtractor().run_extraction_cycle()"
+
+4. Presiona Enter
+
+5. Espera 2-3 segundos. Si tienes emails de MaxiREST:
+   - Se extraerán automáticamente
+   - Verás mensajes de éxito
+   - Recarga live_dashboard_v2.html
+
+================================================================================
+ARCHIVOS QUE NECESITAS
+================================================================================
+
+✓ sales_extractor_v2.py ......... Extractor (busca "Sucursal:" en PDFs)
+✓ automation_service_v2.py ...... Servicio que corre a las 4:00 AM
+✓ config.json ................... Tu configuración (email, credenciales)
+✓ live_dashboard_v2.html ........ Dashboard con los 5 locales
+✓ setup.py ...................... Instalador (ya ejecutado)
+✓ README.md ..................... Documentación completa
+
+================================================================================
+LOS 5 LOCALES IDENTIFICADOS AUTOMÁTICAMENTE
+================================================================================
+
+Sucursal: GG Vol 4        ➜ 🏪 Galpón Pasco (Pte Roca 1898)
+Sucursal: GG              ➜ 🍺 Garage de Sabores (Alvear 51 bis)
+Sucursal: COLEGIO         ➜ 🎓 COLEGIO (Belgrano 646)
+Sucursal: GROWLER         ➜ ☕ GROWLER CAFE (Moreno 1835) - 2 TURNOS
+Sucursal: GROWLER VV      ➜ 🛣️  Growler Vía Vieja (Santa Fe 3329)
+
+El sistema busca automáticamente el campo "Sucursal:" en los PDFs
+y clasifica los datos por local.
+
+================================================================================
+¿QUÉ OCURRE AUTOMÁTICAMENTE A LAS 4:00 AM?
+================================================================================
+
+1. ✓ Conecta a Gmail por IMAP
+2. ✓ Descarga todos los emails con "MaxiREST" o "FINTURNO" de los últimos 7 días
+3. ✓ Extrae los PDFs adjuntos
+4. ✓ Lee cada PDF y busca el campo "Sucursal:"
+5. ✓ Extrae datos de ventas, formas de pago, turnos, etc.
+6. ✓ Guarda en base de datos SQLite
+7. ✓ Genera alertas si hay anomalías
+8. ✓ Actualiza dashboard_data.json
+9. ✓ Dashboard muestra los datos automáticamente (se recarga cada 5 min)
+
+================================================================================
+INFORMACIÓN EN EL DASHBOARD
+================================================================================
+
+TARJETAS DE ESTADÍSTICAS:
+  - Ventas Hoy (Total de todos los locales)
+  - Tickets Vendidos
+  - Ticket Promedio
+  - Mejor Local del Día
+
+GRÁFICOS:
+  - Tendencia de Ventas (últimos 30 días)
+  - Formas de Pago (Efectivo, Tarjetas, etc.)
+  - Comparativa por Local (últimos 7 días)
+
+TARJETAS DE LOCALES (5 TARJETAS):
+  - GG Vol 4
+  - GG Vol 2
+  - COLEGIO
+  - GROWLER CAFE (con ⭐ para 2 turnos)
+  - GROWLER VIA VIEJA
+
+Cada tarjeta muestra:
+  - Ventas del día
+  - Cantidad de tickets
+  - % Efectivo/Tarjetas
+  - % Salón/Mostrador
+
+ALERTAS:
+  - Alertas de ventas bajas (< -15%)
+  - Alertas de ventas altas (> +25%)
+  - Recomendaciones por local
+
+================================================================================
+PRIMERAS PRUEBAS DESPUÉS DE INSTALAR
+================================================================================
+
+1. Verifica config.json tenga tu email y contraseña correctos
+
+2. Intenta la prueba manual (Paso 5 arriba)
+
+3. Si ves mensajes de "Extración completada":
+   ✓ Haz refresh en live_dashboard_v2.html
+   ✓ Verás los datos de tus emails
+
+4. Si no ves datos:
+   - Verifica que tengas emails de MaxiREST en tu inbox
+   - Revisa que el asunto contenga "MaxiREST" o "FINTURNO"
+   - Revisa los logs: sales_extractor.log
+
+================================================================================
+LOGS - PARA SOLUCIONAR PROBLEMAS
+================================================================================
+
+Si algo no funciona, revisa estos archivos:
+
+sales_extractor.log ........... Logs de extracción de datos
+automation_service.log ........ Logs del servicio automático
+sales_data.db ................. Base de datos (se crea automáticamente)
+dashboard_data.json ........... Datos en formato JSON (se actualiza)
+
+================================================================================
+CARACTERÍSTICAS PRINCIPALES
+================================================================================
+
+✅ Identifica 5 locales automáticamente por "Sucursal:"
+✅ Manejo especial para GROWLER CAFE con 2 turnos
+✅ Extracción automática DIARIA a las 4:00 AM (configurable)
+✅ Dashboard interactivo con gráficos en tiempo real
+✅ Base de datos con histórico de 30 días
+✅ Alertas automáticas por desempeño bajo/alto
+✅ Compatible Windows / macOS / Linux
+✅ 100% automático - solo instala y olvídate
+
+================================================================================
+¿DUDAS O PROBLEMAS?
+================================================================================
+
+1. Lee README.md para documentación completa
+
+2. Revisa los logs:
+   - sales_extractor.log (errores de extracción)
+   - automation_service.log (errores del servicio)
+
+3. Verifica:
+   - config.json tiene email y contraseña correctos
+   - Tienes emails de MaxiREST en tu inbox
+   - Tarea programada está activa (Windows Task Scheduler)
+
+4. Prueba manual:
+   python -c "from sales_extractor_v2 import SalesDataExtractor; SalesDataExtractor().run_extraction_cycle()"
+
+================================================================================
+
+¡INSTALACIÓN COMPLETADA! 🎉
+
+Tu sistema está listo. A partir de mañana a las 4:00 AM,
+se extraerán automáticamente los datos de ventas de los 5 locales.
+
+¡Que disfrutes tu dashboard! 📊
+
+================================================================================
