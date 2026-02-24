@@ -220,7 +220,7 @@
             // Encontrar el último día con datos (excluyendo hoy para evitar datos parciales)
             const allDates = [...new Set(ad.map(d=>d.date))].sort().reverse();
             const todayStr = new Date().toISOString().slice(0,10);
-            const lastDate = allDates.find(d => d !== todayStr) || allDates[0];
+            const lastDate = allDates.length > 1 ? allDates[1] : allDates[0];
             if (!lastDate) { document.getElementById('lastDayComparison').innerHTML = '<p style="color:var(--muted);">Sin datos</p>'; return; }
 
             // Encontrar el mismo día de la semana anterior
