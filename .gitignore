@@ -1,0 +1,9 @@
+*.db
+*.db-journal
+*.log
+*.bak
+__pycache__/
+temp_pdfs/
+venv/
+node_modules/
+.netlify/

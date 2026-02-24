@@ -229,7 +229,7 @@ class SalesDataExtractor:
             mail.select("inbox")
 
             # Buscar emails de MaxiREST de los últimos 7 días
-            since_date = (datetime.now() - timedelta(days=7)).strftime("%d-%b-%Y")
+            since_date = "01-Jan-2026"
             search_criteria = f'(SINCE "{since_date}" SUBJECT "MaxiREST")'
 
             status, messages = mail.search(None, search_criteria)
@@ -320,7 +320,8 @@ class SalesDataExtractor:
                     # Guardar archivo temporalmente
                     temp_dir = Path("temp_pdfs")
                     temp_dir.mkdir(exist_ok=True)
-                    temp_path = temp_dir / f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{filename}"
+                    import uuid
+                    temp_path = temp_dir / f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:8]}_{filename}"
 
                     with open(temp_path, 'wb') as f:
                         f.write(file_data)
@@ -646,7 +647,7 @@ class SalesDataExtractor:
         cursor.execute('''
             SELECT location, date, total_sales
             FROM sales_data
-            WHERE date >= date('now', '-7 days')
+            WHERE date >= '2026-01-01'
             ORDER BY location, date
         ''')
 
@@ -712,7 +713,7 @@ class SalesDataExtractor:
         # Datos de los últimos 30 días
         cursor.execute('''
             SELECT * FROM sales_data
-            WHERE date >= date('now', '-30 days')
+            WHERE date >= date('now', '-90 days')
             ORDER BY date DESC
         ''')
 
@@ -729,7 +730,7 @@ class SalesDataExtractor:
         # Alertas activas
         cursor.execute('''
             SELECT * FROM alerts
-            WHERE date >= date('now', '-7 days')
+            WHERE date >= '2026-01-01'
             ORDER BY created_at DESC
         ''')
 

@@ -127,7 +127,7 @@ class SalesDataExtractor:
         # Usar base temporal para evitar disk I/O errors en /mnt/Documents
         import shutil
         import tempfile
-        temp_db = os.path.join(tempfile.gettempdir(), 'sales_data_temp.db')
+        temp_db = 'sales_data_temp.db'
 
         # Copiar BD existente a temp si existe
         if os.path.exists(self.db_path):
@@ -236,8 +236,8 @@ class SalesDataExtractor:
             email_ids = messages[0].split()
 
             extracted_emails = []
+            for email_id in email_ids:  # Procesar todos los emails encontrados
 
-            for email_id in email_ids[-50:]:  # Procesar últimos 50 emails
                 status, msg_data = mail.fetch(email_id, "(RFC822)")
 
                 for response_part in msg_data:
@@ -320,7 +320,8 @@ class SalesDataExtractor:
                     # Guardar archivo temporalmente
                     temp_dir = Path("temp_pdfs")
                     temp_dir.mkdir(exist_ok=True)
-                    temp_path = temp_dir / f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{filename}"
+                    import uuid
+                    temp_path = temp_dir / f"{datetime.now().strftime('%Y%m%d_%H%M%S')}_{uuid.uuid4().hex[:8]}_{filename}"
 
                     with open(temp_path, 'wb') as f:
                         f.write(file_data)
@@ -539,7 +540,7 @@ class SalesDataExtractor:
 
         # Copiar BD a ubicación temporal para evitar disk I/O errors
         import shutil
-        temp_db = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data_temp.db')
+        temp_db = 'sales_data_temp.db'
         shutil.copy(self.db_path, temp_db)
 
         conn = sqlite3.connect(temp_db)
@@ -581,7 +582,7 @@ class SalesDataExtractor:
 
         # Usar base temporal para evitar disk I/O errors
         import shutil
-        temp_db = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data_temp.db')
+        temp_db = 'sales_data_temp.db'
         shutil.copy(self.db_path, temp_db)
 
         conn = sqlite3.connect(temp_db)
@@ -619,7 +620,7 @@ class SalesDataExtractor:
         """Marcar email como procesado"""
         # Usar base temporal para evitar disk I/O errors
         import shutil
-        temp_db = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data_temp.db')
+        temp_db = 'sales_data_temp.db'
         shutil.copy(self.db_path, temp_db)
 
         conn = sqlite3.connect(temp_db)
@@ -703,7 +704,7 @@ class SalesDataExtractor:
         """Exportar datos para el dashboard en formato JSON"""
         # Usar base temporal para evitar disk I/O errors
         import shutil
-        temp_db = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sales_data_temp.db')
+        temp_db = 'sales_data_temp.db'
         shutil.copy(self.db_path, temp_db)
 
         conn = sqlite3.connect(temp_db)
