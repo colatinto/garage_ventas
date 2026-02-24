@@ -1,6 +1,24 @@
 {
   "sales_data": [
     {
+      "id": 369,
+      "date": "2026-02-23",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 36320000.0,
+      "total_tickets": 19,
+      "cash_sales": 2250000.0,
+      "card_sales": 11370000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 20450000.0,
+      "salon_sales": 16850000.0,
+      "counter_sales": 19470000.0,
+      "opening_time": "16:09",
+      "closing_time": "23:37",
+      "closure_number": 880
+    },
+    {
       "id": 367,
       "date": "2026-02-23",
       "location": "GROWLER CAFE",
@@ -5115,6 +5133,33 @@
   ],
   "alerts": [
     {
+      "id": 49,
+      "date": "2026-02-24",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -26.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 50,
+      "date": "2026-02-24",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -25.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 51,
+      "date": "2026-02-24",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -77.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 46,
       "date": "2026-02-24",
       "location": "GG Vol 2",
@@ -5620,17 +5665,17 @@
       },
       {
         "name": "Heineken Lata",
-        "quantity": 421.0,
-        "total_amount": 189225000.0
+        "quantity": 422.0,
+        "total_amount": 189675000.0
       },
       {
         "name": "Pinta Santa Fe",
-        "quantity": 405.0,
-        "total_amount": 174130000.0
+        "quantity": 406.0,
+        "total_amount": 174560000.0
       }
     ]
   },
-  "last_updated": "2026-02-23T22:30:46.277177",
+  "last_updated": "2026-02-23T23:50:12.470496",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",

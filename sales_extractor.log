@@ -2313,3 +2313,16 @@
 2026-02-23 22:30:46,260 - INFO - Generadas 3 alertas
 2026-02-23 22:30:46,288 - INFO - Datos exportados para dashboard
 2026-02-23 22:30:46,288 - INFO - === Ciclo completado: 0 reportes procesados ===
+2026-02-23 23:47:54,754 - INFO - Base de datos configurada correctamente
+2026-02-23 23:47:54,759 - INFO - Extractor de ventas inicializado (v2.0)
+2026-02-23 23:47:54,760 - INFO - === Iniciando ciclo de extracción ===
+2026-02-23 23:50:11,606 - INFO - PDF extraído: FINTURNO.PDF
+2026-02-23 23:50:11,607 - INFO - Email extraído: MaxiREST - Fin de turno - 23/02/2026 Tarde
+2026-02-23 23:50:12,424 - INFO - Extraídos 1 emails nuevos
+2026-02-23 23:50:12,437 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-02-23 23:50:12,448 - INFO - Guardados 23 productos de GROWLER VIA VIEJA - 2026-02-23
+2026-02-23 23:50:12,451 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (23 productos)
+2026-02-23 23:50:12,453 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-02-23 (Tarde)
+2026-02-23 23:50:12,460 - INFO - Generadas 3 alertas
+2026-02-23 23:50:12,478 - INFO - Datos exportados para dashboard
+2026-02-23 23:50:12,478 - INFO - === Ciclo completado: 1 reportes procesados ===
