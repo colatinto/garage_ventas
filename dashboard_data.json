@@ -1,6 +1,186 @@
 {
   "sales_data": [
     {
+      "id": 381,
+      "date": "2026-02-25",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Mañana",
+      "total_sales": 57021500.0,
+      "total_tickets": 53,
+      "cash_sales": 12116000.0,
+      "card_sales": 9140000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 35765500.0,
+      "salon_sales": 36816000.0,
+      "counter_sales": 20205500.0,
+      "opening_time": "16:24",
+      "closing_time": "23:56",
+      "closure_number": 882
+    },
+    {
+      "id": 380,
+      "date": "2026-02-25",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 131507000.0,
+      "total_tickets": 65,
+      "cash_sales": 53843000.0,
+      "card_sales": 23494000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 54170000.0,
+      "salon_sales": 0.0,
+      "counter_sales": 2070000.0,
+      "opening_time": "15:05",
+      "closing_time": "23:39",
+      "closure_number": 2716
+    },
+    {
+      "id": 378,
+      "date": "2026-02-25",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 90777000.0,
+      "total_tickets": 63,
+      "cash_sales": 30657000.0,
+      "card_sales": 28191000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 31929000.0,
+      "salon_sales": 0.0,
+      "counter_sales": 1629000.0,
+      "opening_time": "07:33",
+      "closing_time": "15:04",
+      "closure_number": 2715
+    },
+    {
+      "id": 382,
+      "date": "2026-02-25",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 130115000.0,
+      "total_tickets": 36,
+      "cash_sales": 55665000.0,
+      "card_sales": 61900000.0,
+      "transfer_sales": 4100000.0,
+      "mercadopago_sales": 40565000.0,
+      "other_sales": 4100000.0,
+      "salon_sales": 121400000.0,
+      "counter_sales": 8715000.0,
+      "opening_time": "17:47",
+      "closing_time": "01:28",
+      "closure_number": 140
+    },
+    {
+      "id": 379,
+      "date": "2026-02-25",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 66342000.0,
+      "total_tickets": 41,
+      "cash_sales": 13572000.0,
+      "card_sales": 19760000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 20190000.0,
+      "salon_sales": 59592000.0,
+      "counter_sales": 6750000.0,
+      "opening_time": "07:44",
+      "closing_time": "16:14",
+      "closure_number": 359
+    },
+    {
+      "id": 375,
+      "date": "2026-02-24",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 48350000.0,
+      "total_tickets": 43,
+      "cash_sales": 21650000.0,
+      "card_sales": 3030000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 23670000.0,
+      "salon_sales": 16670000.0,
+      "counter_sales": 31680000.0,
+      "opening_time": "16:13",
+      "closing_time": "23:57",
+      "closure_number": 881
+    },
+    {
+      "id": 374,
+      "date": "2026-02-24",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 117807000.0,
+      "total_tickets": 55,
+      "cash_sales": 50542000.0,
+      "card_sales": 30940000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 36325000.0,
+      "salon_sales": 0.0,
+      "counter_sales": 520000.0,
+      "opening_time": "15:52",
+      "closing_time": "23:21",
+      "closure_number": 2714
+    },
+    {
+      "id": 373,
+      "date": "2026-02-24",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 108412000.0,
+      "total_tickets": 55,
+      "cash_sales": 62973000.0,
+      "card_sales": 14780000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 29159000.0,
+      "salon_sales": 0.0,
+      "counter_sales": 520000.0,
+      "opening_time": "07:24",
+      "closing_time": "15:50",
+      "closure_number": 2713
+    },
+    {
+      "id": 376,
+      "date": "2026-02-24",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 88250000.0,
+      "total_tickets": 31,
+      "cash_sales": 70200000.0,
+      "card_sales": 18050000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 27450000.0,
+      "other_sales": 0.0,
+      "salon_sales": 80400000.0,
+      "counter_sales": 7850000.0,
+      "opening_time": "18:33",
+      "closing_time": "00:45",
+      "closure_number": 139
+    },
+    {
+      "id": 372,
+      "date": "2026-02-24",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 71326000.0,
+      "total_tickets": 38,
+      "cash_sales": 11286000.0,
+      "card_sales": 9130000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 25110000.0,
+      "salon_sales": 65079000.0,
+      "counter_sales": 6247000.0,
+      "opening_time": "07:41",
+      "closing_time": "15:39",
+      "closure_number": 358
+    },
+    {
       "id": 369,
       "date": "2026-02-23",
       "location": "GROWLER VIA VIEJA",
@@ -71,6 +251,24 @@
       "opening_time": "18:25",
       "closing_time": "00:53",
       "closure_number": 138
+    },
+    {
+      "id": 377,
+      "date": "2026-02-23",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 59300000.0,
+      "total_tickets": 61,
+      "cash_sales": 26550000.0,
+      "card_sales": 500000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 32250000.0,
+      "salon_sales": 1800000.0,
+      "counter_sales": 23600000.0,
+      "opening_time": "18:41",
+      "closing_time": "01:28",
+      "closure_number": 433
     },
     {
       "id": 368,
@@ -5169,6 +5367,141 @@
   ],
   "alerts": [
     {
+      "id": 73,
+      "date": "2026-02-26",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 48.8% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 74,
+      "date": "2026-02-26",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -56.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 75,
+      "date": "2026-02-26",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -62.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 70,
+      "date": "2026-02-26",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 48.8% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 71,
+      "date": "2026-02-26",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -56.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 72,
+      "date": "2026-02-26",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -62.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 67,
+      "date": "2026-02-26",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 48.8% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 68,
+      "date": "2026-02-26",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -56.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 69,
+      "date": "2026-02-26",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -62.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 64,
+      "date": "2026-02-26",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -26.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 65,
+      "date": "2026-02-26",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -43.2% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 66,
+      "date": "2026-02-26",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -77.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 61,
+      "date": "2026-02-24",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -26.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 62,
+      "date": "2026-02-24",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -43.2% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 63,
+      "date": "2026-02-24",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -77.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 58,
       "date": "2026-02-24",
       "location": "GG Vol 2",
@@ -5713,13 +6046,13 @@
     "GG Vol 2": [
       {
         "name": "German Pils HB",
-        "quantity": 1030.0,
-        "total_amount": 437181872.0
+        "quantity": 1039.0,
+        "total_amount": 441231872.0
       },
       {
         "name": "Easy 5 Ipa",
-        "quantity": 613.0,
-        "total_amount": 293565628.0
+        "quantity": 634.0,
+        "total_amount": 303665628.0
       },
       {
         "name": "Sidra Artesanal",
@@ -5728,8 +6061,8 @@
       },
       {
         "name": "Papitas",
-        "quantity": 73.0,
-        "total_amount": 17950481.0
+        "quantity": 74.0,
+        "total_amount": 18185775.0
       },
       {
         "name": "Coca Cola",
@@ -5740,35 +6073,35 @@
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 897.0,
-        "total_amount": 99489232.0
+        "quantity": 944.0,
+        "total_amount": 105409232.0
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 658.0,
-        "total_amount": 74415324.0
+        "quantity": 675.0,
+        "total_amount": 76915324.0
       },
       {
         "name": "Menu Clasico",
-        "quantity": 504.0,
-        "total_amount": 704005066.0
+        "quantity": 538.0,
+        "total_amount": 752155066.0
       },
       {
         "name": "Vaso Limonada",
-        "quantity": 498.0,
-        "total_amount": 103315000.0
+        "quantity": 520.0,
+        "total_amount": 106690000.0
       },
       {
         "name": "Iced Flat White",
-        "quantity": 452.0,
-        "total_amount": 221531452.0
+        "quantity": 462.0,
+        "total_amount": 225587452.0
       }
     ],
     "GROWLER VIA VIEJA": [
       {
         "name": "Pinta Heineken",
-        "quantity": 1898.0,
-        "total_amount": 948994792.0
+        "quantity": 1920.0,
+        "total_amount": 959994792.0
       },
       {
         "name": "FERNET NOC",
@@ -5777,8 +6110,8 @@
       },
       {
         "name": "Promo Heineken",
-        "quantity": 672.0,
-        "total_amount": 503950000.0
+        "quantity": 708.0,
+        "total_amount": 530950000.0
       },
       {
         "name": "Heineken Lata",
@@ -5787,12 +6120,12 @@
       },
       {
         "name": "Pinta Santa Fe",
-        "quantity": 406.0,
-        "total_amount": 174560000.0
+        "quantity": 407.0,
+        "total_amount": 174990000.0
       }
     ]
   },
-  "last_updated": "2026-02-24T09:32:14.700472",
+  "last_updated": "2026-02-26T13:24:23.621285",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
