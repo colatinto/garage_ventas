@@ -3707,3 +3707,6 @@
 2026-04-01 12:55:20,053 - INFO - Generadas 5 alertas
 2026-04-01 12:55:20,075 - INFO - Datos exportados para dashboard
 2026-04-01 12:55:20,075 - INFO - === Ciclo completado: 43 reportes procesados ===
+2026-04-16 13:11:57,558 - INFO - Base de datos configurada correctamente
+2026-04-16 13:11:57,560 - INFO - Extractor de ventas inicializado (v2.0)
+2026-04-16 13:11:57,560 - INFO - === Iniciando ciclo de extracción ===
