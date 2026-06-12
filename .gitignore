@@ -7,3 +7,4 @@ temp_pdfs/
 venv/
 node_modules/
 .netlify/
+config.secret.json

@@ -120,6 +120,18 @@ class SalesDataExtractor:
                 json.dump(default_config, f, indent=4, ensure_ascii=False)
             logger.info(f"Creado archivo de configuración: {config_file}")
 
+        # Cargar credenciales secretas si existen
+        secret_config_file = "config.secret.json"
+        if os.path.exists(secret_config_file):
+            try:
+                with open(secret_config_file, 'r', encoding='utf-8') as f:
+                    secret_config = json.load(f)
+                    if "email" in secret_config:
+                        default_config["email"].update(secret_config["email"])
+                        logger.info("Credenciales cargadas desde config.secret.json")
+            except Exception as e:
+                logger.warning(f"Error cargando config.secret.json: {e}")
+
         return default_config
 
     def setup_database(self):

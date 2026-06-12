@@ -1,8 +1,8 @@
 {
     "email": {
         "provider": "gmail",
-        "username": "growlergaragerosario@gmail.com",
-        "password": "iuen urxj iguw fkkr",
+        "username": "",
+        "password": "",
         "imap_server": "imap.gmail.com",
         "imap_port": 993
     },
