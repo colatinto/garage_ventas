@@ -10407,6 +10407,24 @@
   ],
   "alerts": [
     {
+      "id": 122,
+      "date": "2026-06-12",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -38.4% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 123,
+      "date": "2026-06-12",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -59.3% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 120,
       "date": "2026-06-12",
       "location": "COLEGIO",
@@ -11579,7 +11597,7 @@
       }
     ]
   },
-  "last_updated": "2026-06-12T10:03:52.067822",
+  "last_updated": "2026-06-12T10:21:16.942493",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
