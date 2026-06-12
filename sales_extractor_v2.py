@@ -722,10 +722,10 @@ class SalesDataExtractor:
         conn = sqlite3.connect(temp_db)
         cursor = conn.cursor()
 
-        # Datos de los últimos 30 días
+        # Datos de todo el año 2026 (o todo lo disponible)
         cursor.execute('''
             SELECT * FROM sales_data
-            WHERE date >= date('now', '-90 days')
+            WHERE date >= '2026-01-01'
             ORDER BY date DESC
         ''')
 
