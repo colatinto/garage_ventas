@@ -4979,3 +4979,1600 @@
 2026-05-05 11:57:15,995 - INFO - Generadas 5 alertas
 2026-05-05 11:57:16,007 - INFO - Datos exportados para dashboard
 2026-05-05 11:57:16,007 - INFO - === Ciclo completado: 30 reportes procesados ===
+2026-06-12 09:29:25,467 - INFO - Base de datos configurada correctamente
+2026-06-12 09:29:25,468 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 09:30:34,029 - INFO - Base de datos configurada correctamente
+2026-06-12 09:30:34,031 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 09:30:34,031 - INFO - === Iniciando ciclo de extracción ===
+2026-06-12 09:37:03,558 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:03,561 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 Mañana
+2026-06-12 09:37:03,965 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:03,965 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 Mañana
+2026-06-12 09:37:04,374 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:04,375 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 Tarde
+2026-06-12 09:37:04,785 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:04,785 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 Tarde
+2026-06-12 09:37:05,290 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:05,291 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 unico
+2026-06-12 09:37:05,688 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:05,688 - INFO - Email extraído: MaxiREST - Fin de turno - 05/05/2026 Tarde
+2026-06-12 09:37:06,107 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:06,107 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 Mañana
+2026-06-12 09:37:06,508 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:06,508 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 Mañana
+2026-06-12 09:37:06,903 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:06,903 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 Tarde
+2026-06-12 09:37:07,283 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:07,283 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 Tarde
+2026-06-12 09:37:07,809 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:07,809 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 unico
+2026-06-12 09:37:08,202 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:08,203 - INFO - Email extraído: MaxiREST - Fin de turno - 06/05/2026 Tarde
+2026-06-12 09:37:08,606 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:08,606 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 Mañana
+2026-06-12 09:37:08,997 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:08,997 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 Mañana
+2026-06-12 09:37:09,523 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:09,523 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 Tarde
+2026-06-12 09:37:09,917 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:09,917 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 Tarde
+2026-06-12 09:37:10,295 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:10,295 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 unico
+2026-06-12 09:37:10,690 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:10,690 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 UNICO
+2026-06-12 09:37:11,123 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:11,123 - INFO - Email extraído: MaxiREST - Fin de turno - 07/05/2026 Tarde
+2026-06-12 09:37:11,546 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:11,546 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 Mañana
+2026-06-12 09:37:12,078 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:12,078 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 Mañana
+2026-06-12 09:37:12,491 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:12,491 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 Tarde
+2026-06-12 09:37:12,912 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:12,912 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 Tarde
+2026-06-12 09:37:13,288 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:13,288 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 unico
+2026-06-12 09:37:13,912 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:13,912 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 Tarde
+2026-06-12 09:37:14,339 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:14,339 - INFO - Email extraído: MaxiREST - Fin de turno - 08/05/2026 UNICO
+2026-06-12 09:37:14,865 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:14,865 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 Mañana
+2026-06-12 09:37:15,402 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:15,402 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 Mañana
+2026-06-12 09:37:15,798 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:15,798 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 Tarde
+2026-06-12 09:37:16,167 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:16,167 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 unico
+2026-06-12 09:37:16,743 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:16,743 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 Tarde
+2026-06-12 09:37:17,144 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:17,144 - INFO - Email extraído: MaxiREST - Fin de turno - 09/05/2026 UNICO
+2026-06-12 09:37:17,536 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:17,536 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 Mañana
+2026-06-12 09:37:17,919 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:17,919 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 Mañana
+2026-06-12 09:37:18,299 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:18,299 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 Tarde
+2026-06-12 09:37:18,690 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:18,690 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 Tarde
+2026-06-12 09:37:19,087 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:19,087 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 Tarde
+2026-06-12 09:37:19,686 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:19,686 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 unico
+2026-06-12 09:37:20,084 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:20,085 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 UNICO
+2026-06-12 09:37:20,496 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:20,497 - INFO - Email extraído: MaxiREST - Fin de turno - 11/05/2026 Mañana
+2026-06-12 09:37:20,893 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:20,894 - INFO - Email extraído: MaxiREST - Fin de turno - 11/05/2026 Mañana
+2026-06-12 09:37:21,318 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:21,318 - INFO - Email extraído: MaxiREST - Fin de turno - 11/05/2026 Tarde
+2026-06-12 09:37:21,696 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:21,697 - INFO - Email extraído: MaxiREST - Fin de turno - 11/05/2026 Tarde
+2026-06-12 09:37:22,099 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:22,100 - INFO - Email extraído: MaxiREST - Fin de turno - 11/05/2026 UNICO
+2026-06-12 09:37:22,512 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:22,512 - INFO - Email extraído: MaxiREST - Fin de turno - 10/05/2026 unico
+2026-06-12 09:37:22,934 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:22,934 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 Mañana
+2026-06-12 09:37:23,357 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:23,357 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 Mañana
+2026-06-12 09:37:23,756 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:23,756 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 Tarde
+2026-06-12 09:37:24,173 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:24,173 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 Mañana
+2026-06-12 09:37:24,626 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:24,626 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 unico
+2026-06-12 09:37:25,006 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:25,006 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 UNICO
+2026-06-12 09:37:25,385 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:25,385 - INFO - Email extraído: MaxiREST - Fin de turno - 12/05/2026 Tarde
+2026-06-12 09:37:25,923 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:25,923 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 Mañana
+2026-06-12 09:37:26,364 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:26,364 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 Mañana
+2026-06-12 09:37:26,761 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:26,761 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 Tarde
+2026-06-12 09:37:27,198 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:27,198 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 Tarde
+2026-06-12 09:37:27,604 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:27,604 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 unico
+2026-06-12 09:37:27,975 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:27,975 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 UNICO
+2026-06-12 09:37:28,422 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:28,422 - INFO - Email extraído: MaxiREST - Fin de turno - 13/05/2026 Tarde
+2026-06-12 09:37:28,804 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:28,804 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 Mañana
+2026-06-12 09:37:29,181 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:29,181 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 Mañana
+2026-06-12 09:37:29,700 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:29,700 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 Tarde
+2026-06-12 09:37:30,230 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:30,230 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 Tarde
+2026-06-12 09:37:30,688 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:30,688 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 unico
+2026-06-12 09:37:31,214 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:31,215 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 UNICO
+2026-06-12 09:37:31,583 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:31,584 - INFO - Email extraído: MaxiREST - Fin de turno - 14/05/2026 Tarde
+2026-06-12 09:37:31,979 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:31,980 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 Mañana
+2026-06-12 09:37:32,365 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:32,365 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 Mañana
+2026-06-12 09:37:32,836 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:32,837 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 Tarde
+2026-06-12 09:37:33,258 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:33,258 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 Tarde
+2026-06-12 09:37:33,707 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:33,707 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 unico
+2026-06-12 09:37:34,156 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:34,156 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 Tarde
+2026-06-12 09:37:34,556 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:34,556 - INFO - Email extraído: MaxiREST - Fin de turno - 15/05/2026 UNICO
+2026-06-12 09:37:34,988 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:34,988 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 Mañana
+2026-06-12 09:37:35,395 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:35,395 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 Mañana
+2026-06-12 09:37:35,762 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:35,762 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 Mañana
+2026-06-12 09:37:36,153 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:36,153 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 Tarde
+2026-06-12 09:37:36,591 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:36,591 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 Tarde
+2026-06-12 09:37:37,000 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:37,000 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 unico
+2026-06-12 09:37:37,377 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:37,377 - INFO - Email extraído: MaxiREST - Fin de turno - 16/05/2026 UNICO
+2026-06-12 09:37:37,750 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:37,750 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 Mañana
+2026-06-12 09:37:38,159 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:38,159 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 Mañana
+2026-06-12 09:37:38,744 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:38,744 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 Tarde
+2026-06-12 09:37:39,136 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:39,136 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 Tarde
+2026-06-12 09:37:39,524 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:39,524 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 unico
+2026-06-12 09:37:39,917 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:39,918 - INFO - Email extraído: MaxiREST - Fin de turno - 17/05/2026 UNICO
+2026-06-12 09:37:40,310 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:40,310 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 Mañana
+2026-06-12 09:37:40,693 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:40,693 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 Mañana
+2026-06-12 09:37:41,097 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:41,097 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 Tarde
+2026-06-12 09:37:41,685 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:41,685 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 Tarde
+2026-06-12 09:37:42,075 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:42,075 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 unico
+2026-06-12 09:37:42,532 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:42,532 - INFO - Email extraído: MaxiREST - Fin de turno - 18/05/2026 Tarde
+2026-06-12 09:37:42,897 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:42,897 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 Mañana
+2026-06-12 09:37:43,295 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:43,296 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 Mañana
+2026-06-12 09:37:43,719 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:43,720 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 Tarde
+2026-06-12 09:37:44,200 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:44,200 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 Mañana
+2026-06-12 09:37:44,593 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:44,593 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 unico
+2026-06-12 09:37:44,969 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:44,969 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 Tarde
+2026-06-12 09:37:45,335 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:45,337 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 Mañana
+2026-06-12 09:37:45,727 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:45,728 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 Mañana
+2026-06-12 09:37:46,117 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:46,117 - INFO - Email extraído: MaxiREST - Fin de turno - 19/05/2026 UNICO
+2026-06-12 09:37:46,643 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:46,643 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 Tarde
+2026-06-12 09:37:47,043 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:47,043 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 Tarde
+2026-06-12 09:37:47,555 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:47,555 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 UNICO
+2026-06-12 09:37:47,924 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:47,924 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 unico
+2026-06-12 09:37:48,329 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:48,329 - INFO - Email extraído: MaxiREST - Fin de turno - 20/05/2026 Tarde
+2026-06-12 09:37:48,707 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:48,707 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 Mañana
+2026-06-12 09:37:49,096 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:49,096 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 Mañana
+2026-06-12 09:37:49,516 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:49,516 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 Tarde
+2026-06-12 09:37:49,905 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:49,905 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 Tarde
+2026-06-12 09:37:50,287 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:50,288 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 unico
+2026-06-12 09:37:50,708 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:50,708 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 Tarde
+2026-06-12 09:37:51,096 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:51,096 - INFO - Email extraído: MaxiREST - Fin de turno - 21/05/2026 UNICO
+2026-06-12 09:37:51,602 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:51,602 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 Mañana
+2026-06-12 09:37:52,185 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:52,185 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 Mañana
+2026-06-12 09:37:52,607 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:52,607 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 Tarde
+2026-06-12 09:37:53,058 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:53,058 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 UNICO
+2026-06-12 09:37:53,485 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:53,485 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 Tarde
+2026-06-12 09:37:54,065 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:54,065 - INFO - Email extraído: MaxiREST - Fin de turno - 23/05/2026 Mañana
+2026-06-12 09:37:54,470 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:54,470 - INFO - Email extraído: MaxiREST - Fin de turno - 23/05/2026 Mañana
+2026-06-12 09:37:54,861 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:54,862 - INFO - Email extraído: MaxiREST - Fin de turno - 23/05/2026 Tarde
+2026-06-12 09:37:55,275 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:55,275 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 unico
+2026-06-12 09:37:55,739 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:55,739 - INFO - Email extraído: MaxiREST - Fin de turno - 23/05/2026 Tarde
+2026-06-12 09:37:56,168 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:56,168 - INFO - Email extraído: MaxiREST - Fin de turno - 23/05/2026 UNICO
+2026-06-12 09:37:56,552 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:56,552 - INFO - Email extraído: MaxiREST - Fin de turno - 24/05/2026 Mañana
+2026-06-12 09:37:56,949 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:56,949 - INFO - Email extraído: MaxiREST - Fin de turno - 24/05/2026 Tarde
+2026-06-12 09:37:57,570 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:57,570 - INFO - Email extraído: MaxiREST - Fin de turno - 24/05/2026 unico
+2026-06-12 09:37:58,017 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:58,017 - INFO - Email extraído: MaxiREST - Fin de turno - 24/05/2026 Tarde
+2026-06-12 09:37:58,542 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:58,542 - INFO - Email extraído: MaxiREST - Fin de turno - 24/05/2026 UNICO
+2026-06-12 09:37:58,931 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:58,931 - INFO - Email extraído: MaxiREST - Fin de turno - 25/05/2026 Mañana
+2026-06-12 09:37:59,309 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:59,309 - INFO - Email extraído: MaxiREST - Fin de turno - 25/05/2026 Tarde
+2026-06-12 09:37:59,731 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:37:59,731 - INFO - Email extraído: MaxiREST - Fin de turno - 25/05/2026 Tarde
+2026-06-12 09:38:00,147 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:00,147 - INFO - Email extraído: MaxiREST - Fin de turno - 25/05/2026 unico
+2026-06-12 09:38:00,539 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:00,539 - INFO - Email extraído: MaxiREST - Fin de turno - 22/05/2026 Tarde
+2026-06-12 09:38:00,930 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:00,930 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 Mañana
+2026-06-12 09:38:01,513 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:01,513 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 Mañana
+2026-06-12 09:38:01,928 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:01,928 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 Tarde
+2026-06-12 09:38:02,357 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:02,357 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 unico
+2026-06-12 09:38:02,739 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:02,739 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 Tarde
+2026-06-12 09:38:03,152 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:03,152 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 UNICO
+2026-06-12 09:38:03,686 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:03,686 - INFO - Email extraído: MaxiREST - Fin de turno - 26/05/2026 Tarde
+2026-06-12 09:38:04,465 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:04,465 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 Mañana
+2026-06-12 09:38:04,863 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:04,863 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 Mañana
+2026-06-12 09:38:05,258 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:05,258 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 Tarde
+2026-06-12 09:38:05,655 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:05,655 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 Tarde
+2026-06-12 09:38:06,050 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:06,050 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 UNICO
+2026-06-12 09:38:06,433 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:06,433 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 unico
+2026-06-12 09:38:06,814 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:06,815 - INFO - Email extraído: MaxiREST - Fin de turno - 27/05/2026 Tarde
+2026-06-12 09:38:07,191 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:07,191 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 Mañana
+2026-06-12 09:38:07,587 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:07,588 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 Mañana
+2026-06-12 09:38:07,981 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:07,981 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 Tarde
+2026-06-12 09:38:08,367 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:08,367 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 Tarde
+2026-06-12 09:38:08,765 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:08,765 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 unico
+2026-06-12 09:38:09,149 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:09,149 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 UNICO
+2026-06-12 09:38:09,506 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:09,506 - INFO - Email extraído: MaxiREST - Fin de turno - 28/05/2026 Tarde
+2026-06-12 09:38:09,888 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:09,888 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Mañana
+2026-06-12 09:38:10,451 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:10,451 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Mañana
+2026-06-12 09:38:10,828 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:10,828 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Tarde
+2026-06-12 09:38:11,243 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:11,243 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Noche
+2026-06-12 09:38:11,667 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:11,667 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Tarde
+2026-06-12 09:38:12,061 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:12,061 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 unico
+2026-06-12 09:38:12,620 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:12,620 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 Tarde
+2026-06-12 09:38:13,051 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:13,051 - INFO - Email extraído: MaxiREST - Fin de turno - 29/05/2026 UNICO
+2026-06-12 09:38:13,521 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:13,521 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 Mañana
+2026-06-12 09:38:13,917 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:13,917 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 Mañana
+2026-06-12 09:38:14,331 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:14,331 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 Tarde
+2026-06-12 09:38:14,707 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:14,707 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 unico
+2026-06-12 09:38:15,138 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:15,138 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 Tarde
+2026-06-12 09:38:15,512 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:15,513 - INFO - Email extraído: MaxiREST - Fin de turno - 30/05/2026 UNICO
+2026-06-12 09:38:15,916 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:15,917 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 Mañana
+2026-06-12 09:38:16,297 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:16,297 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 Mañana
+2026-06-12 09:38:16,704 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:16,704 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 Tarde
+2026-06-12 09:38:17,107 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:17,107 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 Tarde
+2026-06-12 09:38:17,497 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:17,498 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 unico
+2026-06-12 09:38:17,886 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:17,886 - INFO - Email extraído: MaxiREST - Fin de turno - 31/05/2026 UNICO
+2026-06-12 09:38:18,300 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:18,300 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 Mañana
+2026-06-12 09:38:18,742 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:18,742 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 Mañana
+2026-06-12 09:38:19,126 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:19,126 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 Tarde
+2026-06-12 09:38:19,519 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:19,520 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 Tarde
+2026-06-12 09:38:19,910 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:19,911 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 unico
+2026-06-12 09:38:20,543 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:20,543 - INFO - Email extraído: MaxiREST - Fin de turno - 01/06/2026 Tarde
+2026-06-12 09:38:20,980 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:20,980 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Mañana
+2026-06-12 09:38:21,396 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:21,396 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Mañana
+2026-06-12 09:38:21,759 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:21,759 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Mañana
+2026-06-12 09:38:22,134 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:22,134 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Tarde
+2026-06-12 09:38:22,550 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:22,550 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Tarde
+2026-06-12 09:38:22,946 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:22,946 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 unico
+2026-06-12 09:38:23,360 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:23,360 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 Tarde
+2026-06-12 09:38:23,743 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:23,743 - INFO - Email extraído: MaxiREST - Fin de turno - 02/06/2026 UNICO
+2026-06-12 09:38:24,216 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:24,216 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 Noche
+2026-06-12 09:38:24,598 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:24,598 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 Mañana
+2026-06-12 09:38:25,000 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:25,000 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 Tarde
+2026-06-12 09:38:25,385 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:25,385 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 Tarde
+2026-06-12 09:38:25,776 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:25,776 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 unico
+2026-06-12 09:38:26,172 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:26,172 - INFO - Email extraído: MaxiREST - Fin de turno - 03/06/2026 Tarde
+2026-06-12 09:38:26,543 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:26,543 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 Mañana
+2026-06-12 09:38:26,927 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:26,927 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 Mañana
+2026-06-12 09:38:27,344 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:27,345 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 Tarde
+2026-06-12 09:38:27,759 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:27,759 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 Tarde
+2026-06-12 09:38:28,159 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:28,160 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 UNICO
+2026-06-12 09:38:28,566 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:28,566 - INFO - Email extraído: MaxiREST - Fin de turno - 04/06/2026 Tarde
+2026-06-12 09:38:29,285 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:29,286 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 Mañana
+2026-06-12 09:38:29,951 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:29,951 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 Mañana
+2026-06-12 09:38:30,336 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:30,336 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 Tarde
+2026-06-12 09:38:30,743 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:30,743 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 Tarde
+2026-06-12 09:38:31,139 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:31,139 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 unico
+2026-06-12 09:38:31,558 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:31,558 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 Tarde
+2026-06-12 09:38:32,059 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:32,059 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 Mañana
+2026-06-12 09:38:32,728 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:32,728 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 Mañana
+2026-06-12 09:38:33,121 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:33,121 - INFO - Email extraído: MaxiREST - Fin de turno - 05/06/2026 UNICO
+2026-06-12 09:38:33,806 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:33,806 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 Tarde
+2026-06-12 09:38:34,258 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:34,258 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 Tarde
+2026-06-12 09:38:34,629 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:34,629 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 unico
+2026-06-12 09:38:35,020 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:35,020 - INFO - Email extraído: MaxiREST - Fin de turno - 06/06/2026 UNICO
+2026-06-12 09:38:35,683 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:35,683 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 Mañana
+2026-06-12 09:38:36,335 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:36,335 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 Mañana
+2026-06-12 09:38:37,011 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:37,011 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 Tarde
+2026-06-12 09:38:37,685 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:37,685 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 Tarde
+2026-06-12 09:38:38,379 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:38,379 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 UNICO
+2026-06-12 09:38:38,815 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:38,815 - INFO - Email extraído: MaxiREST - Fin de turno - 07/06/2026 unico
+2026-06-12 09:38:40,134 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:40,137 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 Mañana
+2026-06-12 09:38:40,942 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:40,942 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 Noche
+2026-06-12 09:38:41,619 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:41,619 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 Tarde
+2026-06-12 09:38:42,318 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:42,318 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 Tarde
+2026-06-12 09:38:43,044 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:43,045 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 unico
+2026-06-12 09:38:43,770 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:43,770 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 UNICO
+2026-06-12 09:38:44,439 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:44,439 - INFO - Email extraído: MaxiREST - Fin de turno - 08/06/2026 Mañana
+2026-06-12 09:38:45,132 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:45,132 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 Mañana
+2026-06-12 09:38:45,818 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:45,818 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 Mañana
+2026-06-12 09:38:46,540 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:46,540 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 Tarde
+2026-06-12 09:38:47,211 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:47,212 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 Tarde
+2026-06-12 09:38:47,860 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:47,861 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 UNICO
+2026-06-12 09:38:48,536 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:48,536 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 unico
+2026-06-12 09:38:49,196 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:49,196 - INFO - Email extraído: MaxiREST - Fin de turno - 09/06/2026 Tarde
+2026-06-12 09:38:49,865 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:49,865 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 Mañana
+2026-06-12 09:38:50,537 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:50,537 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 Mañana
+2026-06-12 09:38:51,224 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:51,224 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 Tarde
+2026-06-12 09:38:51,895 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:51,895 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 Tarde
+2026-06-12 09:38:52,594 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:52,595 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 unico
+2026-06-12 09:38:53,281 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:53,281 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 UNICO
+2026-06-12 09:38:53,954 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:53,954 - INFO - Email extraído: MaxiREST - Fin de turno - 10/06/2026 Tarde
+2026-06-12 09:38:54,606 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:54,606 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 Mañana
+2026-06-12 09:38:55,260 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:55,260 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 Mañana
+2026-06-12 09:38:55,906 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:55,906 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 Tarde
+2026-06-12 09:38:56,569 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:56,569 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 Tarde
+2026-06-12 09:38:57,240 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:57,240 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 unico
+2026-06-12 09:38:57,884 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:57,884 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 UNICO
+2026-06-12 09:38:58,526 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-12 09:38:58,527 - INFO - Email extraído: MaxiREST - Fin de turno - 11/06/2026 Tarde
+2026-06-12 09:38:59,163 - INFO - Extraídos 248 emails nuevos
+2026-06-12 09:38:59,170 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,171 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,178 - INFO - Datos guardados: COLEGIO - 2026-05-05 (Mañana)
+2026-06-12 09:38:59,189 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,193 - INFO - Guardados 21 productos de GROWLER CAFE - 2026-05-05
+2026-06-12 09:38:59,194 - INFO - Datos extraídos del PDF: GROWLER CAFE (21 productos)
+2026-06-12 09:38:59,196 - INFO - Datos guardados: GROWLER CAFE - 2026-05-05 (Mañana)
+2026-06-12 09:38:59,204 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,208 - INFO - Guardados 38 productos de GROWLER CAFE - 2026-05-05
+2026-06-12 09:38:59,209 - INFO - Datos extraídos del PDF: GROWLER CAFE (38 productos)
+2026-06-12 09:38:59,211 - INFO - Datos guardados: GROWLER CAFE - 2026-05-05 (Tarde)
+2026-06-12 09:38:59,219 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,221 - INFO - Guardados 17 productos de GROWLER VIA VIEJA - 2026-05-05
+2026-06-12 09:38:59,221 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (17 productos)
+2026-06-12 09:38:59,222 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-05 (Tarde)
+2026-06-12 09:38:59,226 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,226 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,227 - INFO - Datos guardados: GG Vol 4 - 2026-05-05 (Unico)
+2026-06-12 09:38:59,231 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,231 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,233 - INFO - Datos guardados: COLEGIO - 2026-05-05 (Tarde)
+2026-06-12 09:38:59,237 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,237 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,239 - INFO - Datos guardados: COLEGIO - 2026-05-06 (Mañana)
+2026-06-12 09:38:59,245 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,247 - INFO - Guardados 35 productos de GROWLER CAFE - 2026-05-06
+2026-06-12 09:38:59,247 - INFO - Datos extraídos del PDF: GROWLER CAFE (35 productos)
+2026-06-12 09:38:59,248 - INFO - Datos guardados: GROWLER CAFE - 2026-05-06 (Mañana)
+2026-06-12 09:38:59,254 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,257 - INFO - Guardados 63 productos de GROWLER CAFE - 2026-05-06
+2026-06-12 09:38:59,257 - INFO - Datos extraídos del PDF: GROWLER CAFE (63 productos)
+2026-06-12 09:38:59,258 - INFO - Datos guardados: GROWLER CAFE - 2026-05-06 (Tarde)
+2026-06-12 09:38:59,263 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,265 - INFO - Guardados 21 productos de GROWLER VIA VIEJA - 2026-05-06
+2026-06-12 09:38:59,265 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (21 productos)
+2026-06-12 09:38:59,266 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-06 (Tarde)
+2026-06-12 09:38:59,270 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,270 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,271 - INFO - Datos guardados: GG Vol 4 - 2026-05-06 (Unico)
+2026-06-12 09:38:59,275 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,275 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,276 - INFO - Datos guardados: COLEGIO - 2026-05-06 (Tarde)
+2026-06-12 09:38:59,280 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,280 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,280 - INFO - Datos guardados: COLEGIO - 2026-05-07 (Mañana)
+2026-06-12 09:38:59,291 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,293 - INFO - Guardados 24 productos de GROWLER CAFE - 2026-05-07
+2026-06-12 09:38:59,294 - INFO - Datos extraídos del PDF: GROWLER CAFE (24 productos)
+2026-06-12 09:38:59,294 - INFO - Datos guardados: GROWLER CAFE - 2026-05-07 (Mañana)
+2026-06-12 09:38:59,301 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,309 - INFO - Guardados 26 productos de GROWLER VIA VIEJA - 2026-05-07
+2026-06-12 09:38:59,310 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (26 productos)
+2026-06-12 09:38:59,311 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-07 (Tarde)
+2026-06-12 09:38:59,316 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,319 - INFO - Guardados 45 productos de GROWLER CAFE - 2026-05-07
+2026-06-12 09:38:59,319 - INFO - Datos extraídos del PDF: GROWLER CAFE (45 productos)
+2026-06-12 09:38:59,320 - INFO - Datos guardados: GROWLER CAFE - 2026-05-07 (Tarde)
+2026-06-12 09:38:59,324 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,324 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,324 - INFO - Datos guardados: GG Vol 4 - 2026-05-07 (Unico)
+2026-06-12 09:38:59,328 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,330 - INFO - Guardados 6 productos de GG Vol 2 - 2026-05-07
+2026-06-12 09:38:59,330 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:38:59,331 - INFO - Datos guardados: GG Vol 2 - 2026-05-07 (Unico)
+2026-06-12 09:38:59,335 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,335 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,336 - INFO - Datos guardados: COLEGIO - 2026-05-07 (Tarde)
+2026-06-12 09:38:59,340 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,341 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,341 - INFO - Datos guardados: COLEGIO - 2026-05-08 (Mañana)
+2026-06-12 09:38:59,346 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,348 - INFO - Guardados 26 productos de GROWLER CAFE - 2026-05-08
+2026-06-12 09:38:59,349 - INFO - Datos extraídos del PDF: GROWLER CAFE (26 productos)
+2026-06-12 09:38:59,349 - INFO - Datos guardados: GROWLER CAFE - 2026-05-08 (Mañana)
+2026-06-12 09:38:59,353 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,353 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,354 - INFO - Datos guardados: COLEGIO - 2026-05-08 (Tarde)
+2026-06-12 09:38:59,361 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,363 - INFO - Guardados 77 productos de GROWLER CAFE - 2026-05-08
+2026-06-12 09:38:59,363 - INFO - Datos extraídos del PDF: GROWLER CAFE (77 productos)
+2026-06-12 09:38:59,364 - INFO - Datos guardados: GROWLER CAFE - 2026-05-08 (Tarde)
+2026-06-12 09:38:59,368 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,368 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,369 - INFO - Datos guardados: GG Vol 4 - 2026-05-08 (Unico)
+2026-06-12 09:38:59,377 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,380 - INFO - Guardados 71 productos de GROWLER VIA VIEJA - 2026-05-08
+2026-06-12 09:38:59,380 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (71 productos)
+2026-06-12 09:38:59,381 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-08 (Tarde)
+2026-06-12 09:38:59,385 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,386 - INFO - Guardados 5 productos de GG Vol 2 - 2026-05-08
+2026-06-12 09:38:59,387 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:38:59,388 - INFO - Datos guardados: GG Vol 2 - 2026-05-08 (Unico)
+2026-06-12 09:38:59,393 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,395 - INFO - Guardados 38 productos de GROWLER CAFE - 2026-05-09
+2026-06-12 09:38:59,395 - INFO - Datos extraídos del PDF: GROWLER CAFE (38 productos)
+2026-06-12 09:38:59,396 - INFO - Datos guardados: GROWLER CAFE - 2026-05-09 (Mañana)
+2026-06-12 09:38:59,400 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,402 - INFO - Guardados 18 productos de GROWLER VIA VIEJA - 2026-05-09
+2026-06-12 09:38:59,403 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (18 productos)
+2026-06-12 09:38:59,403 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-09 (Mañana)
+2026-06-12 09:38:59,408 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,410 - INFO - Guardados 39 productos de GROWLER CAFE - 2026-05-09
+2026-06-12 09:38:59,411 - INFO - Datos extraídos del PDF: GROWLER CAFE (39 productos)
+2026-06-12 09:38:59,412 - INFO - Datos guardados: GROWLER CAFE - 2026-05-09 (Tarde)
+2026-06-12 09:38:59,416 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,416 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,416 - INFO - Datos guardados: GG Vol 4 - 2026-05-09 (Unico)
+2026-06-12 09:38:59,426 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,429 - INFO - Guardados 72 productos de GROWLER VIA VIEJA - 2026-05-09
+2026-06-12 09:38:59,429 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (72 productos)
+2026-06-12 09:38:59,430 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-09 (Tarde)
+2026-06-12 09:38:59,434 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,436 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-09
+2026-06-12 09:38:59,436 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:38:59,437 - INFO - Datos guardados: GG Vol 2 - 2026-05-09 (Unico)
+2026-06-12 09:38:59,442 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,445 - INFO - Guardados 31 productos de GROWLER CAFE - 2026-05-10
+2026-06-12 09:38:59,446 - INFO - Datos extraídos del PDF: GROWLER CAFE (31 productos)
+2026-06-12 09:38:59,448 - INFO - Datos guardados: GROWLER CAFE - 2026-05-10 (Mañana)
+2026-06-12 09:38:59,454 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,455 - INFO - Guardados 8 productos de GROWLER VIA VIEJA - 2026-05-10
+2026-06-12 09:38:59,455 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (8 productos)
+2026-06-12 09:38:59,456 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-10 (Mañana)
+2026-06-12 09:38:59,460 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,460 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,461 - INFO - Datos guardados: COLEGIO - 2026-05-10 (Tarde)
+2026-06-12 09:38:59,466 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,469 - INFO - Guardados 49 productos de GROWLER CAFE - 2026-05-10
+2026-06-12 09:38:59,469 - INFO - Datos extraídos del PDF: GROWLER CAFE (49 productos)
+2026-06-12 09:38:59,471 - INFO - Datos guardados: GROWLER CAFE - 2026-05-10 (Tarde)
+2026-06-12 09:38:59,477 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,480 - INFO - Guardados 32 productos de GROWLER VIA VIEJA - 2026-05-10
+2026-06-12 09:38:59,480 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (32 productos)
+2026-06-12 09:38:59,481 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-10 (Tarde)
+2026-06-12 09:38:59,484 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,485 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,486 - INFO - Datos guardados: GG Vol 4 - 2026-05-10 (Unico)
+2026-06-12 09:38:59,490 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,491 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-10
+2026-06-12 09:38:59,492 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:38:59,493 - INFO - Datos guardados: GG Vol 2 - 2026-05-10 (Unico)
+2026-06-12 09:38:59,497 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,497 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,498 - INFO - Datos guardados: COLEGIO - 2026-05-11 (Mañana)
+2026-06-12 09:38:59,503 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,505 - INFO - Guardados 24 productos de GROWLER CAFE - 2026-05-11
+2026-06-12 09:38:59,505 - INFO - Datos extraídos del PDF: GROWLER CAFE (24 productos)
+2026-06-12 09:38:59,506 - INFO - Datos guardados: GROWLER CAFE - 2026-05-11 (Mañana)
+2026-06-12 09:38:59,512 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,516 - INFO - Guardados 26 productos de GROWLER CAFE - 2026-05-11
+2026-06-12 09:38:59,517 - INFO - Datos extraídos del PDF: GROWLER CAFE (26 productos)
+2026-06-12 09:38:59,518 - INFO - Datos guardados: GROWLER CAFE - 2026-05-11 (Tarde)
+2026-06-12 09:38:59,524 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,525 - INFO - Guardados 26 productos de GROWLER VIA VIEJA - 2026-05-11
+2026-06-12 09:38:59,526 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (26 productos)
+2026-06-12 09:38:59,527 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-11 (Tarde)
+2026-06-12 09:38:59,530 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,531 - INFO - Guardados 3 productos de GG Vol 2 - 2026-05-11
+2026-06-12 09:38:59,532 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:38:59,533 - INFO - Datos guardados: GG Vol 2 - 2026-05-11 (Unico)
+2026-06-12 09:38:59,535 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,536 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,536 - INFO - Datos guardados: GG Vol 4 - 2026-05-10 (Unico)
+2026-06-12 09:38:59,541 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,541 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,542 - INFO - Datos guardados: COLEGIO - 2026-05-12 (Mañana)
+2026-06-12 09:38:59,546 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,548 - INFO - Guardados 22 productos de GROWLER CAFE - 2026-05-12
+2026-06-12 09:38:59,548 - INFO - Datos extraídos del PDF: GROWLER CAFE (22 productos)
+2026-06-12 09:38:59,549 - INFO - Datos guardados: GROWLER CAFE - 2026-05-12 (Mañana)
+2026-06-12 09:38:59,554 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,556 - INFO - Guardados 36 productos de GROWLER CAFE - 2026-05-12
+2026-06-12 09:38:59,557 - INFO - Datos extraídos del PDF: GROWLER CAFE (36 productos)
+2026-06-12 09:38:59,558 - INFO - Datos guardados: GROWLER CAFE - 2026-05-12 (Tarde)
+2026-06-12 09:38:59,563 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,564 - INFO - Guardados 22 productos de GROWLER VIA VIEJA - 2026-05-12
+2026-06-12 09:38:59,565 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (22 productos)
+2026-06-12 09:38:59,566 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-12 (Mañana)
+2026-06-12 09:38:59,570 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,570 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,571 - INFO - Datos guardados: GG Vol 4 - 2026-05-12 (Unico)
+2026-06-12 09:38:59,574 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,575 - INFO - Guardados 3 productos de GG Vol 2 - 2026-05-12
+2026-06-12 09:38:59,576 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:38:59,577 - INFO - Datos guardados: GG Vol 2 - 2026-05-12 (Unico)
+2026-06-12 09:38:59,580 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,580 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,581 - INFO - Datos guardados: COLEGIO - 2026-05-12 (Tarde)
+2026-06-12 09:38:59,585 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,585 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,586 - INFO - Datos guardados: COLEGIO - 2026-05-13 (Mañana)
+2026-06-12 09:38:59,591 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,595 - INFO - Guardados 29 productos de GROWLER CAFE - 2026-05-13
+2026-06-12 09:38:59,595 - INFO - Datos extraídos del PDF: GROWLER CAFE (29 productos)
+2026-06-12 09:38:59,596 - INFO - Datos guardados: GROWLER CAFE - 2026-05-13 (Mañana)
+2026-06-12 09:38:59,601 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,602 - INFO - Guardados 15 productos de GROWLER VIA VIEJA - 2026-05-13
+2026-06-12 09:38:59,603 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (15 productos)
+2026-06-12 09:38:59,604 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-13 (Tarde)
+2026-06-12 09:38:59,609 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,611 - INFO - Guardados 52 productos de GROWLER CAFE - 2026-05-13
+2026-06-12 09:38:59,612 - INFO - Datos extraídos del PDF: GROWLER CAFE (52 productos)
+2026-06-12 09:38:59,613 - INFO - Datos guardados: GROWLER CAFE - 2026-05-13 (Tarde)
+2026-06-12 09:38:59,616 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,616 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,619 - INFO - Datos guardados: GG Vol 4 - 2026-05-13 (Unico)
+2026-06-12 09:38:59,622 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,623 - INFO - Guardados 2 productos de GG Vol 2 - 2026-05-13
+2026-06-12 09:38:59,624 - INFO - Datos extraídos del PDF: GG Vol 2 (2 productos)
+2026-06-12 09:38:59,625 - INFO - Datos guardados: GG Vol 2 - 2026-05-13 (Unico)
+2026-06-12 09:38:59,629 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,629 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,630 - INFO - Datos guardados: COLEGIO - 2026-05-13 (Tarde)
+2026-06-12 09:38:59,633 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,633 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,634 - INFO - Datos guardados: COLEGIO - 2026-05-14 (Mañana)
+2026-06-12 09:38:59,639 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,641 - INFO - Guardados 24 productos de GROWLER CAFE - 2026-05-14
+2026-06-12 09:38:59,641 - INFO - Datos extraídos del PDF: GROWLER CAFE (24 productos)
+2026-06-12 09:38:59,642 - INFO - Datos guardados: GROWLER CAFE - 2026-05-14 (Mañana)
+2026-06-12 09:38:59,647 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,649 - INFO - Guardados 43 productos de GROWLER CAFE - 2026-05-14
+2026-06-12 09:38:59,649 - INFO - Datos extraídos del PDF: GROWLER CAFE (43 productos)
+2026-06-12 09:38:59,650 - INFO - Datos guardados: GROWLER CAFE - 2026-05-14 (Tarde)
+2026-06-12 09:38:59,655 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,657 - INFO - Guardados 27 productos de GROWLER VIA VIEJA - 2026-05-14
+2026-06-12 09:38:59,658 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (27 productos)
+2026-06-12 09:38:59,659 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-14 (Tarde)
+2026-06-12 09:38:59,662 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,662 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,664 - INFO - Datos guardados: GG Vol 4 - 2026-05-14 (Unico)
+2026-06-12 09:38:59,668 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,669 - INFO - Guardados 5 productos de GG Vol 2 - 2026-05-14
+2026-06-12 09:38:59,670 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:38:59,672 - INFO - Datos guardados: GG Vol 2 - 2026-05-14 (Unico)
+2026-06-12 09:38:59,675 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,675 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,676 - INFO - Datos guardados: COLEGIO - 2026-05-14 (Tarde)
+2026-06-12 09:38:59,680 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,680 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,681 - INFO - Datos guardados: COLEGIO - 2026-05-15 (Mañana)
+2026-06-12 09:38:59,686 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,688 - INFO - Guardados 27 productos de GROWLER CAFE - 2026-05-15
+2026-06-12 09:38:59,688 - INFO - Datos extraídos del PDF: GROWLER CAFE (27 productos)
+2026-06-12 09:38:59,689 - INFO - Datos guardados: GROWLER CAFE - 2026-05-15 (Mañana)
+2026-06-12 09:38:59,693 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,693 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,694 - INFO - Datos guardados: COLEGIO - 2026-05-15 (Tarde)
+2026-06-12 09:38:59,699 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,702 - INFO - Guardados 62 productos de GROWLER CAFE - 2026-05-15
+2026-06-12 09:38:59,702 - INFO - Datos extraídos del PDF: GROWLER CAFE (62 productos)
+2026-06-12 09:38:59,704 - INFO - Datos guardados: GROWLER CAFE - 2026-05-15 (Tarde)
+2026-06-12 09:38:59,707 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,708 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,709 - INFO - Datos guardados: GG Vol 4 - 2026-05-15 (Unico)
+2026-06-12 09:38:59,718 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,720 - INFO - Guardados 56 productos de GROWLER VIA VIEJA - 2026-05-15
+2026-06-12 09:38:59,721 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (56 productos)
+2026-06-12 09:38:59,722 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-15 (Tarde)
+2026-06-12 09:38:59,725 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,726 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-15
+2026-06-12 09:38:59,727 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:38:59,728 - INFO - Datos guardados: GG Vol 2 - 2026-05-15 (Unico)
+2026-06-12 09:38:59,733 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,735 - INFO - Guardados 48 productos de GROWLER CAFE - 2026-05-16
+2026-06-12 09:38:59,736 - INFO - Datos extraídos del PDF: GROWLER CAFE (48 productos)
+2026-06-12 09:38:59,737 - INFO - Datos guardados: GROWLER CAFE - 2026-05-16 (Mañana)
+2026-06-12 09:38:59,742 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,743 - INFO - Guardados 12 productos de GROWLER VIA VIEJA - 2026-05-16
+2026-06-12 09:38:59,744 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (12 productos)
+2026-06-12 09:38:59,745 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-16 (Mañana)
+2026-06-12 09:38:59,749 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,749 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,750 - INFO - Datos guardados: COLEGIO - 2026-05-16 (Mañana)
+2026-06-12 09:38:59,756 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,758 - INFO - Guardados 61 productos de GROWLER CAFE - 2026-05-16
+2026-06-12 09:38:59,759 - INFO - Datos extraídos del PDF: GROWLER CAFE (61 productos)
+2026-06-12 09:38:59,760 - INFO - Datos guardados: GROWLER CAFE - 2026-05-16 (Tarde)
+2026-06-12 09:38:59,768 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,770 - INFO - Guardados 58 productos de GROWLER VIA VIEJA - 2026-05-16
+2026-06-12 09:38:59,771 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (58 productos)
+2026-06-12 09:38:59,772 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-16 (Tarde)
+2026-06-12 09:38:59,775 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,775 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,775 - INFO - Datos guardados: GG Vol 4 - 2026-05-16 (Unico)
+2026-06-12 09:38:59,779 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,781 - INFO - Guardados 5 productos de GG Vol 2 - 2026-05-16
+2026-06-12 09:38:59,781 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:38:59,783 - INFO - Datos guardados: GG Vol 2 - 2026-05-16 (Unico)
+2026-06-12 09:38:59,787 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,788 - INFO - Guardados 12 productos de GROWLER CAFE - 2026-05-17
+2026-06-12 09:38:59,789 - INFO - Datos extraídos del PDF: GROWLER CAFE (12 productos)
+2026-06-12 09:38:59,790 - INFO - Datos guardados: GROWLER CAFE - 2026-05-17 (Mañana)
+2026-06-12 09:38:59,793 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,794 - INFO - Guardados 4 productos de GROWLER VIA VIEJA - 2026-05-17
+2026-06-12 09:38:59,795 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (4 productos)
+2026-06-12 09:38:59,796 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-17 (Mañana)
+2026-06-12 09:38:59,802 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,806 - INFO - Guardados 41 productos de GROWLER CAFE - 2026-05-17
+2026-06-12 09:38:59,806 - INFO - Datos extraídos del PDF: GROWLER CAFE (41 productos)
+2026-06-12 09:38:59,807 - INFO - Datos guardados: GROWLER CAFE - 2026-05-17 (Tarde)
+2026-06-12 09:38:59,811 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,813 - INFO - Guardados 11 productos de GROWLER VIA VIEJA - 2026-05-17
+2026-06-12 09:38:59,813 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (11 productos)
+2026-06-12 09:38:59,814 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-17 (Tarde)
+2026-06-12 09:38:59,818 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,818 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,819 - INFO - Datos guardados: GG Vol 4 - 2026-05-17 (Unico)
+2026-06-12 09:38:59,822 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,823 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-17
+2026-06-12 09:38:59,823 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:38:59,824 - INFO - Datos guardados: GG Vol 2 - 2026-05-17 (Unico)
+2026-06-12 09:38:59,827 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,828 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,828 - INFO - Datos guardados: COLEGIO - 2026-05-18 (Mañana)
+2026-06-12 09:38:59,833 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,835 - INFO - Guardados 33 productos de GROWLER CAFE - 2026-05-18
+2026-06-12 09:38:59,835 - INFO - Datos extraídos del PDF: GROWLER CAFE (33 productos)
+2026-06-12 09:38:59,837 - INFO - Datos guardados: GROWLER CAFE - 2026-05-18 (Mañana)
+2026-06-12 09:38:59,842 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,844 - INFO - Guardados 33 productos de GROWLER CAFE - 2026-05-18
+2026-06-12 09:38:59,844 - INFO - Datos extraídos del PDF: GROWLER CAFE (33 productos)
+2026-06-12 09:38:59,845 - INFO - Datos guardados: GROWLER CAFE - 2026-05-18 (Tarde)
+2026-06-12 09:38:59,849 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,851 - INFO - Guardados 24 productos de GROWLER VIA VIEJA - 2026-05-18
+2026-06-12 09:38:59,851 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (24 productos)
+2026-06-12 09:38:59,852 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-18 (Tarde)
+2026-06-12 09:38:59,855 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,856 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,856 - INFO - Datos guardados: GG Vol 4 - 2026-05-18 (Unico)
+2026-06-12 09:38:59,859 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,860 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,860 - INFO - Datos guardados: COLEGIO - 2026-05-18 (Tarde)
+2026-06-12 09:38:59,864 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,864 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,865 - INFO - Datos guardados: COLEGIO - 2026-05-19 (Mañana)
+2026-06-12 09:38:59,869 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,871 - INFO - Guardados 19 productos de GROWLER CAFE - 2026-05-19
+2026-06-12 09:38:59,871 - INFO - Datos extraídos del PDF: GROWLER CAFE (19 productos)
+2026-06-12 09:38:59,872 - INFO - Datos guardados: GROWLER CAFE - 2026-05-19 (Mañana)
+2026-06-12 09:38:59,877 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,879 - INFO - Guardados 37 productos de GROWLER CAFE - 2026-05-19
+2026-06-12 09:38:59,880 - INFO - Datos extraídos del PDF: GROWLER CAFE (37 productos)
+2026-06-12 09:38:59,881 - INFO - Datos guardados: GROWLER CAFE - 2026-05-19 (Tarde)
+2026-06-12 09:38:59,885 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,886 - INFO - Guardados 20 productos de GROWLER VIA VIEJA - 2026-05-19
+2026-06-12 09:38:59,887 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (20 productos)
+2026-06-12 09:38:59,888 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-19 (Mañana)
+2026-06-12 09:38:59,891 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,891 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,892 - INFO - Datos guardados: GG Vol 4 - 2026-05-19 (Unico)
+2026-06-12 09:38:59,895 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,896 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,897 - INFO - Datos guardados: COLEGIO - 2026-05-19 (Tarde)
+2026-06-12 09:38:59,901 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,902 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,903 - INFO - Datos guardados: COLEGIO - 2026-05-20 (Mañana)
+2026-06-12 09:38:59,908 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,916 - INFO - Guardados 25 productos de GROWLER CAFE - 2026-05-20
+2026-06-12 09:38:59,916 - INFO - Datos extraídos del PDF: GROWLER CAFE (25 productos)
+2026-06-12 09:38:59,918 - INFO - Datos guardados: GROWLER CAFE - 2026-05-20 (Mañana)
+2026-06-12 09:38:59,923 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,925 - INFO - Guardados 6 productos de GG Vol 2 - 2026-05-19
+2026-06-12 09:38:59,925 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:38:59,926 - INFO - Datos guardados: GG Vol 2 - 2026-05-19 (Unico)
+2026-06-12 09:38:59,930 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,932 - INFO - Guardados 17 productos de GROWLER VIA VIEJA - 2026-05-20
+2026-06-12 09:38:59,932 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (17 productos)
+2026-06-12 09:38:59,933 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-20 (Tarde)
+2026-06-12 09:38:59,938 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,940 - INFO - Guardados 44 productos de GROWLER CAFE - 2026-05-20
+2026-06-12 09:38:59,941 - INFO - Datos extraídos del PDF: GROWLER CAFE (44 productos)
+2026-06-12 09:38:59,942 - INFO - Datos guardados: GROWLER CAFE - 2026-05-20 (Tarde)
+2026-06-12 09:38:59,945 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,946 - INFO - Guardados 3 productos de GG Vol 2 - 2026-05-20
+2026-06-12 09:38:59,946 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:38:59,947 - INFO - Datos guardados: GG Vol 2 - 2026-05-20 (Unico)
+2026-06-12 09:38:59,950 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,950 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,951 - INFO - Datos guardados: GG Vol 4 - 2026-05-20 (Unico)
+2026-06-12 09:38:59,955 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,955 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,956 - INFO - Datos guardados: COLEGIO - 2026-05-20 (Tarde)
+2026-06-12 09:38:59,959 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,959 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,960 - INFO - Datos guardados: COLEGIO - 2026-05-21 (Mañana)
+2026-06-12 09:38:59,965 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,966 - INFO - Guardados 26 productos de GROWLER CAFE - 2026-05-21
+2026-06-12 09:38:59,967 - INFO - Datos extraídos del PDF: GROWLER CAFE (26 productos)
+2026-06-12 09:38:59,968 - INFO - Datos guardados: GROWLER CAFE - 2026-05-21 (Mañana)
+2026-06-12 09:38:59,972 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:38:59,974 - INFO - Guardados 22 productos de GROWLER VIA VIEJA - 2026-05-21
+2026-06-12 09:38:59,974 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (22 productos)
+2026-06-12 09:38:59,975 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-21 (Tarde)
+2026-06-12 09:38:59,980 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:38:59,982 - INFO - Guardados 71 productos de GROWLER CAFE - 2026-05-21
+2026-06-12 09:38:59,983 - INFO - Datos extraídos del PDF: GROWLER CAFE (71 productos)
+2026-06-12 09:38:59,984 - INFO - Datos guardados: GROWLER CAFE - 2026-05-21 (Tarde)
+2026-06-12 09:38:59,988 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:38:59,988 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:38:59,989 - INFO - Datos guardados: GG Vol 4 - 2026-05-21 (Unico)
+2026-06-12 09:38:59,993 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:38:59,993 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:38:59,994 - INFO - Datos guardados: COLEGIO - 2026-05-21 (Tarde)
+2026-06-12 09:38:59,997 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:38:59,998 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-21
+2026-06-12 09:38:59,999 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:39:00,000 - INFO - Datos guardados: GG Vol 2 - 2026-05-21 (Unico)
+2026-06-12 09:39:00,003 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,003 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,004 - INFO - Datos guardados: COLEGIO - 2026-05-22 (Mañana)
+2026-06-12 09:39:00,008 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,010 - INFO - Guardados 29 productos de GROWLER CAFE - 2026-05-22
+2026-06-12 09:39:00,011 - INFO - Datos extraídos del PDF: GROWLER CAFE (29 productos)
+2026-06-12 09:39:00,012 - INFO - Datos guardados: GROWLER CAFE - 2026-05-22 (Mañana)
+2026-06-12 09:39:00,017 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,020 - INFO - Guardados 57 productos de GROWLER CAFE - 2026-05-22
+2026-06-12 09:39:00,020 - INFO - Datos extraídos del PDF: GROWLER CAFE (57 productos)
+2026-06-12 09:39:00,021 - INFO - Datos guardados: GROWLER CAFE - 2026-05-22 (Tarde)
+2026-06-12 09:39:00,025 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,026 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-22
+2026-06-12 09:39:00,026 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:39:00,027 - INFO - Datos guardados: GG Vol 2 - 2026-05-22 (Unico)
+2026-06-12 09:39:00,034 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,036 - INFO - Guardados 53 productos de GROWLER VIA VIEJA - 2026-05-22
+2026-06-12 09:39:00,037 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (53 productos)
+2026-06-12 09:39:00,038 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-22 (Tarde)
+2026-06-12 09:39:00,043 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,046 - INFO - Guardados 47 productos de GROWLER CAFE - 2026-05-23
+2026-06-12 09:39:00,046 - INFO - Datos extraídos del PDF: GROWLER CAFE (47 productos)
+2026-06-12 09:39:00,047 - INFO - Datos guardados: GROWLER CAFE - 2026-05-23 (Mañana)
+2026-06-12 09:39:00,051 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,052 - INFO - Guardados 9 productos de GROWLER VIA VIEJA - 2026-05-23
+2026-06-12 09:39:00,053 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (9 productos)
+2026-06-12 09:39:00,054 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-23 (Mañana)
+2026-06-12 09:39:00,059 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,061 - INFO - Guardados 56 productos de GROWLER CAFE - 2026-05-23
+2026-06-12 09:39:00,062 - INFO - Datos extraídos del PDF: GROWLER CAFE (56 productos)
+2026-06-12 09:39:00,063 - INFO - Datos guardados: GROWLER CAFE - 2026-05-23 (Tarde)
+2026-06-12 09:39:00,067 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,067 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,068 - INFO - Datos guardados: GG Vol 4 - 2026-05-22 (Unico)
+2026-06-12 09:39:00,076 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,080 - INFO - Guardados 48 productos de GROWLER VIA VIEJA - 2026-05-23
+2026-06-12 09:39:00,081 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (48 productos)
+2026-06-12 09:39:00,082 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-23 (Tarde)
+2026-06-12 09:39:00,086 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,087 - INFO - Guardados 6 productos de GG Vol 2 - 2026-05-23
+2026-06-12 09:39:00,087 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:39:00,088 - INFO - Datos guardados: GG Vol 2 - 2026-05-23 (Unico)
+2026-06-12 09:39:00,093 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,095 - INFO - Guardados 28 productos de GROWLER CAFE - 2026-05-24
+2026-06-12 09:39:00,098 - INFO - Datos extraídos del PDF: GROWLER CAFE (28 productos)
+2026-06-12 09:39:00,099 - INFO - Datos guardados: GROWLER CAFE - 2026-05-24 (Mañana)
+2026-06-12 09:39:00,105 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,107 - INFO - Guardados 42 productos de GROWLER CAFE - 2026-05-24
+2026-06-12 09:39:00,108 - INFO - Datos extraídos del PDF: GROWLER CAFE (42 productos)
+2026-06-12 09:39:00,109 - INFO - Datos guardados: GROWLER CAFE - 2026-05-24 (Tarde)
+2026-06-12 09:39:00,112 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,112 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,113 - INFO - Datos guardados: GG Vol 4 - 2026-05-24 (Unico)
+2026-06-12 09:39:00,120 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,122 - INFO - Guardados 64 productos de GROWLER VIA VIEJA - 2026-05-24
+2026-06-12 09:39:00,123 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (64 productos)
+2026-06-12 09:39:00,124 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-24 (Tarde)
+2026-06-12 09:39:00,127 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,128 - INFO - Guardados 6 productos de GG Vol 2 - 2026-05-24
+2026-06-12 09:39:00,129 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:39:00,130 - INFO - Datos guardados: GG Vol 2 - 2026-05-24 (Unico)
+2026-06-12 09:39:00,134 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,136 - INFO - Guardados 35 productos de GROWLER CAFE - 2026-05-25
+2026-06-12 09:39:00,136 - INFO - Datos extraídos del PDF: GROWLER CAFE (35 productos)
+2026-06-12 09:39:00,137 - INFO - Datos guardados: GROWLER CAFE - 2026-05-25 (Mañana)
+2026-06-12 09:39:00,142 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,144 - INFO - Guardados 28 productos de GROWLER VIA VIEJA - 2026-05-25
+2026-06-12 09:39:00,145 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (28 productos)
+2026-06-12 09:39:00,146 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-25 (Tarde)
+2026-06-12 09:39:00,150 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,152 - INFO - Guardados 45 productos de GROWLER CAFE - 2026-05-25
+2026-06-12 09:39:00,153 - INFO - Datos extraídos del PDF: GROWLER CAFE (45 productos)
+2026-06-12 09:39:00,154 - INFO - Datos guardados: GROWLER CAFE - 2026-05-25 (Tarde)
+2026-06-12 09:39:00,157 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,157 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,158 - INFO - Datos guardados: GG Vol 4 - 2026-05-25 (Unico)
+2026-06-12 09:39:00,161 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,161 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,162 - INFO - Datos guardados: COLEGIO - 2026-05-22 (Tarde)
+2026-06-12 09:39:00,165 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,165 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,166 - INFO - Datos guardados: COLEGIO - 2026-05-26 (Mañana)
+2026-06-12 09:39:00,170 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,171 - INFO - Guardados 17 productos de GROWLER CAFE - 2026-05-26
+2026-06-12 09:39:00,171 - INFO - Datos extraídos del PDF: GROWLER CAFE (17 productos)
+2026-06-12 09:39:00,172 - INFO - Datos guardados: GROWLER CAFE - 2026-05-26 (Mañana)
+2026-06-12 09:39:00,177 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,179 - INFO - Guardados 31 productos de GROWLER CAFE - 2026-05-26
+2026-06-12 09:39:00,179 - INFO - Datos extraídos del PDF: GROWLER CAFE (31 productos)
+2026-06-12 09:39:00,180 - INFO - Datos guardados: GROWLER CAFE - 2026-05-26 (Tarde)
+2026-06-12 09:39:00,183 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,183 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,184 - INFO - Datos guardados: GG Vol 4 - 2026-05-26 (Unico)
+2026-06-12 09:39:00,188 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,190 - INFO - Guardados 15 productos de GROWLER VIA VIEJA - 2026-05-26
+2026-06-12 09:39:00,190 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (15 productos)
+2026-06-12 09:39:00,191 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-26 (Tarde)
+2026-06-12 09:39:00,195 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,196 - INFO - Guardados 4 productos de GG Vol 2 - 2026-05-26
+2026-06-12 09:39:00,196 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:39:00,197 - INFO - Datos guardados: GG Vol 2 - 2026-05-26 (Unico)
+2026-06-12 09:39:00,200 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,200 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,201 - INFO - Datos guardados: COLEGIO - 2026-05-26 (Tarde)
+2026-06-12 09:39:00,204 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,204 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,205 - INFO - Datos guardados: COLEGIO - 2026-05-27 (Mañana)
+2026-06-12 09:39:00,211 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,213 - INFO - Guardados 18 productos de GROWLER CAFE - 2026-05-27
+2026-06-12 09:39:00,213 - INFO - Datos extraídos del PDF: GROWLER CAFE (18 productos)
+2026-06-12 09:39:00,214 - INFO - Datos guardados: GROWLER CAFE - 2026-05-27 (Mañana)
+2026-06-12 09:39:00,220 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,222 - INFO - Guardados 28 productos de GROWLER CAFE - 2026-05-27
+2026-06-12 09:39:00,223 - INFO - Datos extraídos del PDF: GROWLER CAFE (28 productos)
+2026-06-12 09:39:00,224 - INFO - Datos guardados: GROWLER CAFE - 2026-05-27 (Tarde)
+2026-06-12 09:39:00,228 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,230 - INFO - Guardados 11 productos de GROWLER VIA VIEJA - 2026-05-27
+2026-06-12 09:39:00,230 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (11 productos)
+2026-06-12 09:39:00,231 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-27 (Tarde)
+2026-06-12 09:39:00,234 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,235 - INFO - Guardados 2 productos de GG Vol 2 - 2026-05-27
+2026-06-12 09:39:00,236 - INFO - Datos extraídos del PDF: GG Vol 2 (2 productos)
+2026-06-12 09:39:00,237 - INFO - Datos guardados: GG Vol 2 - 2026-05-27 (Unico)
+2026-06-12 09:39:00,239 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,240 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,240 - INFO - Datos guardados: GG Vol 4 - 2026-05-27 (Unico)
+2026-06-12 09:39:00,243 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,243 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,244 - INFO - Datos guardados: COLEGIO - 2026-05-27 (Tarde)
+2026-06-12 09:39:00,247 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,247 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,248 - INFO - Datos guardados: COLEGIO - 2026-05-28 (Mañana)
+2026-06-12 09:39:00,252 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,254 - INFO - Guardados 23 productos de GROWLER CAFE - 2026-05-28
+2026-06-12 09:39:00,255 - INFO - Datos extraídos del PDF: GROWLER CAFE (23 productos)
+2026-06-12 09:39:00,255 - INFO - Datos guardados: GROWLER CAFE - 2026-05-28 (Mañana)
+2026-06-12 09:39:00,261 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,263 - INFO - Guardados 44 productos de GROWLER CAFE - 2026-05-28
+2026-06-12 09:39:00,263 - INFO - Datos extraídos del PDF: GROWLER CAFE (44 productos)
+2026-06-12 09:39:00,264 - INFO - Datos guardados: GROWLER CAFE - 2026-05-28 (Tarde)
+2026-06-12 09:39:00,268 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,270 - INFO - Guardados 19 productos de GROWLER VIA VIEJA - 2026-05-28
+2026-06-12 09:39:00,270 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (19 productos)
+2026-06-12 09:39:00,271 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-28 (Tarde)
+2026-06-12 09:39:00,274 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,274 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,275 - INFO - Datos guardados: GG Vol 4 - 2026-05-28 (Unico)
+2026-06-12 09:39:00,278 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,279 - INFO - Guardados 3 productos de GG Vol 2 - 2026-05-28
+2026-06-12 09:39:00,280 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:39:00,281 - INFO - Datos guardados: GG Vol 2 - 2026-05-28 (Unico)
+2026-06-12 09:39:00,284 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,284 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,285 - INFO - Datos guardados: COLEGIO - 2026-05-28 (Tarde)
+2026-06-12 09:39:00,288 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,288 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,289 - INFO - Datos guardados: COLEGIO - 2026-05-29 (Mañana)
+2026-06-12 09:39:00,293 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,295 - INFO - Guardados 37 productos de GROWLER CAFE - 2026-05-29
+2026-06-12 09:39:00,296 - INFO - Datos extraídos del PDF: GROWLER CAFE (37 productos)
+2026-06-12 09:39:00,297 - INFO - Datos guardados: GROWLER CAFE - 2026-05-29 (Mañana)
+2026-06-12 09:39:00,300 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,300 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,301 - INFO - Datos guardados: COLEGIO - 2026-05-29 (Tarde)
+2026-06-12 09:39:00,305 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,305 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,306 - INFO - Datos guardados: COLEGIO - 2026-05-29 (Noche)
+2026-06-12 09:39:00,311 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,313 - INFO - Guardados 66 productos de GROWLER CAFE - 2026-05-29
+2026-06-12 09:39:00,314 - INFO - Datos extraídos del PDF: GROWLER CAFE (66 productos)
+2026-06-12 09:39:00,315 - INFO - Datos guardados: GROWLER CAFE - 2026-05-29 (Tarde)
+2026-06-12 09:39:00,318 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,318 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,319 - INFO - Datos guardados: GG Vol 4 - 2026-05-29 (Unico)
+2026-06-12 09:39:00,325 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,327 - INFO - Guardados 45 productos de GROWLER VIA VIEJA - 2026-05-29
+2026-06-12 09:39:00,327 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (45 productos)
+2026-06-12 09:39:00,328 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-29 (Tarde)
+2026-06-12 09:39:00,331 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,332 - INFO - Guardados 3 productos de GG Vol 2 - 2026-05-29
+2026-06-12 09:39:00,333 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:39:00,334 - INFO - Datos guardados: GG Vol 2 - 2026-05-29 (Unico)
+2026-06-12 09:39:00,339 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,340 - INFO - Guardados 34 productos de GROWLER CAFE - 2026-05-30
+2026-06-12 09:39:00,341 - INFO - Datos extraídos del PDF: GROWLER CAFE (34 productos)
+2026-06-12 09:39:00,342 - INFO - Datos guardados: GROWLER CAFE - 2026-05-30 (Mañana)
+2026-06-12 09:39:00,345 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,347 - INFO - Guardados 13 productos de GROWLER VIA VIEJA - 2026-05-30
+2026-06-12 09:39:00,348 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (13 productos)
+2026-06-12 09:39:00,349 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-30 (Mañana)
+2026-06-12 09:39:00,354 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,357 - INFO - Guardados 74 productos de GROWLER CAFE - 2026-05-30
+2026-06-12 09:39:00,357 - INFO - Datos extraídos del PDF: GROWLER CAFE (74 productos)
+2026-06-12 09:39:00,358 - INFO - Datos guardados: GROWLER CAFE - 2026-05-30 (Tarde)
+2026-06-12 09:39:00,361 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,361 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,362 - INFO - Datos guardados: GG Vol 4 - 2026-05-30 (Unico)
+2026-06-12 09:39:00,369 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,372 - INFO - Guardados 57 productos de GROWLER VIA VIEJA - 2026-05-30
+2026-06-12 09:39:00,372 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (57 productos)
+2026-06-12 09:39:00,373 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-30 (Tarde)
+2026-06-12 09:39:00,376 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,378 - INFO - Guardados 5 productos de GG Vol 2 - 2026-05-30
+2026-06-12 09:39:00,378 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:39:00,379 - INFO - Datos guardados: GG Vol 2 - 2026-05-30 (Unico)
+2026-06-12 09:39:00,384 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,386 - INFO - Guardados 40 productos de GROWLER CAFE - 2026-05-31
+2026-06-12 09:39:00,387 - INFO - Datos extraídos del PDF: GROWLER CAFE (40 productos)
+2026-06-12 09:39:00,388 - INFO - Datos guardados: GROWLER CAFE - 2026-05-31 (Mañana)
+2026-06-12 09:39:00,392 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,394 - INFO - Guardados 21 productos de GROWLER VIA VIEJA - 2026-05-31
+2026-06-12 09:39:00,394 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (21 productos)
+2026-06-12 09:39:00,395 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-31 (Mañana)
+2026-06-12 09:39:00,400 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,403 - INFO - Guardados 49 productos de GROWLER CAFE - 2026-05-31
+2026-06-12 09:39:00,404 - INFO - Datos extraídos del PDF: GROWLER CAFE (49 productos)
+2026-06-12 09:39:00,405 - INFO - Datos guardados: GROWLER CAFE - 2026-05-31 (Tarde)
+2026-06-12 09:39:00,409 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,414 - INFO - Guardados 22 productos de GROWLER VIA VIEJA - 2026-05-31
+2026-06-12 09:39:00,414 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (22 productos)
+2026-06-12 09:39:00,415 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-05-31 (Tarde)
+2026-06-12 09:39:00,419 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,420 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,421 - INFO - Datos guardados: GG Vol 4 - 2026-05-31 (Unico)
+2026-06-12 09:39:00,424 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,425 - INFO - Guardados 5 productos de GG Vol 2 - 2026-05-31
+2026-06-12 09:39:00,425 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:39:00,426 - INFO - Datos guardados: GG Vol 2 - 2026-05-31 (Unico)
+2026-06-12 09:39:00,430 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,430 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,431 - INFO - Datos guardados: COLEGIO - 2026-06-01 (Mañana)
+2026-06-12 09:39:00,436 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,438 - INFO - Guardados 18 productos de GROWLER CAFE - 2026-06-01
+2026-06-12 09:39:00,438 - INFO - Datos extraídos del PDF: GROWLER CAFE (18 productos)
+2026-06-12 09:39:00,439 - INFO - Datos guardados: GROWLER CAFE - 2026-06-01 (Mañana)
+2026-06-12 09:39:00,443 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,445 - INFO - Guardados 29 productos de GROWLER CAFE - 2026-06-01
+2026-06-12 09:39:00,446 - INFO - Datos extraídos del PDF: GROWLER CAFE (29 productos)
+2026-06-12 09:39:00,447 - INFO - Datos guardados: GROWLER CAFE - 2026-06-01 (Tarde)
+2026-06-12 09:39:00,451 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,453 - INFO - Guardados 21 productos de GROWLER VIA VIEJA - 2026-06-01
+2026-06-12 09:39:00,453 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (21 productos)
+2026-06-12 09:39:00,454 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-01 (Tarde)
+2026-06-12 09:39:00,457 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,457 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,458 - INFO - Datos guardados: GG Vol 4 - 2026-06-01 (Unico)
+2026-06-12 09:39:00,462 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,462 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,463 - INFO - Datos guardados: COLEGIO - 2026-06-01 (Tarde)
+2026-06-12 09:39:00,466 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,466 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (0 productos)
+2026-06-12 09:39:00,467 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-02 (Mañana)
+2026-06-12 09:39:00,472 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,473 - INFO - Guardados 21 productos de GROWLER CAFE - 2026-06-02
+2026-06-12 09:39:00,474 - INFO - Datos extraídos del PDF: GROWLER CAFE (21 productos)
+2026-06-12 09:39:00,475 - INFO - Datos guardados: GROWLER CAFE - 2026-06-02 (Mañana)
+2026-06-12 09:39:00,479 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,479 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,480 - INFO - Datos guardados: COLEGIO - 2026-06-02 (Mañana)
+2026-06-12 09:39:00,483 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,483 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,485 - INFO - Datos guardados: COLEGIO - 2026-06-02 (Tarde)
+2026-06-12 09:39:00,490 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,492 - INFO - Guardados 46 productos de GROWLER CAFE - 2026-06-02
+2026-06-12 09:39:00,493 - INFO - Datos extraídos del PDF: GROWLER CAFE (46 productos)
+2026-06-12 09:39:00,494 - INFO - Datos guardados: GROWLER CAFE - 2026-06-02 (Tarde)
+2026-06-12 09:39:00,497 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,497 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,498 - INFO - Datos guardados: GG Vol 4 - 2026-06-02 (Unico)
+2026-06-12 09:39:00,503 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,505 - INFO - Guardados 22 productos de GROWLER VIA VIEJA - 2026-06-02
+2026-06-12 09:39:00,505 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (22 productos)
+2026-06-12 09:39:00,506 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-02 (Tarde)
+2026-06-12 09:39:00,510 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,511 - INFO - Guardados 3 productos de GG Vol 2 - 2026-06-02
+2026-06-12 09:39:00,512 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:39:00,513 - INFO - Datos guardados: GG Vol 2 - 2026-06-02 (Unico)
+2026-06-12 09:39:00,516 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,516 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,517 - INFO - Datos guardados: COLEGIO - 2026-06-03 (Noche)
+2026-06-12 09:39:00,522 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,524 - INFO - Guardados 26 productos de GROWLER CAFE - 2026-06-03
+2026-06-12 09:39:00,525 - INFO - Datos extraídos del PDF: GROWLER CAFE (26 productos)
+2026-06-12 09:39:00,526 - INFO - Datos guardados: GROWLER CAFE - 2026-06-03 (Mañana)
+2026-06-12 09:39:00,544 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,545 - INFO - Guardados 23 productos de GROWLER VIA VIEJA - 2026-06-03
+2026-06-12 09:39:00,546 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (23 productos)
+2026-06-12 09:39:00,547 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-03 (Tarde)
+2026-06-12 09:39:00,552 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,555 - INFO - Guardados 70 productos de GROWLER CAFE - 2026-06-03
+2026-06-12 09:39:00,556 - INFO - Datos extraídos del PDF: GROWLER CAFE (70 productos)
+2026-06-12 09:39:00,557 - INFO - Datos guardados: GROWLER CAFE - 2026-06-03 (Tarde)
+2026-06-12 09:39:00,560 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,561 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,562 - INFO - Datos guardados: GG Vol 4 - 2026-06-03 (Unico)
+2026-06-12 09:39:00,565 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,565 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,566 - INFO - Datos guardados: COLEGIO - 2026-06-03 (Tarde)
+2026-06-12 09:39:00,570 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,570 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,571 - INFO - Datos guardados: COLEGIO - 2026-06-04 (Mañana)
+2026-06-12 09:39:00,576 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,577 - INFO - Guardados 24 productos de GROWLER CAFE - 2026-06-04
+2026-06-12 09:39:00,578 - INFO - Datos extraídos del PDF: GROWLER CAFE (24 productos)
+2026-06-12 09:39:00,579 - INFO - Datos guardados: GROWLER CAFE - 2026-06-04 (Mañana)
+2026-06-12 09:39:00,584 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,586 - INFO - Guardados 52 productos de GROWLER CAFE - 2026-06-04
+2026-06-12 09:39:00,587 - INFO - Datos extraídos del PDF: GROWLER CAFE (52 productos)
+2026-06-12 09:39:00,588 - INFO - Datos guardados: GROWLER CAFE - 2026-06-04 (Tarde)
+2026-06-12 09:39:00,593 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,596 - INFO - Guardados 27 productos de GROWLER VIA VIEJA - 2026-06-04
+2026-06-12 09:39:00,596 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (27 productos)
+2026-06-12 09:39:00,597 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-04 (Tarde)
+2026-06-12 09:39:00,602 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,603 - INFO - Guardados 6 productos de GG Vol 2 - 2026-06-04
+2026-06-12 09:39:00,604 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:39:00,605 - INFO - Datos guardados: GG Vol 2 - 2026-06-04 (Unico)
+2026-06-12 09:39:00,609 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,609 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,610 - INFO - Datos guardados: COLEGIO - 2026-06-04 (Tarde)
+2026-06-12 09:39:00,614 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,614 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,615 - INFO - Datos guardados: COLEGIO - 2026-06-05 (Mañana)
+2026-06-12 09:39:00,620 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,622 - INFO - Guardados 28 productos de GROWLER CAFE - 2026-06-05
+2026-06-12 09:39:00,622 - INFO - Datos extraídos del PDF: GROWLER CAFE (28 productos)
+2026-06-12 09:39:00,624 - INFO - Datos guardados: GROWLER CAFE - 2026-06-05 (Mañana)
+2026-06-12 09:39:00,628 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,628 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,629 - INFO - Datos guardados: COLEGIO - 2026-06-05 (Tarde)
+2026-06-12 09:39:00,635 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,637 - INFO - Guardados 67 productos de GROWLER CAFE - 2026-06-05
+2026-06-12 09:39:00,638 - INFO - Datos extraídos del PDF: GROWLER CAFE (67 productos)
+2026-06-12 09:39:00,639 - INFO - Datos guardados: GROWLER CAFE - 2026-06-05 (Tarde)
+2026-06-12 09:39:00,642 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,643 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,644 - INFO - Datos guardados: GG Vol 4 - 2026-06-05 (Unico)
+2026-06-12 09:39:00,652 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,654 - INFO - Guardados 65 productos de GROWLER VIA VIEJA - 2026-06-05
+2026-06-12 09:39:00,655 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (65 productos)
+2026-06-12 09:39:00,656 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-05 (Tarde)
+2026-06-12 09:39:00,661 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,663 - INFO - Guardados 38 productos de GROWLER CAFE - 2026-06-06
+2026-06-12 09:39:00,664 - INFO - Datos extraídos del PDF: GROWLER CAFE (38 productos)
+2026-06-12 09:39:00,665 - INFO - Datos guardados: GROWLER CAFE - 2026-06-06 (Mañana)
+2026-06-12 09:39:00,669 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,671 - INFO - Guardados 22 productos de GROWLER VIA VIEJA - 2026-06-06
+2026-06-12 09:39:00,672 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (22 productos)
+2026-06-12 09:39:00,673 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-06 (Mañana)
+2026-06-12 09:39:00,677 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,679 - INFO - Guardados 6 productos de GG Vol 2 - 2026-06-05
+2026-06-12 09:39:00,679 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-12 09:39:00,680 - INFO - Datos guardados: GG Vol 2 - 2026-06-05 (Unico)
+2026-06-12 09:39:00,686 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,688 - INFO - Guardados 56 productos de GROWLER CAFE - 2026-06-06
+2026-06-12 09:39:00,689 - INFO - Datos extraídos del PDF: GROWLER CAFE (56 productos)
+2026-06-12 09:39:00,690 - INFO - Datos guardados: GROWLER CAFE - 2026-06-06 (Tarde)
+2026-06-12 09:39:00,698 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,700 - INFO - Guardados 58 productos de GROWLER VIA VIEJA - 2026-06-06
+2026-06-12 09:39:00,701 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (58 productos)
+2026-06-12 09:39:00,702 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-06 (Tarde)
+2026-06-12 09:39:00,706 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,706 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,707 - INFO - Datos guardados: GG Vol 4 - 2026-06-06 (Unico)
+2026-06-12 09:39:00,711 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,713 - INFO - Guardados 5 productos de GG Vol 2 - 2026-06-06
+2026-06-12 09:39:00,714 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:39:00,716 - INFO - Datos guardados: GG Vol 2 - 2026-06-06 (Unico)
+2026-06-12 09:39:00,722 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,727 - INFO - Guardados 27 productos de GROWLER CAFE - 2026-06-07
+2026-06-12 09:39:00,727 - INFO - Datos extraídos del PDF: GROWLER CAFE (27 productos)
+2026-06-12 09:39:00,728 - INFO - Datos guardados: GROWLER CAFE - 2026-06-07 (Mañana)
+2026-06-12 09:39:00,732 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,734 - INFO - Guardados 11 productos de GROWLER VIA VIEJA - 2026-06-07
+2026-06-12 09:39:00,735 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (11 productos)
+2026-06-12 09:39:00,736 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-07 (Mañana)
+2026-06-12 09:39:00,741 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,743 - INFO - Guardados 34 productos de GROWLER CAFE - 2026-06-07
+2026-06-12 09:39:00,744 - INFO - Datos extraídos del PDF: GROWLER CAFE (34 productos)
+2026-06-12 09:39:00,745 - INFO - Datos guardados: GROWLER CAFE - 2026-06-07 (Tarde)
+2026-06-12 09:39:00,750 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,752 - INFO - Guardados 21 productos de GROWLER VIA VIEJA - 2026-06-07
+2026-06-12 09:39:00,753 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (21 productos)
+2026-06-12 09:39:00,754 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-07 (Tarde)
+2026-06-12 09:39:00,757 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,759 - INFO - Guardados 2 productos de GG Vol 2 - 2026-06-07
+2026-06-12 09:39:00,759 - INFO - Datos extraídos del PDF: GG Vol 2 (2 productos)
+2026-06-12 09:39:00,761 - INFO - Datos guardados: GG Vol 2 - 2026-06-07 (Unico)
+2026-06-12 09:39:00,769 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,769 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,770 - INFO - Datos guardados: GG Vol 4 - 2026-06-07 (Unico)
+2026-06-12 09:39:00,774 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,776 - INFO - Guardados 23 productos de GROWLER CAFE - 2026-06-08
+2026-06-12 09:39:00,777 - INFO - Datos extraídos del PDF: GROWLER CAFE (23 productos)
+2026-06-12 09:39:00,778 - INFO - Datos guardados: GROWLER CAFE - 2026-06-08 (Mañana)
+2026-06-12 09:39:00,781 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,781 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,782 - INFO - Datos guardados: COLEGIO - 2026-06-08 (Noche)
+2026-06-12 09:39:00,787 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,790 - INFO - Guardados 37 productos de GROWLER CAFE - 2026-06-08
+2026-06-12 09:39:00,790 - INFO - Datos extraídos del PDF: GROWLER CAFE (37 productos)
+2026-06-12 09:39:00,792 - INFO - Datos guardados: GROWLER CAFE - 2026-06-08 (Tarde)
+2026-06-12 09:39:00,796 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,797 - INFO - Guardados 9 productos de GROWLER VIA VIEJA - 2026-06-08
+2026-06-12 09:39:00,797 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (9 productos)
+2026-06-12 09:39:00,798 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-08 (Tarde)
+2026-06-12 09:39:00,802 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,802 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,803 - INFO - Datos guardados: GG Vol 4 - 2026-06-08 (Unico)
+2026-06-12 09:39:00,806 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,808 - INFO - Guardados 4 productos de GG Vol 2 - 2026-06-08
+2026-06-12 09:39:00,808 - INFO - Datos extraídos del PDF: GG Vol 2 (4 productos)
+2026-06-12 09:39:00,809 - INFO - Datos guardados: GG Vol 2 - 2026-06-08 (Unico)
+2026-06-12 09:39:00,816 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,816 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,817 - INFO - Datos guardados: COLEGIO - 2026-06-08 (Mañana)
+2026-06-12 09:39:00,822 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,823 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,824 - INFO - Datos guardados: COLEGIO - 2026-06-09 (Mañana)
+2026-06-12 09:39:00,829 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,831 - INFO - Guardados 16 productos de GROWLER CAFE - 2026-06-09
+2026-06-12 09:39:00,832 - INFO - Datos extraídos del PDF: GROWLER CAFE (16 productos)
+2026-06-12 09:39:00,833 - INFO - Datos guardados: GROWLER CAFE - 2026-06-09 (Mañana)
+2026-06-12 09:39:00,844 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,846 - INFO - Guardados 30 productos de GROWLER CAFE - 2026-06-09
+2026-06-12 09:39:00,847 - INFO - Datos extraídos del PDF: GROWLER CAFE (30 productos)
+2026-06-12 09:39:00,848 - INFO - Datos guardados: GROWLER CAFE - 2026-06-09 (Tarde)
+2026-06-12 09:39:00,854 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,856 - INFO - Guardados 10 productos de GROWLER VIA VIEJA - 2026-06-09
+2026-06-12 09:39:00,856 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (10 productos)
+2026-06-12 09:39:00,858 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-09 (Tarde)
+2026-06-12 09:39:00,863 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,864 - INFO - Guardados 3 productos de GG Vol 2 - 2026-06-09
+2026-06-12 09:39:00,865 - INFO - Datos extraídos del PDF: GG Vol 2 (3 productos)
+2026-06-12 09:39:00,866 - INFO - Datos guardados: GG Vol 2 - 2026-06-09 (Unico)
+2026-06-12 09:39:00,869 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,869 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,870 - INFO - Datos guardados: GG Vol 4 - 2026-06-09 (Unico)
+2026-06-12 09:39:00,873 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,873 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,874 - INFO - Datos guardados: COLEGIO - 2026-06-09 (Tarde)
+2026-06-12 09:39:00,877 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,877 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,878 - INFO - Datos guardados: COLEGIO - 2026-06-10 (Mañana)
+2026-06-12 09:39:00,882 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,884 - INFO - Guardados 27 productos de GROWLER CAFE - 2026-06-10
+2026-06-12 09:39:00,885 - INFO - Datos extraídos del PDF: GROWLER CAFE (27 productos)
+2026-06-12 09:39:00,886 - INFO - Datos guardados: GROWLER CAFE - 2026-06-10 (Mañana)
+2026-06-12 09:39:00,890 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,892 - INFO - Guardados 40 productos de GROWLER CAFE - 2026-06-10
+2026-06-12 09:39:00,893 - INFO - Datos extraídos del PDF: GROWLER CAFE (40 productos)
+2026-06-12 09:39:00,894 - INFO - Datos guardados: GROWLER CAFE - 2026-06-10 (Tarde)
+2026-06-12 09:39:00,898 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,899 - INFO - Guardados 14 productos de GROWLER VIA VIEJA - 2026-06-10
+2026-06-12 09:39:00,900 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (14 productos)
+2026-06-12 09:39:00,901 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-10 (Tarde)
+2026-06-12 09:39:00,904 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,904 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,905 - INFO - Datos guardados: GG Vol 4 - 2026-06-10 (Unico)
+2026-06-12 09:39:00,908 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,910 - INFO - Guardados 5 productos de GG Vol 2 - 2026-06-10
+2026-06-12 09:39:00,911 - INFO - Datos extraídos del PDF: GG Vol 2 (5 productos)
+2026-06-12 09:39:00,912 - INFO - Datos guardados: GG Vol 2 - 2026-06-10 (Unico)
+2026-06-12 09:39:00,915 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,915 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,916 - INFO - Datos guardados: COLEGIO - 2026-06-10 (Tarde)
+2026-06-12 09:39:00,920 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,920 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,921 - INFO - Datos guardados: COLEGIO - 2026-06-11 (Mañana)
+2026-06-12 09:39:00,926 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,930 - INFO - Guardados 32 productos de GROWLER CAFE - 2026-06-11
+2026-06-12 09:39:00,931 - INFO - Datos extraídos del PDF: GROWLER CAFE (32 productos)
+2026-06-12 09:39:00,932 - INFO - Datos guardados: GROWLER CAFE - 2026-06-11 (Mañana)
+2026-06-12 09:39:00,937 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-12 09:39:00,940 - INFO - Guardados 39 productos de GROWLER CAFE - 2026-06-11
+2026-06-12 09:39:00,941 - INFO - Datos extraídos del PDF: GROWLER CAFE (39 productos)
+2026-06-12 09:39:00,942 - INFO - Datos guardados: GROWLER CAFE - 2026-06-11 (Tarde)
+2026-06-12 09:39:00,947 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-12 09:39:00,949 - INFO - Guardados 24 productos de GROWLER VIA VIEJA - 2026-06-11
+2026-06-12 09:39:00,949 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (24 productos)
+2026-06-12 09:39:00,950 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-11 (Tarde)
+2026-06-12 09:39:00,953 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-12 09:39:00,953 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-12 09:39:00,955 - INFO - Datos guardados: GG Vol 4 - 2026-06-11 (Unico)
+2026-06-12 09:39:00,958 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-12 09:39:00,959 - INFO - Guardados 8 productos de GG Vol 2 - 2026-06-11
+2026-06-12 09:39:00,960 - INFO - Datos extraídos del PDF: GG Vol 2 (8 productos)
+2026-06-12 09:39:00,961 - INFO - Datos guardados: GG Vol 2 - 2026-06-11 (Unico)
+2026-06-12 09:39:00,964 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-12 09:39:00,964 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-12 09:39:00,965 - INFO - Datos guardados: COLEGIO - 2026-06-11 (Tarde)
+2026-06-12 09:39:00,968 - INFO - Generadas 2 alertas
+2026-06-12 09:39:00,984 - INFO - Datos exportados para dashboard
+2026-06-12 09:39:00,984 - INFO - === Ciclo completado: 248 reportes procesados ===
+2026-06-12 09:49:22,364 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 09:49:22,380 - INFO - Base de datos configurada correctamente
+2026-06-12 09:49:22,380 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 09:56:30,244 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 09:56:30,257 - INFO - Base de datos configurada correctamente
+2026-06-12 09:56:30,257 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 09:56:30,257 - INFO - === Iniciando ciclo de extracción ===
+2026-06-12 09:59:01,673 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 09:59:01,680 - INFO - Base de datos configurada correctamente
+2026-06-12 09:59:01,680 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 09:59:01,680 - INFO - === Iniciando ciclo de extracción ===
+2026-06-12 10:03:52,044 - INFO - Extraídos 0 emails nuevos
+2026-06-12 10:03:52,052 - INFO - Generadas 2 alertas
+2026-06-12 10:03:52,078 - INFO - Datos exportados para dashboard
+2026-06-12 10:03:52,078 - INFO - === Ciclo completado: 0 reportes procesados ===
+2026-06-12 10:21:16,921 - ERROR - Error extrayendo emails: command: FETCH => socket error: EOF
+2026-06-12 10:21:16,926 - INFO - Generadas 2 alertas
+2026-06-12 10:21:16,948 - INFO - Datos exportados para dashboard
+2026-06-12 10:21:16,948 - INFO - === Ciclo completado: 0 reportes procesados ===
+2026-06-12 10:49:32,213 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 10:49:32,225 - INFO - Base de datos configurada correctamente
+2026-06-12 10:49:32,225 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 10:49:32,225 - INFO - === Iniciando ciclo de extracción ===
+2026-06-12 10:59:22,051 - INFO - Extraídos 0 emails nuevos
+2026-06-12 10:59:22,059 - INFO - Generadas 2 alertas
+2026-06-12 10:59:22,086 - INFO - Datos exportados para dashboard
+2026-06-12 10:59:22,086 - INFO - === Ciclo completado: 0 reportes procesados ===
+2026-06-12 10:59:25,713 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 10:59:25,722 - INFO - Base de datos configurada correctamente
+2026-06-12 10:59:25,722 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 10:59:25,722 - INFO - === Iniciando ciclo de extracción ===
+2026-06-12 11:07:55,836 - INFO - Extraídos 0 emails nuevos
+2026-06-12 11:07:55,842 - INFO - Generadas 2 alertas
+2026-06-12 11:07:55,871 - INFO - Datos exportados para dashboard
+2026-06-12 11:07:55,871 - INFO - === Ciclo completado: 0 reportes procesados ===
+2026-06-12 11:09:38,622 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 11:09:38,637 - INFO - Base de datos configurada correctamente
+2026-06-12 11:09:38,637 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 11:09:46,820 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-12 11:09:46,825 - INFO - Base de datos configurada correctamente
+2026-06-12 11:09:46,825 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-12 11:09:46,841 - INFO - Datos exportados para dashboard
+2026-06-16 09:55:27,467 - INFO - Credenciales cargadas desde config.secret.json
+2026-06-16 09:55:27,493 - INFO - Base de datos configurada correctamente
+2026-06-16 09:55:27,494 - INFO - Extractor de ventas inicializado (v2.0)
+2026-06-16 09:55:27,494 - INFO - === Iniciando ciclo de extracción ===
+2026-06-16 10:04:19,468 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:19,468 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 Mañana
+2026-06-16 10:04:20,246 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:20,246 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 Mañana
+2026-06-16 10:04:20,958 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:20,958 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 Tarde
+2026-06-16 10:04:21,423 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:21,423 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 Tarde
+2026-06-16 10:04:21,858 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:21,858 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 unico
+2026-06-16 10:04:22,393 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:22,393 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 Mañana
+2026-06-16 10:04:22,845 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:22,845 - INFO - Email extraído: MaxiREST - Fin de turno - 12/06/2026 UNICO
+2026-06-16 10:04:23,752 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:23,752 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 Mañana
+2026-06-16 10:04:24,582 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:24,582 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 Mañana
+2026-06-16 10:04:25,110 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:25,110 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 Tarde
+2026-06-16 10:04:25,524 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:25,524 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 unico
+2026-06-16 10:04:26,298 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:26,298 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 Tarde
+2026-06-16 10:04:27,088 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:27,088 - INFO - Email extraído: MaxiREST - Fin de turno - 13/06/2026 UNICO
+2026-06-16 10:04:27,941 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:27,941 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 Mañana
+2026-06-16 10:04:28,771 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:28,771 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 Mañana
+2026-06-16 10:04:29,577 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:29,577 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 Mañana
+2026-06-16 10:04:30,028 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:30,028 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 Tarde
+2026-06-16 10:04:30,454 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:30,455 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 unico
+2026-06-16 10:04:31,043 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:31,044 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 Tarde
+2026-06-16 10:04:31,492 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:31,492 - INFO - Email extraído: MaxiREST - Fin de turno - 14/06/2026 UNICO
+2026-06-16 10:04:32,284 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:32,285 - INFO - Email extraído: MaxiREST - Fin de turno - 15/06/2026 Mañana
+2026-06-16 10:04:33,057 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:33,057 - INFO - Email extraído: MaxiREST - Fin de turno - 15/06/2026 Tarde
+2026-06-16 10:04:33,876 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:33,876 - INFO - Email extraído: MaxiREST - Fin de turno - 15/06/2026 Tarde
+2026-06-16 10:04:34,748 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:34,748 - INFO - Email extraído: MaxiREST - Fin de turno - 15/06/2026 UNICO
+2026-06-16 10:04:35,476 - INFO - PDF extraído: FINTURNO.PDF
+2026-06-16 10:04:35,476 - INFO - Email extraído: MaxiREST - Fin de turno - 15/06/2026 unico
+2026-06-16 10:04:36,208 - INFO - Extraídos 25 emails nuevos
+2026-06-16 10:04:36,214 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-16 10:04:36,215 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-16 10:04:36,222 - INFO - Datos guardados: COLEGIO - 2026-06-12 (Mañana)
+2026-06-16 10:04:36,236 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,240 - INFO - Guardados 33 productos de GROWLER CAFE - 2026-06-12
+2026-06-16 10:04:36,241 - INFO - Datos extraídos del PDF: GROWLER CAFE (33 productos)
+2026-06-16 10:04:36,242 - INFO - Datos guardados: GROWLER CAFE - 2026-06-12 (Mañana)
+2026-06-16 10:04:36,246 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-16 10:04:36,246 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-16 10:04:36,248 - INFO - Datos guardados: COLEGIO - 2026-06-12 (Tarde)
+2026-06-16 10:04:36,255 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,258 - INFO - Guardados 54 productos de GROWLER CAFE - 2026-06-12
+2026-06-16 10:04:36,258 - INFO - Datos extraídos del PDF: GROWLER CAFE (54 productos)
+2026-06-16 10:04:36,260 - INFO - Datos guardados: GROWLER CAFE - 2026-06-12 (Tarde)
+2026-06-16 10:04:36,264 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-16 10:04:36,264 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-16 10:04:36,266 - INFO - Datos guardados: GG Vol 4 - 2026-06-12 (Unico)
+2026-06-16 10:04:36,274 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,277 - INFO - Guardados 57 productos de GROWLER VIA VIEJA - 2026-06-12
+2026-06-16 10:04:36,278 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (57 productos)
+2026-06-16 10:04:36,279 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-12 (Mañana)
+2026-06-16 10:04:36,284 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-16 10:04:36,286 - INFO - Guardados 8 productos de GG Vol 2 - 2026-06-12
+2026-06-16 10:04:36,287 - INFO - Datos extraídos del PDF: GG Vol 2 (8 productos)
+2026-06-16 10:04:36,288 - INFO - Datos guardados: GG Vol 2 - 2026-06-12 (Unico)
+2026-06-16 10:04:36,293 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,295 - INFO - Guardados 35 productos de GROWLER CAFE - 2026-06-13
+2026-06-16 10:04:36,296 - INFO - Datos extraídos del PDF: GROWLER CAFE (35 productos)
+2026-06-16 10:04:36,297 - INFO - Datos guardados: GROWLER CAFE - 2026-06-13 (Mañana)
+2026-06-16 10:04:36,302 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,303 - INFO - Guardados 15 productos de GROWLER VIA VIEJA - 2026-06-13
+2026-06-16 10:04:36,304 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (15 productos)
+2026-06-16 10:04:36,305 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-13 (Mañana)
+2026-06-16 10:04:36,310 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,313 - INFO - Guardados 61 productos de GROWLER CAFE - 2026-06-13
+2026-06-16 10:04:36,313 - INFO - Datos extraídos del PDF: GROWLER CAFE (61 productos)
+2026-06-16 10:04:36,315 - INFO - Datos guardados: GROWLER CAFE - 2026-06-13 (Tarde)
+2026-06-16 10:04:36,318 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-16 10:04:36,318 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-16 10:04:36,320 - INFO - Datos guardados: GG Vol 4 - 2026-06-13 (Unico)
+2026-06-16 10:04:36,327 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,329 - INFO - Guardados 65 productos de GROWLER VIA VIEJA - 2026-06-13
+2026-06-16 10:04:36,330 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (65 productos)
+2026-06-16 10:04:36,332 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-13 (Tarde)
+2026-06-16 10:04:36,335 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-16 10:04:36,337 - INFO - Guardados 9 productos de GG Vol 2 - 2026-06-13
+2026-06-16 10:04:36,338 - INFO - Datos extraídos del PDF: GG Vol 2 (9 productos)
+2026-06-16 10:04:36,339 - INFO - Datos guardados: GG Vol 2 - 2026-06-13 (Unico)
+2026-06-16 10:04:36,343 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,346 - INFO - Guardados 37 productos de GROWLER CAFE - 2026-06-14
+2026-06-16 10:04:36,346 - INFO - Datos extraídos del PDF: GROWLER CAFE (37 productos)
+2026-06-16 10:04:36,348 - INFO - Datos guardados: GROWLER CAFE - 2026-06-14 (Mañana)
+2026-06-16 10:04:36,353 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,354 - INFO - Guardados 20 productos de GROWLER VIA VIEJA - 2026-06-14
+2026-06-16 10:04:36,355 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (20 productos)
+2026-06-16 10:04:36,356 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-14 (Mañana)
+2026-06-16 10:04:36,360 - INFO - Ubicación identificada por Sucursal: COLEGIO → COLEGIO
+2026-06-16 10:04:36,360 - INFO - Datos extraídos del PDF: COLEGIO (0 productos)
+2026-06-16 10:04:36,361 - INFO - Datos guardados: COLEGIO - 2026-06-14 (Mañana)
+2026-06-16 10:04:36,366 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,369 - INFO - Guardados 55 productos de GROWLER CAFE - 2026-06-14
+2026-06-16 10:04:36,370 - INFO - Datos extraídos del PDF: GROWLER CAFE (55 productos)
+2026-06-16 10:04:36,371 - INFO - Datos guardados: GROWLER CAFE - 2026-06-14 (Tarde)
+2026-06-16 10:04:36,375 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-16 10:04:36,375 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-16 10:04:36,376 - INFO - Datos guardados: GG Vol 4 - 2026-06-14 (Unico)
+2026-06-16 10:04:36,386 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,388 - INFO - Guardados 57 productos de GROWLER VIA VIEJA - 2026-06-14
+2026-06-16 10:04:36,389 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (57 productos)
+2026-06-16 10:04:36,390 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-14 (Tarde)
+2026-06-16 10:04:36,393 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-16 10:04:36,395 - INFO - Guardados 7 productos de GG Vol 2 - 2026-06-14
+2026-06-16 10:04:36,395 - INFO - Datos extraídos del PDF: GG Vol 2 (7 productos)
+2026-06-16 10:04:36,396 - INFO - Datos guardados: GG Vol 2 - 2026-06-14 (Unico)
+2026-06-16 10:04:36,400 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,402 - INFO - Guardados 20 productos de GROWLER CAFE - 2026-06-15
+2026-06-16 10:04:36,403 - INFO - Datos extraídos del PDF: GROWLER CAFE (20 productos)
+2026-06-16 10:04:36,404 - INFO - Datos guardados: GROWLER CAFE - 2026-06-15 (Mañana)
+2026-06-16 10:04:36,409 - INFO - Ubicación identificada por Sucursal: GROWLER → GROWLER CAFE
+2026-06-16 10:04:36,412 - INFO - Guardados 54 productos de GROWLER CAFE - 2026-06-15
+2026-06-16 10:04:36,412 - INFO - Datos extraídos del PDF: GROWLER CAFE (54 productos)
+2026-06-16 10:04:36,413 - INFO - Datos guardados: GROWLER CAFE - 2026-06-15 (Tarde)
+2026-06-16 10:04:36,418 - INFO - Ubicación identificada por Sucursal: GROWLER VV → GROWLER VIA VIEJA
+2026-06-16 10:04:36,419 - INFO - Guardados 15 productos de GROWLER VIA VIEJA - 2026-06-15
+2026-06-16 10:04:36,420 - INFO - Datos extraídos del PDF: GROWLER VIA VIEJA (15 productos)
+2026-06-16 10:04:36,421 - INFO - Datos guardados: GROWLER VIA VIEJA - 2026-06-15 (Tarde)
+2026-06-16 10:04:36,424 - INFO - Ubicación identificada por Sucursal: GG → GG Vol 2
+2026-06-16 10:04:36,426 - INFO - Guardados 6 productos de GG Vol 2 - 2026-06-15
+2026-06-16 10:04:36,426 - INFO - Datos extraídos del PDF: GG Vol 2 (6 productos)
+2026-06-16 10:04:36,428 - INFO - Datos guardados: GG Vol 2 - 2026-06-15 (Unico)
+2026-06-16 10:04:36,431 - INFO - Ubicación identificada por Sucursal: GG Vol 4 → GG Vol 4
+2026-06-16 10:04:36,431 - INFO - Datos extraídos del PDF: GG Vol 4 (0 productos)
+2026-06-16 10:04:36,432 - INFO - Datos guardados: GG Vol 4 - 2026-06-15 (Unico)
+2026-06-16 10:04:36,435 - INFO - Generadas 4 alertas
+2026-06-16 10:04:36,451 - INFO - Datos exportados para dashboard
+2026-06-16 10:04:36,451 - INFO - === Ciclo completado: 25 reportes procesados ===
