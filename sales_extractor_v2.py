@@ -471,7 +471,7 @@ class SalesDataExtractor:
         # Extraer ventas totales - Buscar en sección "RESUMEN DE VENTAS"
         total_match = re.search(r'TOTAL\s+([\d.,]+)\s+(\d+)', text)
         if total_match:
-            sales_str = total_match.group(1).replace('.', '').replace(',', '')
+            sales_str = total_match.group(1).replace('.', '').replace(',', '.')
             data['total_sales'] = float(sales_str)
             data['total_tickets'] = int(total_match.group(2))
         else:
@@ -480,26 +480,26 @@ class SalesDataExtractor:
 
         # Extraer ventas por forma de pago
         efectivo_match = re.search(r'Efectivo\s+([\d.,]+)', text)
-        data['cash_sales'] = float(efectivo_match.group(1).replace('.', '').replace(',', '')) if efectivo_match else 0
+        data['cash_sales'] = float(efectivo_match.group(1).replace('.', '').replace(',', '.')) if efectivo_match else 0
 
         tarjetas_match = re.search(r'Tarjetas\s+([\d.,]+)', text)
-        data['card_sales'] = float(tarjetas_match.group(1).replace('.', '').replace(',', '')) if tarjetas_match else 0
+        data['card_sales'] = float(tarjetas_match.group(1).replace('.', '').replace(',', '.')) if tarjetas_match else 0
 
         transfer_match = re.search(r'Transferencia\s+([\d.,]+)', text)
-        data['transfer_sales'] = float(transfer_match.group(1).replace('.', '').replace(',', '')) if transfer_match else 0
+        data['transfer_sales'] = float(transfer_match.group(1).replace('.', '').replace(',', '.')) if transfer_match else 0
 
         mp_match = re.search(r'MERCADOPAGO\s+([\d.,]+)', text)
-        data['mercadopago_sales'] = float(mp_match.group(1).replace('.', '').replace(',', '')) if mp_match else 0
+        data['mercadopago_sales'] = float(mp_match.group(1).replace('.', '').replace(',', '.')) if mp_match else 0
 
         otros_match = re.search(r'Otros\s+([\d.,]+)', text)
-        data['other_sales'] = float(otros_match.group(1).replace('.', '').replace(',', '')) if otros_match else 0
+        data['other_sales'] = float(otros_match.group(1).replace('.', '').replace(',', '.')) if otros_match else 0
 
         # Extraer ventas por canal
         salon_match = re.search(r'Salón\s+([\d.,]+)', text)
-        data['salon_sales'] = float(salon_match.group(1).replace('.', '').replace(',', '')) if salon_match else 0
+        data['salon_sales'] = float(salon_match.group(1).replace('.', '').replace(',', '.')) if salon_match else 0
 
         mostrador_match = re.search(r'Mostrador\s+([\d.,]+)', text)
-        data['counter_sales'] = float(mostrador_match.group(1).replace('.', '').replace(',', '')) if mostrador_match else 0
+        data['counter_sales'] = float(mostrador_match.group(1).replace('.', '').replace(',', '.')) if mostrador_match else 0
 
         return data
 
@@ -530,7 +530,7 @@ class SalesDataExtractor:
                 code = product_match.group(1)
                 name = product_match.group(2).strip()
                 quantity = float(product_match.group(3))
-                total_str = product_match.group(4).replace('.', '').replace(',', '')
+                total_str = product_match.group(4).replace('.', '').replace(',', '.')
                 total = float(total_str)
 
                 # Filtrar productos del sistema (propinas, menú personal, etc.)
