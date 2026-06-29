@@ -125,15 +125,60 @@ def read_costos_fijos():
     return costos_by_local_month
 
 def read_sueldos():
-    """Lee sueldos por local"""
-    sueldos_by_local = {
-        'GROWLER CAFE': 13868615,
-        'GROWLER VIA VIEJA': 8450628,
-        'COLEGIO': 3369229,
-        'GG Vol 2': 4861570,
-        'GG Vol 4': 7478538
+    """Lee sueldos por local y mes desde liquidaciones de Lila"""
+    sueldos_by_local_month = defaultdict(lambda: defaultdict(float))
+
+    # Datos reales extraídos de RESUMEN LOCALES (enero a marzo confirmados)
+    sueldos_data = {
+        '2026-01': {
+            'GROWLER CAFE': 3527979,
+            'GROWLER VIA VIEJA': 516182,
+            'COLEGIO': 532731,
+            'GG Vol 2': 542600,
+            'GG Vol 4': 0
+        },
+        '2026-02': {
+            'GROWLER CAFE': 3450964,
+            'GROWLER VIA VIEJA': 807768,
+            'COLEGIO': 726796,
+            'GG Vol 2': 511165,
+            'GG Vol 4': 0
+        },
+        '2026-03': {
+            'GROWLER CAFE': 3612565,
+            'GROWLER VIA VIEJA': 821565,
+            'COLEGIO': 734062,
+            'GG Vol 2': 516274,
+            'GG Vol 4': 0
+        },
+        '2026-04': {  # Placeholder: usar marzo hasta tener datos de abril
+            'GROWLER CAFE': 3612565,
+            'GROWLER VIA VIEJA': 821565,
+            'COLEGIO': 734062,
+            'GG Vol 2': 516274,
+            'GG Vol 4': 0
+        },
+        '2026-05': {  # Placeholder: usar marzo hasta tener datos de mayo
+            'GROWLER CAFE': 3612565,
+            'GROWLER VIA VIEJA': 821565,
+            'COLEGIO': 734062,
+            'GG Vol 2': 516274,
+            'GG Vol 4': 0
+        },
+        '2026-06': {  # Placeholder: usar marzo hasta tener datos de junio
+            'GROWLER CAFE': 3612565,
+            'GROWLER VIA VIEJA': 821565,
+            'COLEGIO': 734062,
+            'GG Vol 2': 516274,
+            'GG Vol 4': 0
+        }
     }
-    return sueldos_by_local
+
+    for month, locals_dict in sueldos_data.items():
+        for local, amount in locals_dict.items():
+            sueldos_by_local_month[local][month] = amount
+
+    return sueldos_by_local_month
 
 def read_ingresos():
     """Lee ingresos de la BD SQLite"""
@@ -176,7 +221,7 @@ def calculate_margins():
             ing = ingresos[local].get(month, 0)
             cmv_val = cmv[local].get(month, 0)
             costos_val = costos[local].get(month, 0)
-            sueldos_val = sueldos.get(local, 0) / 6  # Promedio mensual
+            sueldos_val = sueldos[local].get(month, 0)  # Datos reales por mes
 
             margen = ing - cmv_val - costos_val - sueldos_val
             margen_pct = (margen / ing * 100) if ing > 0 else 0
