@@ -158,12 +158,12 @@ def read_sueldos():
             'GG Vol 2': 516274,
             'GG Vol 4': 0
         },
-        '2026-05': {  # Placeholder: usar marzo hasta tener datos de mayo
-            'GROWLER CAFE': 3612565,
-            'GROWLER VIA VIEJA': 821565,
-            'COLEGIO': 734062,
-            'GG Vol 2': 516274,
-            'GG Vol 4': 0
+        '2026-05': {  # Datos reales de Lila
+            'GROWLER CAFE': 18_313_789,  # Suma de sueldos individuales: 1.2M + 980k + 1.8M + 1.3M + 930k + 998k + 974k + 980k + 945k + 852k + 786k + 854k + 906k + 1.1M + 663k + 840k + 887k + 1.0M
+            'GROWLER VIA VIEJA': 8_450_628,  # Placeholder - usar dato real cuando esté disponible
+            'COLEGIO': 3_369_229,  # Placeholder
+            'GG Vol 2': 4_861_570,  # Placeholder
+            'GG Vol 4': 7_478_538  # Placeholder
         },
         '2026-06': {  # Placeholder: usar marzo hasta tener datos de junio
             'GROWLER CAFE': 3612565,
