@@ -426,6 +426,24 @@ class SalesDataExtractor:
 
         return "unknown"
 
+    def parse_number(self, num_str: str) -> float:
+        """Parsear número en cualquier formato (argentino o decimal)"""
+        if not num_str or num_str.strip() in ['', '-']:
+            return 0.0
+
+        num_str = num_str.replace('$', '').strip()
+
+        # Si tiene comas, es formato argentino: 7.061.334,00
+        if ',' in num_str:
+            num_str = num_str.replace('.', '').replace(',', '.')
+        # Si solo tiene un punto (sin comas), es decimal normal: 451500.00
+        # Dejar como está
+
+        try:
+            return float(num_str)
+        except:
+            return 0.0
+
     def parse_sales_text(self, text: str) -> Dict:
         """Parsear datos de ventas del texto del PDF"""
         data = {}
@@ -471,8 +489,7 @@ class SalesDataExtractor:
         # Extraer ventas totales - Buscar en sección "RESUMEN DE VENTAS"
         total_match = re.search(r'TOTAL\s+([\d.,]+)\s+(\d+)', text)
         if total_match:
-            sales_str = total_match.group(1).replace('.', '').replace(',', '.')
-            data['total_sales'] = float(sales_str)
+            data['total_sales'] = self.parse_number(total_match.group(1))
             data['total_tickets'] = int(total_match.group(2))
         else:
             data['total_sales'] = 0
@@ -480,26 +497,26 @@ class SalesDataExtractor:
 
         # Extraer ventas por forma de pago
         efectivo_match = re.search(r'Efectivo\s+([\d.,]+)', text)
-        data['cash_sales'] = float(efectivo_match.group(1).replace('.', '').replace(',', '.')) if efectivo_match else 0
+        data['cash_sales'] = self.parse_number(efectivo_match.group(1)) if efectivo_match else 0
 
         tarjetas_match = re.search(r'Tarjetas\s+([\d.,]+)', text)
-        data['card_sales'] = float(tarjetas_match.group(1).replace('.', '').replace(',', '.')) if tarjetas_match else 0
+        data['card_sales'] = self.parse_number(tarjetas_match.group(1)) if tarjetas_match else 0
 
         transfer_match = re.search(r'Transferencia\s+([\d.,]+)', text)
-        data['transfer_sales'] = float(transfer_match.group(1).replace('.', '').replace(',', '.')) if transfer_match else 0
+        data['transfer_sales'] = self.parse_number(transfer_match.group(1)) if transfer_match else 0
 
         mp_match = re.search(r'MERCADOPAGO\s+([\d.,]+)', text)
-        data['mercadopago_sales'] = float(mp_match.group(1).replace('.', '').replace(',', '.')) if mp_match else 0
+        data['mercadopago_sales'] = self.parse_number(mp_match.group(1)) if mp_match else 0
 
         otros_match = re.search(r'Otros\s+([\d.,]+)', text)
-        data['other_sales'] = float(otros_match.group(1).replace('.', '').replace(',', '.')) if otros_match else 0
+        data['other_sales'] = self.parse_number(otros_match.group(1)) if otros_match else 0
 
         # Extraer ventas por canal
         salon_match = re.search(r'Salón\s+([\d.,]+)', text)
-        data['salon_sales'] = float(salon_match.group(1).replace('.', '').replace(',', '.')) if salon_match else 0
+        data['salon_sales'] = self.parse_number(salon_match.group(1)) if salon_match else 0
 
         mostrador_match = re.search(r'Mostrador\s+([\d.,]+)', text)
-        data['counter_sales'] = float(mostrador_match.group(1).replace('.', '').replace(',', '.')) if mostrador_match else 0
+        data['counter_sales'] = self.parse_number(mostrador_match.group(1)) if mostrador_match else 0
 
         return data
 
@@ -530,8 +547,7 @@ class SalesDataExtractor:
                 code = product_match.group(1)
                 name = product_match.group(2).strip()
                 quantity = float(product_match.group(3))
-                total_str = product_match.group(4).replace('.', '').replace(',', '.')
-                total = float(total_str)
+                total = self.parse_number(product_match.group(4))
 
                 # Filtrar productos del sistema (propinas, menú personal, etc.)
                 if code not in ['269', '654'] and quantity > 0:
