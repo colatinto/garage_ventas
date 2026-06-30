@@ -1,0 +1,55 @@
+,,
+Para que se usa el archivo?,,
+,,
+" - Se utilizará para el registro de todo ingreso de mercadería al local, informando el proveedor y los detalles incluidos en el comprobante que acompaña la descarga.",,
+ - Los Locales además informarán Pagos y otros Gastos Varios que se gestionen directamente esde el local.,,
+" - Administración utilizará el archivo para la gestión de Pagos centralizados; el control de CCs de proveedores y para la consolidación de Costos, Gastos y Movimientos de Caja y Bancos.",,
+,,
+Quien completa el archivo?,,
+,,
+ - El encargado de turno de cada local al momento de Recibir mercadería y/o efectuar un pago desde el local,,
+ - Administración completará todos los pagos que no hayan sido cancelados desde el local.,,
+,,
+Como completar el archivo?,,
+,,
+1) SE REALIZA UN REGISTRO COMPLETO Y CONTINUADO EN EL ARCHIVO DEL LOCAL CORRESPONDIENTE (Hoja con nombre del local),,
+,,
+Campos Archivo,Forma registro,Detalles
+,,
+Col. A - PROVEEDOR,Seleccionar opción,"Si el Proveedor / Gasto Vario no se encuentra, registrar bajo ""Gastos Varios - Otros"" , dejar detalles en comentarios y dar aviso a Lila"
+Col B - IVA PROVEEDOR,Automático,Se completa solo en base al tipo de comprobante emitido por el proveedor y alicuota de IVA correspondiente
+Col C - FECHA RECEPCIÓN MERCADERÍA,Registro manual,Especial atención a los formatos y tipeos de fechas (Dia/Mes/año)
+Col D - COMPROBANTE,Seleccionar opción,Si no hay comprobante de ningun tipo dejarlo informado. Si falta la factura A dejarlo en comentarios. 
+Col E - NÚMERO COMPROBANTE,Registro manual,
+Col F - TOTAL COMPROBANTE $,Registro manual,
+Col G - IVA $,Automático,Se completa solo en base al tipo de comprobante emitido por el proveedor y alicuota de IVA correspondiente
+Col H - TOTAL NETO IVA $,Automático,Se completa solo el cálculo del Total del comprobante - IVA 
+Col I - Ds Pago convenidos,Automático,Se completa solo en base al acuerdo con el proveedor. 0 (cero) días de CC son casos que reciben pago contra entrega de mercadería o factura
+Col J - VENCIMIENTO,Automático,Se completa solo considerando el día de entrega de la mercadería y los días de CC acordados
+Col K - FECHA PAGO,Registro manual,Pagos desde el local completa el Local / Resto pagos completa Flor o Guille. En el caso de uso de Postnets de proveedores Flor registrará la fecha de compensación
+Col L - MONTO PAGO,Registro manual,Pagos desde el local completa el Local / Resto pagos completa Flor o Guille. En caso de pagos parcializados actualizar la fecha de pago cuando se termina de cancelar
+Col M - PENDIENTE PAGO,Automático,Se completa solo en caso que el pago haya sido parcial. En tales casos actualizar el monto cuando se termine de cancelar.
+Col. N - ESTADO,Automático,Se completa solo considerando el día en que se abre el archivo y la fecha de vencimiento.
+Col O - FORMA PAGO,Seleccionar opción,
+Col P - COMENTARIOS,Registro manual,Utilizar si se precisa dar detalle o queda algo pendiente por parte del proveedor
+Col Q - Linea P&L,Automático,Se completa solo y es de Uso exclusivo Administración. 
+,,
+Gastos varios para seleccionar,,
+,,
+Se utilizarán las siguientes categorias para registrar pagos en efectivo a proveedores esporádicos gestionados directamente desde el Local. ,,
+" - En cada caso se seleccionará en la Col. A ""Proveedor"" el tipo de gasto considerando la finalidad del mismo según se detalla debajo",,
+" - Se utilizará la Col. P ""Comentarios"" para informar detalles del mismo.",,
+,,
+Gastos Varios - Mantenimiento Local --------------------->,"Para Ferreteria, Repuestos, Mano de obra plomería/cerrajería/pintura/arreglos/otros, Service de artefactos, Insumos varios de mantenimiento",
+Gastos Varios - Stock Mercadería Local ----------------->,"Para Alimentos y Bebidas necesarios para el Local adquiridos como excepción en supermercados, almacenes o verdulerías",
+Gastos Varios - Descartables y Limpieza ----------------->,"Para servicios de limpieza de salón, productos de limpieza, descartables adquiridos como excepción en supermercados u otros proveedores",
+Gastos Varios - Cadetería / Delivery Growler ------------>,Para Servicios cadetería y envíos para uso de Locales ,
+Gastos Varios - Propinas ------------------------------------->,Para Propinas tarjetas o MP (sujeto a politicas internas de personal),
+Gastos Varios - Viaticos empleados ------------------------>,"Para Gastos de transporte, Uber, Taxis u otros consumos de personal a cargo de Growler (ejemplo Farmacia)",
+Gastos Varios - Eventos -------------------------------------->,Para cualquier egreso por pago en efectivo  a proveedores de Eventos siempre con el detalle en comentarios,
+Gastos Varios - Imprenta y Librería ------------------------>,Para impresión de cartas u otros servicios imprentas e insumos de librería para los locales,
+Gastos Varios - Otros ----------------------------------------->,Para cualquier categoría de gasto o proveedor habitual no listado. Siempre dar aviso a Lila,
+,,
+2) P&L y FF - muestra un resumen de los costos y gastos varios en $ sin IVA de cada local y los movimientos de fondos por pagos efectuados,,
+Uso Exclusivo Administración,,
+Ambos cuadros: hay que actualizar las tablas dinámicas y seleccionar fechas adecuadas,,

@@ -1,54 +1,54 @@
 {
-  "last_updated": "2026-06-29T13:22:36.532199",
+  "last_updated": "2026-06-30T10:56:06.394270",
   "margins": {
     "GROWLER CAFE": {
       "2026-01": {
-        "ingresos": 7061334000.0,
+        "ingresos": 70613340.0,
         "cmv": 23633502.57,
         "costos_fijos": 1212685.5,
         "sueldos": 3527979,
-        "margen": 7032959832.93,
-        "margen_pct": 99.6
+        "margen": 42239172.93,
+        "margen_pct": 59.82
       },
       "2026-02": {
-        "ingresos": 7134922800.0,
+        "ingresos": 71349228.0,
         "cmv": 25557923.58,
         "costos_fijos": 1212685.5,
         "sueldos": 3450964,
-        "margen": 7104701226.92,
-        "margen_pct": 99.58
+        "margen": 41127654.92,
+        "margen_pct": 57.64
       },
       "2026-03": {
-        "ingresos": 7925236700.0,
+        "ingresos": 79252367.0,
         "cmv": 28947372.45,
         "costos_fijos": 1212685.5,
         "sueldos": 3612565,
-        "margen": 7891464077.05,
-        "margen_pct": 99.57
+        "margen": 45479744.05,
+        "margen_pct": 57.39
       },
       "2026-04": {
-        "ingresos": 8730646488.0,
+        "ingresos": 87306464.88,
         "cmv": 28033555.49,
         "costos_fijos": 1212685.5,
         "sueldos": 3612565,
-        "margen": 8697787682.01,
-        "margen_pct": 99.62
+        "margen": 54447658.89,
+        "margen_pct": 62.36
       },
       "2026-05": {
-        "ingresos": 9091367298.0,
+        "ingresos": 90913672.98,
         "cmv": 25573755.12,
         "costos_fijos": 1212685.5,
         "sueldos": 3612565,
-        "margen": 9060968292.38,
-        "margen_pct": 99.67
+        "margen": 60514667.36,
+        "margen_pct": 66.56
       },
       "2026-06": {
-        "ingresos": 7975264500.0,
+        "ingresos": 82399055.0,
         "cmv": 23537691.03,
         "costos_fijos": 1212685.5,
         "sueldos": 3612565,
-        "margen": 7946901558.47,
-        "margen_pct": 99.64
+        "margen": 54036113.47,
+        "margen_pct": 65.58
       }
     },
     "GROWLER VIA VIEJA": {
@@ -61,52 +61,52 @@
         "margen_pct": 0
       },
       "2026-01": {
-        "ingresos": 4888594000.0,
+        "ingresos": 48885940.0,
         "cmv": 12952684.96,
         "costos_fijos": 1602239.67,
         "sueldos": 516182,
-        "margen": 4873522893.37,
-        "margen_pct": 99.69
+        "margen": 33814833.37,
+        "margen_pct": 69.17
       },
       "2026-02": {
-        "ingresos": 4149215000.0,
+        "ingresos": 41492150.0,
         "cmv": 16123494.06,
         "costos_fijos": 1602239.67,
         "sueldos": 807768,
-        "margen": 4130681498.27,
-        "margen_pct": 99.55
+        "margen": 22958648.27,
+        "margen_pct": 55.33
       },
       "2026-03": {
-        "ingresos": 5008264000.0,
+        "ingresos": 50082640.0,
         "cmv": 18361035.53,
         "costos_fijos": 1602239.67,
         "sueldos": 821565,
-        "margen": 4987479159.8,
-        "margen_pct": 99.58
+        "margen": 29297799.8,
+        "margen_pct": 58.5
       },
       "2026-04": {
-        "ingresos": 5701259650.0,
+        "ingresos": 57012596.5,
         "cmv": 15810879.25,
         "costos_fijos": 1602239.67,
         "sueldos": 821565,
-        "margen": 5683024966.08,
-        "margen_pct": 99.68
+        "margen": 38777912.58,
+        "margen_pct": 68.02
       },
       "2026-05": {
-        "ingresos": 4932427600.0,
+        "ingresos": 49324276.0,
         "cmv": 17294142.79,
         "costos_fijos": 1602239.67,
         "sueldos": 821565,
-        "margen": 4912709652.54,
-        "margen_pct": 99.6
+        "margen": 29606328.54,
+        "margen_pct": 60.02
       },
       "2026-06": {
-        "ingresos": 4617198500.0,
+        "ingresos": 47796685.0,
         "cmv": 14698284.57,
         "costos_fijos": 1602239.67,
         "sueldos": 821565,
-        "margen": 4600076410.76,
-        "margen_pct": 99.63
+        "margen": 30674595.76,
+        "margen_pct": 64.18
       },
       "2026-10": {
         "ingresos": 0,
@@ -119,110 +119,110 @@
     },
     "COLEGIO": {
       "2026-01": {
-        "ingresos": 425423000.0,
+        "ingresos": 4254230.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 532731,
-        "margen": 424633616.0,
-        "margen_pct": 99.81
+        "margen": 3464846.0,
+        "margen_pct": 81.44
       },
       "2026-02": {
-        "ingresos": 876935500.0,
+        "ingresos": 8769355.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 726796,
-        "margen": 875952051.0,
-        "margen_pct": 99.89
+        "margen": 7785906.0,
+        "margen_pct": 88.79
       },
       "2026-03": {
-        "ingresos": 1530568500.0,
+        "ingresos": 15305685.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 734062,
-        "margen": 1529577785.0,
-        "margen_pct": 99.94
+        "margen": 14314970.0,
+        "margen_pct": 93.53
       },
       "2026-04": {
-        "ingresos": 1420071100.0,
+        "ingresos": 14200711.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 734062,
-        "margen": 1419080385.0,
-        "margen_pct": 99.93
+        "margen": 13209996.0,
+        "margen_pct": 93.02
       },
       "2026-05": {
-        "ingresos": 1604259400.0,
+        "ingresos": 16042594.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 734062,
-        "margen": 1603268685.0,
-        "margen_pct": 99.94
+        "margen": 15051879.0,
+        "margen_pct": 93.82
       },
       "2026-06": {
-        "ingresos": 1335873500.0,
+        "ingresos": 13809955.0,
         "cmv": 0,
         "costos_fijos": 256653.0,
         "sueldos": 734062,
-        "margen": 1334882785.0,
-        "margen_pct": 99.93
+        "margen": 12819240.0,
+        "margen_pct": 92.83
       }
     },
     "GG Vol 2": {
       "2025-12": {
-        "ingresos": 165750000.0,
+        "ingresos": 1657500.0,
         "cmv": 21325900.68,
         "costos_fijos": 0,
         "sueldos": 0,
-        "margen": 144424099.32,
-        "margen_pct": 87.13
+        "margen": -19668400.68,
+        "margen_pct": -1186.63
       },
       "2026-01": {
-        "ingresos": 4017442002.0,
+        "ingresos": 40174420.02,
         "cmv": 16873051.07,
         "costos_fijos": 1128748.67,
         "sueldos": 542600,
-        "margen": 3998897602.26,
-        "margen_pct": 99.54
+        "margen": 21630020.28,
+        "margen_pct": 53.84
       },
       "2026-02": {
-        "ingresos": 3590487003.0,
+        "ingresos": 35904870.03,
         "cmv": 16506535.45,
         "costos_fijos": 1128748.67,
         "sueldos": 511165,
-        "margen": 3572340553.88,
-        "margen_pct": 99.49
+        "margen": 17758420.91,
+        "margen_pct": 49.46
       },
       "2026-03": {
-        "ingresos": 3192250003.0,
+        "ingresos": 31922500.03,
         "cmv": 19173816.9,
         "costos_fijos": 1128748.67,
         "sueldos": 516274,
-        "margen": 3171431163.43,
-        "margen_pct": 99.35
+        "margen": 11103660.46,
+        "margen_pct": 34.78
       },
       "2026-04": {
-        "ingresos": 3699905005.0,
+        "ingresos": 36999050.05,
         "cmv": 19498264.52,
         "costos_fijos": 1128748.67,
         "sueldos": 516274,
-        "margen": 3678761717.81,
-        "margen_pct": 99.43
+        "margen": 15855762.86,
+        "margen_pct": 42.85
       },
       "2026-05": {
-        "ingresos": 3073020005.0,
+        "ingresos": 30730200.05,
         "cmv": 11362215.38,
         "costos_fijos": 1128748.67,
         "sueldos": 516274,
-        "margen": 3060012766.95,
-        "margen_pct": 99.58
+        "margen": 17722962.0,
+        "margen_pct": 57.67
       },
       "2026-06": {
-        "ingresos": 3287519999.0,
+        "ingresos": 32875199.99,
         "cmv": 12611969.06,
         "costos_fijos": 1128748.67,
         "sueldos": 516274,
-        "margen": 3273263007.27,
-        "margen_pct": 99.57
+        "margen": 18618208.26,
+        "margen_pct": 56.63
       },
       "2026-09": {
         "ingresos": 0,
@@ -235,52 +235,52 @@
     },
     "GG Vol 4": {
       "2026-01": {
-        "ingresos": 4964482500.0,
+        "ingresos": 49644825.0,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 4963125542.0,
-        "margen_pct": 99.97
+        "margen": 48287867.0,
+        "margen_pct": 97.27
       },
       "2026-02": {
-        "ingresos": 4098347500.0,
+        "ingresos": 40983475.0,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 4096990542.0,
-        "margen_pct": 99.97
+        "margen": 39626517.0,
+        "margen_pct": 96.69
       },
       "2026-03": {
-        "ingresos": 3641475002.0,
+        "ingresos": 36414750.02,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 3640118044.0,
-        "margen_pct": 99.96
+        "margen": 35057792.02,
+        "margen_pct": 96.27
       },
       "2026-04": {
-        "ingresos": 3140263889.0,
+        "ingresos": 31402638.89,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 3138906931.0,
-        "margen_pct": 99.96
+        "margen": 30045680.89,
+        "margen_pct": 95.68
       },
       "2026-05": {
-        "ingresos": 2969198550.0,
+        "ingresos": 29691985.5,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 2967841592.0,
-        "margen_pct": 99.95
+        "margen": 28335027.5,
+        "margen_pct": 95.43
       },
       "2026-06": {
-        "ingresos": 2707814500.0,
+        "ingresos": 27462395.0,
         "cmv": 0,
         "costos_fijos": 1356958.0,
         "sueldos": 0,
-        "margen": 2706457542.0,
-        "margen_pct": 99.95
+        "margen": 26105437.0,
+        "margen_pct": 95.06
       }
     }
   }

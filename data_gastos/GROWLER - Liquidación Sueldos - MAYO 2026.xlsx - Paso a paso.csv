@@ -1,0 +1,23 @@
+
+Para que se usa el archivo?
+
+ - Para calcular el total de sueldos y jornales a pagar de acuerdo a la categoría y valor hora definidos por RRHH.
+" - Este archivo funcionará como la única fuente de datos que utilizará RRHH para enviar mensualmente a Administración. Administración tomará este archivo y calculará los saldos finales a pagar a cada empleado considerando las novedades pagadas, las pendientes de pago y las liquidaciones por recibo de sueldo."
+
+Aclaraciones:
+"Liquidaciones finales, Vacaciones, SAC y Sueldos Fijos (Ej. Gte/Encargados de local): los cálculos se realizaran por fuera y también serán registrados por Administración. 
+Novedad! Anteriormente registrabamos estos conceptos en el Template ""Costos Fijos GROWLER - MesXX"", en esta nueva versión la Col. X está dispuesta para capturar este dato. "
+"No van viaticos (transportes y otros) - este tipo de gasto queda registrado en el template ""FC-Remitos LOCALXX"" y se compensa directamente en el local."
+
+Quien completa el archivo?
+
+" - RRHH una vez cerrado el ciclo de validaciones de los templates ""Template Hs Reales - Pagos Personal "" de todos los locales."
+
+Como completar el archivo?
+
+"1) En la pestaña ""RESUMEN LOCALES"" se completa la celda B2 con el mes correspondiente y se pega, en valor y de manera continuada desde la Col. D, la pestaña ""Resumen"" de los templates ""Hs Reales - Pagos Personal"" de cada local. "
+"2) En la pestaña ""RRHH Valor Hora"" se pega en la Col. A y B  la Col. A y B de la pestaña ""Base empleados"" del template ""Hs Reales - Pagos Personal"" de cada local. Y se asigna/actualiza la categoría de la persona. 
+Novedad! El template ""Hs Reales - Pagos Personal"" ahora tiene una sección definida para el STAFF del local (aparte de eventuales o reemplazos). Por lo tanto, sólo se debe pegar esa sección para el cálculo de las horas a pagar."
+"3) Se actualiza el valor hora para cada categoría en la Col. F de la pestaña ""RRHH Valor Hora"""
+"4) En la pestaña ""RESUMEN LOCALES"" Col. A a Col. C quedarán automaticamente asignadas las categorias, valor hora y total a pagar por horas trabajadas de cada empleado."
+"5) Administración deberá considerar la Columa V a la Z de la pestaña ""RESUMEN LOCALES"" para actualizar datos y controlar los cálculos de saldos a pagar a cada empleado."
