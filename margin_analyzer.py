@@ -128,49 +128,50 @@ def read_sueldos():
     """Lee sueldos por local y mes desde liquidaciones de Lila"""
     sueldos_by_local_month = defaultdict(lambda: defaultdict(float))
 
-    # Datos reales extraídos de RESUMEN LOCALES (enero a marzo confirmados)
+    # Datos extraídos de RESUMEN LOCALES (enero-mayo, limpiados de errores de data entry)
+    # Nota: Marzo tenía error en Marcela Giunta ($47.2M), Abril en Dante Rosso ($45.8M) - se descartaron como outliers
     sueldos_data = {
         '2026-01': {
-            'GROWLER CAFE': 3527979,
-            'GROWLER VIA VIEJA': 516182,
-            'COLEGIO': 532731,
-            'GG Vol 2': 542600,
-            'GG Vol 4': 0
+            'GROWLER CAFE': 19_851_730,
+            'GROWLER VIA VIEJA': 7_915_053,
+            'COLEGIO': 2_791_009,
+            'GG Vol 2': 2_661_731,
+            'GG Vol 4': 6_564_750
         },
         '2026-02': {
-            'GROWLER CAFE': 3450964,
-            'GROWLER VIA VIEJA': 807768,
-            'COLEGIO': 726796,
-            'GG Vol 2': 511165,
-            'GG Vol 4': 0
+            'GROWLER CAFE': 16_108_698,
+            'GROWLER VIA VIEJA': 7_611_344,
+            'COLEGIO': 2_220_125,
+            'GG Vol 2': 2_320_000,
+            'GG Vol 4': 7_508_750
         },
         '2026-03': {
-            'GROWLER CAFE': 3612565,
-            'GROWLER VIA VIEJA': 821565,
-            'COLEGIO': 734062,
-            'GG Vol 2': 516274,
-            'GG Vol 4': 0
+            'GROWLER CAFE': 20_359_825,
+            'GROWLER VIA VIEJA': 9_517_565,
+            'COLEGIO': 4_100_839,
+            'GG Vol 2': 2_918_499,
+            'GG Vol 4': 7_039_350
         },
-        '2026-04': {  # Placeholder: usar marzo hasta tener datos de abril
-            'GROWLER CAFE': 3612565,
-            'GROWLER VIA VIEJA': 821565,
-            'COLEGIO': 734062,
-            'GG Vol 2': 516274,
-            'GG Vol 4': 0
+        '2026-04': {
+            'GROWLER CAFE': 17_992_743,
+            'GROWLER VIA VIEJA': 9_015_304,
+            'COLEGIO': 3_905_792,
+            'GG Vol 2': 1_300_000,
+            'GG Vol 4': 8_073_450
         },
-        '2026-05': {  # Datos reales de Lila
-            'GROWLER CAFE': 18_313_789,  # Suma de sueldos individuales: 1.2M + 980k + 1.8M + 1.3M + 930k + 998k + 974k + 980k + 945k + 852k + 786k + 854k + 906k + 1.1M + 663k + 840k + 887k + 1.0M
-            'GROWLER VIA VIEJA': 8_450_628,  # Placeholder - usar dato real cuando esté disponible
-            'COLEGIO': 3_369_229,  # Placeholder
-            'GG Vol 2': 4_861_570,  # Placeholder
-            'GG Vol 4': 7_478_538  # Placeholder
+        '2026-05': {
+            'GROWLER CAFE': 19_306_289,
+            'GROWLER VIA VIEJA': 8_508_851,
+            'COLEGIO': 3_951_229,
+            'GG Vol 2': 1_300_000,
+            'GG Vol 4': 7_215_150
         },
-        '2026-06': {  # Placeholder: usar marzo hasta tener datos de junio
-            'GROWLER CAFE': 3612565,
-            'GROWLER VIA VIEJA': 821565,
-            'COLEGIO': 734062,
-            'GG Vol 2': 516274,
-            'GG Vol 4': 0
+        '2026-06': {  # Placeholder: usar mayo como referencia hasta recibir datos de junio
+            'GROWLER CAFE': 19_306_289,
+            'GROWLER VIA VIEJA': 8_508_851,
+            'COLEGIO': 3_951_229,
+            'GG Vol 2': 1_300_000,
+            'GG Vol 4': 7_215_150
         }
     }
 
