@@ -104,13 +104,12 @@ def read_fc_remitos():
 def read_costos_fijos():
     """Lee costos fijos por local y mes desde COSTOS FIJOS Y OG
 
-    Nota: Incluye costos directos de cada local + ADM Central.
-    ADM Central está en línea separada - se podría distribuir proporcionalmente a ingresos si se necesita.
+    Distribuye ADM Central según: MORENO 40%, VIA VIEJA 30%, COLEGIO 20%, GG2 5%, GG4 5%
     """
     costos_by_local_month = defaultdict(lambda: defaultdict(float))
 
     # Datos extraídos de 'COSTOS FIJOS Y OG' sheet
-    # Incluye: locales + ADM Central como línea separada
+    # Locales + ADM Central por distribuir
     costos_data = {
         '2026-01': {
             'GROWLER CAFE': 0,
@@ -162,11 +161,23 @@ def read_costos_fijos():
         }
     }
 
+    # Distribución de ADM Central
+    adm_distribution = {
+        'GROWLER CAFE': 0.40,
+        'GROWLER VIA VIEJA': 0.30,
+        'COLEGIO': 0.20,
+        'GG Vol 2': 0.05,
+        'GG Vol 4': 0.05
+    }
+
     for month, locals_dict in costos_data.items():
+        adm_amount = locals_dict.get('ADM Central', 0)
+
         for local, amount in locals_dict.items():
-            # Solo sumar costos de locales, no ADM Central (se maneja por separado)
             if local != 'ADM Central':
-                costos_by_local_month[local][month] = amount
+                # Sumar costos directos + porción de ADM Central
+                adm_portion = adm_amount * adm_distribution.get(local, 0)
+                costos_by_local_month[local][month] = amount + adm_portion
 
     return costos_by_local_month
 
