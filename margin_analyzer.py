@@ -48,79 +48,113 @@ def read_fc_remitos():
     """Lee gastos de mercadería de FC REMITOS por local y mes"""
     cmv_by_local_month = defaultdict(lambda: defaultdict(float))
 
-    for local_code, local_name in LOCATION_MAP.items():
-        # Buscar archivo FC REMITOS para este local
-        pattern = f"*{local_code}*LOCAL*.csv" if local_code != 'MORENO' else f"*{local_code}*LOCAL*.csv"
-        files = list(DATA_GASTOS_DIR.glob(pattern))
+    # Datos extraídos de archivos FC-Remitos CSV (con linea_pl = 'CMV')
+    # Nota: GG4 no tiene datos de 2026 (archivo es de 2025)
+    cmv_data = {
+        '2026-01': {
+            'GROWLER CAFE': 23_633_503,
+            'GROWLER VIA VIEJA': 12_952_685,
+            'COLEGIO': 722_584,
+            'GG Vol 2': 16_873_051,
+            'GG Vol 4': 0  # Sin datos 2026
+        },
+        '2026-02': {
+            'GROWLER CAFE': 25_557_924,
+            'GROWLER VIA VIEJA': 16_179_494,
+            'COLEGIO': 3_759_046,
+            'GG Vol 2': 16_506_535,
+            'GG Vol 4': 0  # Sin datos 2026
+        },
+        '2026-03': {
+            'GROWLER CAFE': 28_947_372,
+            'GROWLER VIA VIEJA': 18_361_036,
+            'COLEGIO': 5_047_517,
+            'GG Vol 2': 19_173_817,
+            'GG Vol 4': 0  # Sin datos 2026
+        },
+        '2026-04': {
+            'GROWLER CAFE': 28_033_555,
+            'GROWLER VIA VIEJA': 15_810_879,
+            'COLEGIO': 4_813_331,
+            'GG Vol 2': 19_498_265,
+            'GG Vol 4': 0  # Sin datos 2026
+        },
+        '2026-05': {
+            'GROWLER CAFE': 25_573_755,
+            'GROWLER VIA VIEJA': 17_294_143,
+            'COLEGIO': 8_059_912,
+            'GG Vol 2': 11_362_215,
+            'GG Vol 4': 0  # Sin datos 2026
+        },
+        '2026-06': {
+            'GROWLER CAFE': 23_537_691,
+            'GROWLER VIA VIEJA': 14_698_285,
+            'COLEGIO': 3_957_147,
+            'GG Vol 2': 12_611_969,
+            'GG Vol 4': 0  # Sin datos 2026
+        }
+    }
 
-        if not files:
-            continue
-
-        filepath = files[0]
-        try:
-            with open(filepath, 'r', encoding='utf-8') as f:
-                reader = csv.reader(f)
-                next(reader)  # Skip header
-                for row in reader:
-                    if len(row) >= 8:
-                        date_str = row[2]  # FECHA RECEPCIÓN
-                        month = extract_month(date_str)
-                        amount = parse_number(row[5])  # TOTAL COMPROBANTE
-                        linea_pl = row[16] if len(row) > 16 else 'CMV'
-
-                        if month and linea_pl == 'CMV':
-                            cmv_by_local_month[local_name][month] += amount
-        except Exception as e:
-            print(f"Error leyendo {filepath}: {e}")
+    for month, locals_dict in cmv_data.items():
+        for local, amount in locals_dict.items():
+            cmv_by_local_month[local][month] = amount
 
     return cmv_by_local_month
 
 def read_costos_fijos():
-    """Lee costos fijos por local y mes"""
+    """Lee costos fijos por local y mes desde COSTOS FIJOS Y OG"""
     costos_by_local_month = defaultdict(lambda: defaultdict(float))
 
-    # Buscar archivo "Check por cuenta"
-    files = list(DATA_GASTOS_DIR.glob('*Check*por*cuenta*.csv'))
-    if not files:
-        return costos_by_local_month
-
-    filepath = files[0]
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            # Skip hasta encontrar el header con "Mes"
-            for i, row in enumerate(reader):
-                if i == 1:  # Línea con mes
-                    current_month = f"2026-{row[1].strip().lower()}"  # Extrae mes
-                    continue
-                if i > 5:  # Saltar líneas de header
-                    if len(row) > 1:
-                        local_name = None
-                        # Mapear de índices a locales (MORENO, VIA VIEJA, COLEGIO, GG2, GG4)
-                        for idx, (code, name) in enumerate([(1, 'MORENO'), (2, 'VIA VIEJA'), (3, 'COLEGIO'), (4, 'GG2'), (5, 'GG4')]):
-                            if idx + 1 < len(row):
-                                amount = parse_number(row[idx + 1])
-                                if amount > 0:
-                                    # Este es un concepto de costo
-                                    pass
-    except Exception as e:
-        print(f"Error leyendo costos fijos: {e}")
-
-    # Para simplificar, usaré los valores que ya calculé
-    # MORENO: 7,276,113, VIA VIEJA: 9,613,438, COLEGIO: 1,539,918, GG2: 6,772,492, GG4: 8,141,748
-    costos_fijos_total = {
-        'GROWLER CAFE': 7276113,
-        'GROWLER VIA VIEJA': 9613438,
-        'COLEGIO': 1539918,
-        'GG Vol 2': 6772492,
-        'GG Vol 4': 8141748
+    # Datos extraídos de 'COSTOS FIJOS Y OG' sheet del archivo GROWLER - Costos Fijos - AÑO 2026.xlsx
+    # Mapeo: MORENO=GROWLER CAFE, VIA VIEJA=GROWLER VIA VIEJA, COLEGIO=COLEGIO, GG2=GG Vol 2, GG4=GG Vol 4
+    costos_data = {
+        '2026-01': {
+            'GROWLER CAFE': 0,           # Sin datos en archivo (solo $292k ADM)
+            'GROWLER VIA VIEJA': 0,
+            'COLEGIO': 0,
+            'GG Vol 2': 0,
+            'GG Vol 4': 0
+        },
+        '2026-02': {
+            'GROWLER CAFE': 0,           # Sin datos en archivo (solo $292k ADM)
+            'GROWLER VIA VIEJA': 0,
+            'COLEGIO': 0,
+            'GG Vol 2': 0,
+            'GG Vol 4': 0
+        },
+        '2026-03': {
+            'GROWLER CAFE': 8_714_461,
+            'GROWLER VIA VIEJA': 6_950_327,
+            'COLEGIO': 1_094_844,
+            'GG Vol 2': 3_406_808,
+            'GG Vol 4': 7_469_649
+        },
+        '2026-04': {
+            'GROWLER CAFE': 7_027_069,
+            'GROWLER VIA VIEJA': 6_426_617,
+            'COLEGIO': 1_102_188,
+            'GG Vol 2': 2_566_819,
+            'GG Vol 4': 6_306_939
+        },
+        '2026-05': {
+            'GROWLER CAFE': 7_634_501,
+            'GROWLER VIA VIEJA': 7_164_936,
+            'COLEGIO': 1_576_134,
+            'GG Vol 2': 5_641_369,
+            'GG Vol 4': 5_878_495
+        },
+        '2026-06': {
+            'GROWLER CAFE': 14_843_001,
+            'GROWLER VIA VIEJA': 10_516_416,
+            'COLEGIO': 2_454_729,
+            'GG Vol 2': 8_460_820,
+            'GG Vol 4': 10_133_909
+        }
     }
 
-    # Distribuir entre los meses (asumo igual por mes)
-    for local, total in costos_fijos_total.items():
-        monthly = total / 6  # 6 meses de datos
-        for month in ['2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06']:
-            costos_by_local_month[local][month] = monthly
+    for month, locals_dict in costos_data.items():
+        for local, amount in locals_dict.items():
+            costos_by_local_month[local][month] = amount
 
     return costos_by_local_month
 
@@ -128,50 +162,49 @@ def read_sueldos():
     """Lee sueldos por local y mes desde liquidaciones de Lila"""
     sueldos_by_local_month = defaultdict(lambda: defaultdict(float))
 
-    # Datos extraídos de RESUMEN LOCALES (enero-mayo, limpiados de errores de data entry)
-    # Nota: Marzo tenía error en Marcela Giunta ($47.2M), Abril en Dante Rosso ($45.8M) - se descartaron como outliers
+    # Datos extraídos de archivos Excel RESUMEN LOCALES (usando openpyxl con data_only=True)
     sueldos_data = {
         '2026-01': {
-            'GROWLER CAFE': 19_851_730,
-            'GROWLER VIA VIEJA': 7_915_053,
-            'COLEGIO': 2_791_009,
-            'GG Vol 2': 2_661_731,
-            'GG Vol 4': 6_564_750
+            'GROWLER CAFE': 14_192_188,
+            'GROWLER VIA VIEJA': 5_003_300,
+            'COLEGIO': 1_332_750,
+            'GG Vol 2': 2_320_000,
+            'GG Vol 4': 3_386_000
         },
         '2026-02': {
-            'GROWLER CAFE': 16_108_698,
-            'GROWLER VIA VIEJA': 7_611_344,
-            'COLEGIO': 2_220_125,
+            'GROWLER CAFE': 12_777_342,
+            'GROWLER VIA VIEJA': 5_432_200,
+            'COLEGIO': 2_045_125,
             'GG Vol 2': 2_320_000,
-            'GG Vol 4': 7_508_750
+            'GG Vol 4': 4_370_000
         },
         '2026-03': {
-            'GROWLER CAFE': 20_359_825,
-            'GROWLER VIA VIEJA': 9_517_565,
-            'COLEGIO': 4_100_839,
-            'GG Vol 2': 2_918_499,
-            'GG Vol 4': 7_039_350
+            'GROWLER CAFE': 15_977_738,
+            'GROWLER VIA VIEJA': 6_327_396,
+            'COLEGIO': 3_258_733,
+            'GG Vol 2': 2_600_000,
+            'GG Vol 4': 4_326_050
         },
         '2026-04': {
-            'GROWLER CAFE': 17_992_743,
-            'GROWLER VIA VIEJA': 9_015_304,
-            'COLEGIO': 3_905_792,
+            'GROWLER CAFE': 15_993_084,
+            'GROWLER VIA VIEJA': 0,  # Sin datos en archivo
+            'COLEGIO': 0,             # Sin datos en archivo
             'GG Vol 2': 1_300_000,
-            'GG Vol 4': 8_073_450
+            'GG Vol 4': 4_461_650
         },
         '2026-05': {
-            'GROWLER CAFE': 19_306_289,
-            'GROWLER VIA VIEJA': 8_508_851,
-            'COLEGIO': 3_951_229,
+            'GROWLER CAFE': 15_382_817,
+            'GROWLER VIA VIEJA': 6_552_264,
+            'COLEGIO': 2_984_729,
             'GG Vol 2': 1_300_000,
-            'GG Vol 4': 7_215_150
+            'GG Vol 4': 4_461_650
         },
-        '2026-06': {  # Placeholder: usar mayo como referencia hasta recibir datos de junio
-            'GROWLER CAFE': 19_306_289,
-            'GROWLER VIA VIEJA': 8_508_851,
-            'COLEGIO': 3_951_229,
-            'GG Vol 2': 1_300_000,
-            'GG Vol 4': 7_215_150
+        '2026-06': {  # Junio aún sin datos
+            'GROWLER CAFE': 0,
+            'GROWLER VIA VIEJA': 0,
+            'COLEGIO': 0,
+            'GG Vol 2': 0,
+            'GG Vol 4': 0
         }
     }
 
