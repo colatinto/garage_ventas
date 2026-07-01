@@ -1,0 +1,68 @@
+================================================================================
+ANÁLISIS DE MÁRGENES - PARA REVISIÓN DE LILA
+Fecha: 2026-06-30
+================================================================================
+
+SITUACIÓN ACTUAL
+================================================================================
+Los márgenes están entre 21-93% pero deberían ser máximo 20%.
+
+DATOS EXTRAÍDOS HASTA AHORA
+================================================================================
+✅ SUELDOS: Enero-Junio (desde liquidaciones Excel)
+✅ CMV: Enero-Junio (desde remitos FC)
+✅ COSTOS FIJOS: Marzo-Junio (desde COSTOS FIJOS Y OG)
+
+Ver archivo: margenes_analisis_lila.csv
+
+
+PROBLEMAS ENCONTRADOS
+================================================================================
+
+1. ABRIL: Sueldos en 0 para VIA VIEJA y COLEGIO
+   - ¿Es correcto? ¿O hay un error en los archivos Excel?
+
+2. GG4: Sin CMV de 2026
+   - Solo tenemos archivo de 2025
+   - ¿Dónde está el CMV 2026 de GG4?
+
+3. ENERO-FEBRERO: Costos Fijos incompletos
+   - Solo aparecen $292k en ADM Central
+   - Faltan los costos de los locales
+   - ¿Hay datos en otro lado o no se cargaron?
+
+4. ADM CENTRAL: ~$11M/mes sin distribuir
+   - En los datos aparece como línea separada
+   - ¿Cómo se distribuye entre MORENO, VIA VIEJA, COLEGIO, GG2, GG4?
+   - Este es probablemente el gasto faltante que explica la diferencia a 20%
+
+
+PREGUNTAS PARA LILA
+================================================================================
+
+1. ¿Cómo se distribuye el ADM Central ($11M/mes) entre los locales?
+   (Fijo por local? Porcentaje? Proporcional a ingresos?)
+
+2. ¿Son correctos los sueldos de abril para VIA VIEJA y COLEGIO en 0?
+
+3. ¿Dónde está el CMV real de GG4 para 2026?
+
+4. ¿Por qué faltan costos fijos para enero-febrero?
+
+5. Una vez incluido ADM Central, ¿los márgenes deberían ser ~20%?
+
+
+PRÓXIMOS PASOS
+================================================================================
+Una vez Lila aclare estos puntos:
+1. Actualizar distribución de ADM Central
+2. Incorporar CMV de GG4 correcto
+3. Revisar datos de abril
+4. Regenerar los márgenes
+
+
+ARCHIVOS GENERADOS
+================================================================================
+- margenes_analisis_lila.csv: Data detallada de ingresos, CMV, sueldos, costos, márgenes
+- dashboard_margin_data.json: Data en JSON para dashboard
+- ANALISIS_PARA_LILA.txt: Este archivo
