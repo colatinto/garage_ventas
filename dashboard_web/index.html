@@ -430,19 +430,6 @@
                 const response = await fetch(`dashboard_data.json?t=${new Date().getTime()}`);
                 dashboardData = await response.json();
 
-                // Corregir factor x100 en las ventas (bug en el parseo)
-                dashboardData.sales_data = dashboardData.sales_data.map(sale => ({
-                    ...sale,
-                    total_sales: sale.total_sales / 100,
-                    cash_sales: sale.cash_sales / 100,
-                    card_sales: sale.card_sales / 100,
-                    transfer_sales: sale.transfer_sales / 100,
-                    mercadopago_sales: sale.mercadopago_sales / 100,
-                    other_sales: sale.other_sales / 100,
-                    salon_sales: sale.salon_sales / 100,
-                    counter_sales: sale.counter_sales / 100
-                }));
-
                 initDashboard();
             } catch (error) {
                 console.error('Error cargando datos:', error);
