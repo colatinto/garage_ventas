@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-30T17:01:18.804932",
+  "last_updated": "2026-07-01T09:57:43.120881",
   "margins": {
     "GROWLER CAFE": {
       "2026-01": {
@@ -87,9 +87,9 @@
       "2026-05": {
         "ingresos": 49324276.0,
         "cmv": 17294143,
-        "costos_fijos": 7164936,
+        "costos_fijos": 7164935,
         "sueldos": 6552264,
-        "margen": 18312933.0,
+        "margen": 18312934.0,
         "margen_pct": 37.13
       },
       "2026-06": {
@@ -195,9 +195,9 @@
       "2026-05": {
         "ingresos": 30730200.05,
         "cmv": 11362215,
-        "costos_fijos": 5641369,
+        "costos_fijos": 5641368,
         "sueldos": 1300000,
-        "margen": 12426616.05,
+        "margen": 12426617.05,
         "margen_pct": 40.44
       },
       "2026-06": {
@@ -237,9 +237,9 @@
       "2026-04": {
         "ingresos": 31402638.89,
         "cmv": 0,
-        "costos_fijos": 6306939,
+        "costos_fijos": 6306938,
         "sueldos": 4461650,
-        "margen": 20634049.89,
+        "margen": 20634050.89,
         "margen_pct": 65.71
       },
       "2026-05": {
@@ -253,9 +253,9 @@
       "2026-06": {
         "ingresos": 27462395.0,
         "cmv": 0,
-        "costos_fijos": 10133909,
+        "costos_fijos": 10133908,
         "sueldos": 0,
-        "margen": 17328486.0,
+        "margen": 17328487.0,
         "margen_pct": 63.1
       }
     }

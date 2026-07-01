@@ -102,59 +102,71 @@ def read_fc_remitos():
     return cmv_by_local_month
 
 def read_costos_fijos():
-    """Lee costos fijos por local y mes desde COSTOS FIJOS Y OG"""
+    """Lee costos fijos por local y mes desde COSTOS FIJOS Y OG
+
+    Nota: Incluye costos directos de cada local + ADM Central.
+    ADM Central está en línea separada - se podría distribuir proporcionalmente a ingresos si se necesita.
+    """
     costos_by_local_month = defaultdict(lambda: defaultdict(float))
 
-    # Datos extraídos de 'COSTOS FIJOS Y OG' sheet del archivo GROWLER - Costos Fijos - AÑO 2026.xlsx
-    # Mapeo: MORENO=GROWLER CAFE, VIA VIEJA=GROWLER VIA VIEJA, COLEGIO=COLEGIO, GG2=GG Vol 2, GG4=GG Vol 4
+    # Datos extraídos de 'COSTOS FIJOS Y OG' sheet
+    # Incluye: locales + ADM Central como línea separada
     costos_data = {
         '2026-01': {
-            'GROWLER CAFE': 0,           # Sin datos en archivo (solo $292k ADM)
+            'GROWLER CAFE': 0,
             'GROWLER VIA VIEJA': 0,
             'COLEGIO': 0,
             'GG Vol 2': 0,
-            'GG Vol 4': 0
+            'GG Vol 4': 0,
+            'ADM Central': 292_000
         },
         '2026-02': {
-            'GROWLER CAFE': 0,           # Sin datos en archivo (solo $292k ADM)
+            'GROWLER CAFE': 0,
             'GROWLER VIA VIEJA': 0,
             'COLEGIO': 0,
             'GG Vol 2': 0,
-            'GG Vol 4': 0
+            'GG Vol 4': 0,
+            'ADM Central': 292_000
         },
         '2026-03': {
             'GROWLER CAFE': 8_714_461,
             'GROWLER VIA VIEJA': 6_950_327,
             'COLEGIO': 1_094_844,
             'GG Vol 2': 3_406_808,
-            'GG Vol 4': 7_469_649
+            'GG Vol 4': 7_469_649,
+            'ADM Central': 11_697_381
         },
         '2026-04': {
             'GROWLER CAFE': 7_027_069,
             'GROWLER VIA VIEJA': 6_426_617,
             'COLEGIO': 1_102_188,
             'GG Vol 2': 2_566_819,
-            'GG Vol 4': 6_306_939
+            'GG Vol 4': 6_306_938,
+            'ADM Central': 11_332_749
         },
         '2026-05': {
             'GROWLER CAFE': 7_634_501,
-            'GROWLER VIA VIEJA': 7_164_936,
+            'GROWLER VIA VIEJA': 7_164_935,
             'COLEGIO': 1_576_134,
-            'GG Vol 2': 5_641_369,
-            'GG Vol 4': 5_878_495
+            'GG Vol 2': 5_641_368,
+            'GG Vol 4': 5_878_495,
+            'ADM Central': 11_411_785
         },
         '2026-06': {
             'GROWLER CAFE': 14_843_001,
             'GROWLER VIA VIEJA': 10_516_416,
             'COLEGIO': 2_454_729,
             'GG Vol 2': 8_460_820,
-            'GG Vol 4': 10_133_909
+            'GG Vol 4': 10_133_908,
+            'ADM Central': 4_864_984
         }
     }
 
     for month, locals_dict in costos_data.items():
         for local, amount in locals_dict.items():
-            costos_by_local_month[local][month] = amount
+            # Solo sumar costos de locales, no ADM Central (se maneja por separado)
+            if local != 'ADM Central':
+                costos_by_local_month[local][month] = amount
 
     return costos_by_local_month
 
