@@ -62,13 +62,13 @@ ADM_DISTRIBUCION = {
     'GG Vol 4': 0.05,
 }
 
-# Archivos de remitos (CMV) por local
+# Archivos de remitos (CMV) por local (.csv o .xlsx con hoja LOCAL)
 CMV_FILES = {
     'GROWLER CAFE': 'MORENO - FC-Remitos - AÑO 2026 - LOCAL.csv',
     'GROWLER VIA VIEJA': 'VIA VIEJA - FC-Remitos - AÑO 2026 - LOCAL.csv',
     'COLEGIO': 'FC-Remitos - AÑO 2026 Colegio - LOCAL.csv',
     'GG Vol 2': 'GG2 - FC-Remitos - AÑO 2026  - LOCAL.csv',
-    'GG Vol 4': 'FC-Remitos - GG4 - AÑO 2025 - GG4.csv',  # ojo: contiene 2025; 2026 pendiente
+    'GG Vol 4': 'GG4 - FC-Remitos - AÑO 2026.xlsx',
 }
 
 
@@ -200,7 +200,7 @@ def read_costos_fijos():
 
 
 def read_cmv():
-    """CMV (costo de mercadería) por local y mes desde los remitos CSV."""
+    """CMV (costo de mercadería) por local y mes desde los remitos (CSV o xlsx)."""
     cmv = defaultdict(lambda: defaultdict(float))
     warnings = []
 
@@ -210,35 +210,56 @@ def read_cmv():
             warnings.append(f"CMV {local}: falta archivo {filename}")
             continue
 
-        with open(filepath, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            header = next(reader, [])
-            fecha_idx, total_idx, linea_idx = 2, 5, 16
-            for i, col in enumerate(header):
-                c = col.lower()
-                if 'fecha' in c and fecha_idx == 2:
-                    fecha_idx = i
-                if 'total' in c and 'comprobante' in c:
-                    total_idx = i
-                if 'linea' in c and 'p&l' in c:
-                    linea_idx = i
-
-            count = 0
-            for row in reader:
-                if len(row) <= max(fecha_idx, total_idx, linea_idx):
+        count = 0
+        if filepath.suffix == '.xlsx':
+            # Hoja LOCAL: fila 2 = header; C=fecha recepción, F=total, Q=Línea P&L
+            import warnings as pywarnings
+            with pywarnings.catch_warnings():
+                pywarnings.simplefilter('ignore')
+                wb = load_workbook(filepath, data_only=True)
+            ws = wb['LOCAL']
+            for row in ws.iter_rows(min_row=3, values_only=True):
+                if len(row) < 17:
                     continue
-                try:
-                    month = datetime.strptime(row[fecha_idx].strip(), '%d/%m/%Y').strftime('%Y-%m')
-                except ValueError:
+                fecha, total, linea = row[2], row[5], row[16]
+                if not isinstance(fecha, datetime):
                     continue
-                if month not in MONTHS or row[linea_idx].strip() != 'CMV':
+                month = fecha.strftime('%Y-%m')
+                if month not in MONTHS or str(linea).strip() != 'CMV':
                     continue
-                amount = parse_number(row[total_idx])
-                if amount > 0:
-                    cmv[local][month] += amount
+                if isinstance(total, (int, float)) and total > 0:
+                    cmv[local][month] += total
                     count += 1
-            if count == 0:
-                warnings.append(f"CMV {local}: 0 registros 2026 en {filename}")
+        else:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                reader = csv.reader(f)
+                header = next(reader, [])
+                fecha_idx, total_idx, linea_idx = 2, 5, 16
+                for i, col in enumerate(header):
+                    c = col.lower()
+                    if 'fecha' in c and fecha_idx == 2:
+                        fecha_idx = i
+                    if 'total' in c and 'comprobante' in c:
+                        total_idx = i
+                    if 'linea' in c and 'p&l' in c:
+                        linea_idx = i
+
+                for row in reader:
+                    if len(row) <= max(fecha_idx, total_idx, linea_idx):
+                        continue
+                    try:
+                        month = datetime.strptime(row[fecha_idx].strip(), '%d/%m/%Y').strftime('%Y-%m')
+                    except ValueError:
+                        continue
+                    if month not in MONTHS or row[linea_idx].strip() != 'CMV':
+                        continue
+                    amount = parse_number(row[total_idx])
+                    if amount > 0:
+                        cmv[local][month] += amount
+                        count += 1
+
+        if count == 0:
+            warnings.append(f"CMV {local}: 0 registros 2026 en {filename}")
 
     return cmv, warnings
 

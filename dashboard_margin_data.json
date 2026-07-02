@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02T15:02:44.242825",
+  "last_updated": "2026-07-02T15:11:56.391979",
   "adm_central_por_mes": {
     "2026-03": 11697381.3727,
     "2026-01": 292000.0,
@@ -16,8 +16,7 @@
     "GG Vol 4": 0.05
   },
   "warnings": [
-    "JUNIO: liquidación sin datos (planilla vacía o sin valores calculados)",
-    "CMV GG Vol 4: 0 registros 2026 en FC-Remitos - GG4 - AÑO 2025 - GG4.csv"
+    "JUNIO: liquidación sin datos (planilla vacía o sin valores calculados)"
   ],
   "margins": {
     "GROWLER CAFE": {
@@ -223,51 +222,51 @@
     "GG Vol 4": {
       "2026-01": {
         "ingresos": 49644825.0,
-        "cmv": 0,
+        "cmv": 19080252.63,
         "sueldos": 6564750.0,
         "costos_fijos": 14600.0,
-        "margen": 43065475.0,
-        "margen_pct": 86.75
+        "margen": 23985222.37,
+        "margen_pct": 48.31
       },
       "2026-02": {
         "ingresos": 40983475.0,
-        "cmv": 0,
+        "cmv": 15742572.32,
         "sueldos": 7508750.0,
         "costos_fijos": 14600.0,
-        "margen": 33460125.0,
-        "margen_pct": 81.64
+        "margen": 17717552.68,
+        "margen_pct": 43.23
       },
       "2026-03": {
         "ingresos": 36414750.02,
-        "cmv": 0,
+        "cmv": 13606239.36,
         "sueldos": 7039350.0,
         "costos_fijos": 8054518.48,
-        "margen": 21320881.54,
-        "margen_pct": 58.55
+        "margen": 7714642.18,
+        "margen_pct": 21.19
       },
       "2026-04": {
         "ingresos": 31402638.89,
-        "cmv": 0,
+        "cmv": 14163685.2,
         "sueldos": 8073450.0,
         "costos_fijos": 6873576.31,
-        "margen": 16455612.58,
-        "margen_pct": 52.4
+        "margen": 2291927.38,
+        "margen_pct": 7.3
       },
       "2026-05": {
         "ingresos": 29691985.5,
-        "cmv": 0,
+        "cmv": 10095222.27,
         "sueldos": 7215150.0,
         "costos_fijos": 6449084.43,
-        "margen": 16027751.07,
-        "margen_pct": 53.98
+        "margen": 5932528.8,
+        "margen_pct": 19.98
       },
       "2026-06": {
         "ingresos": 27462395.0,
-        "cmv": 0,
+        "cmv": 13017241.67,
         "sueldos": 0,
         "costos_fijos": 10377157.72,
-        "margen": 17085237.27,
-        "margen_pct": 62.21
+        "margen": 4067995.61,
+        "margen_pct": 14.81
       }
     }
   }
