@@ -138,19 +138,21 @@ controlable:
 | CAFE | 41% | 41% | **24%** | **34%** | **37%** | 51% |
 | VIA VIEJA | 58% | 43% | **25%** | **39%** | **26%** | 44% |
 | COLEGIO | 24% | 31% | **21%** | **15%** | **1%** | 47% |
-| GG2 | 52% | 48% | **19%** | **35%** | **39%** | 35% |
+| GG2† | 46% | 41% | **11%** | **29%** | **30%** | 28% |
 | GG4 | 48% | 43% | **21%** | **7%** | **20%** | 15% |
 
 - **Negrita** = meses con datos completos → dan la zona del 20% real
 - \* Ene-Feb inflados: costos casi sin cargar (1 fila cada mes)
 - \** Junio sin liquidación de sueldos todavía
+- † GG2 incluye +$2,5M/mes de jornales estimados que no están en la
+  liquidación (dato de Franco) — reemplazar por carga real
 - Meses completos aún algo inflados por el IVA sub-cargado (punto 2.1)
 
 **Pendientes de carga (en orden de impacto):**
 1. Posición de IVA mensual completa (afecta todos los meses)
 2. Costos fijos de enero y febrero
 3. Liquidación de junio
-4. Sueldos reales de GG2
+4. Jornales de GG2 en la liquidación (hoy: estimados +$2,5M/mes)
 
 **Conclusión:** el motor de cálculo ya funciona y lee todo automáticamente.
 Con la planilla nueva de GASTOS + el protocolo de carga, la foto mensual

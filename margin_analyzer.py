@@ -140,6 +140,14 @@ def read_sueldos():
         if total_mes == 0:
             warnings.append(f"{mes_nombre}: liquidación sin datos (planilla vacía o sin valores calculados)")
 
+    # Ajustes por datos no registrados en la liquidación (dato de Franco, 02/07/2026):
+    # GG2 paga ~$2,5M/mes de jornales que no se cargan en la planilla.
+    # Eliminar este ajuste cuando los jornales de GG2 entren en la liquidación.
+    AJUSTE_JORNALES_GG2 = 2_500_000
+    for month in MONTHS:
+        sueldos['GG Vol 2'][month] += AJUSTE_JORNALES_GG2
+    warnings.append(f"GG2: +${AJUSTE_JORNALES_GG2:,.0f}/mes de jornales estimados (no registrados en liquidación)")
+
     return sueldos, warnings
 
 
