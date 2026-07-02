@@ -183,7 +183,7 @@
         function updateDashboard() {
             const f = getFilteredData();
             updateKPIs(f); updateLastDayComparison(); updateFullWeekComparison(); updateTicketPerBar(f); updateDurationPerBar(f);
-            updateCharts(f); updateBestDaysPerBar(f); updateProductsCards(); updateLocationCards(f); updateDetailTable(f);
+            updateCharts(f); updateBestDaysPerBar(f); updateProductsCards(); updateLocationCards(f);
         }
 
         function updateKPIs(data) {
@@ -437,15 +437,6 @@
         }
 
         function toggleLocation(ln) { document.getElementById(`body-${ln}`).classList.toggle('active'); document.getElementById(`toggle-${ln}`).classList.toggle('rotated'); }
-
-        function updateDetailTable(data) {
-            const tbody=document.querySelector('#detailTable tbody'); tbody.innerHTML='';
-            [...data].sort((a,b)=>new Date(b.date)-new Date(a.date)).forEach(s => {
-                const row=document.createElement('tr');
-                row.innerHTML=`<td>${s.date}</td><td>${dashboardData.locations[s.location].emoji} ${s.location}</td><td>${s.shift}</td><td style="color:var(--teal,#5aedc5);font-weight:600;font-family:var(--mono,'Space Mono',monospace);">${fmt(s.total_sales)}</td><td>${s.total_tickets}</td><td>${fmt(s.cash_sales)}</td><td>${fmt(s.card_sales)}</td><td>${fmt(s.other_sales)}</td>`;
-                tbody.appendChild(row);
-            });
-        }
 
         loadData();
         setInterval(loadData, 5 * 60 * 1000);
