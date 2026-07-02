@@ -1,100 +1,64 @@
 ================================================================================
-ANÁLISIS DE MÁRGENES - VERSIÓN FINAL CON ADM CENTRAL DISTRIBUIDO
-Fecha: 2026-07-01
+ANÁLISIS DE MÁRGENES - GROWLER GARAGE
+Fecha: 2026-07-02
 ================================================================================
 
-DATOS EXTRAÍDOS CORRECTAMENTE ✅
+CÓMO SE CALCULA
 ================================================================================
-✅ SUELDOS: Enero-Junio (desde liquidaciones Excel)
-✅ CMV: Enero-Junio (desde remitos FC)
-✅ COSTOS FIJOS: Enero-Junio (desde COSTOS FIJOS Y OG)
-✅ ADM CENTRAL: Distribuido según: 40% MORENO, 30% VIA VIEJA, 20% COLEGIO, 5% GG2, 5% GG4
+Margen = Ingresos - CMV - Sueldos - Costos Fijos (con ADM Central distribuido)
+
+Fuentes (se leen automáticamente, sin números copiados a mano):
+- Ingresos:     base de ventas (reportes MaxiREST por email)
+- Sueldos:      GROWLER - Liquidación Sueldos - <MES> 2026.xlsx (RESUMEN LOCALES)
+- Costos Fijos: GROWLER - Costos Fijos - AÑO 2026.xlsx (COSTOS FIJOS Y OG)
+- CMV:          planillas FC-Remitos por local
+
+ADM Central distribuido: 40% Moreno, 30% Via Vieja, 20% Colegio, 5% GG2, 5% GG4
 
 
-MÁRGENES ACTUALES (Con ADM distribuido)
+MÁRGENES CALCULADOS (enero-junio 2026)
 ================================================================================
+                    ENE     FEB     MAR     ABR     MAY     JUN
+GROWLER CAFE       46.3%   46.1%   26.4%   36.3%   41.5%   51.1%*
+VIA VIEJA          63.1%   47.7%   29.8%   43.0%   30.2%   44.2%*
+COLEGIO            50.3%   33.1%   23.3%   19.7%    7.1%   46.5%*
+GG Vol 2           52.2%   47.5%   19.3%   35.3%   38.6%   35.2%*
+GG Vol 4           93.2%   89.3%   66.0%   63.9%   63.2%   62.2%*
 
-GROWLER CAFE:
-  Enero:    46.3%    (realista)
-  Febrero:  46.1%    (realista)
-  Marzo:    26.4%    (baja en marzo - revisar)
-  Abril:    36.3%    (ok)
-  Mayo:     41.5%    (ok)
-  Junio:    51.1%    (alto)
+* Junio incompleto: sin sueldos cargados todavía.
 
-GROWLER VIA VIEJA:
-  Enero:    63.1%    (muy alto - revisar)
-  Febrero:  47.7%    (ok)
-  Marzo:    29.8%    (realista)
-  Abril:    55.0%    (alto)
-  Mayo:     30.2%    (realista)
-  Junio:    44.2%    (ok)
-
-COLEGIO:
-  Enero:    50.3%    (alto)
-  Febrero:  33.1%    (ok)
-  Marzo:    23.3%    (realista)
-  Abril:    42.4%    (ok)
-  Mayo:      7.1%    (MUY BAJO - revisar urgente)
-  Junio:    46.5%    (alto)
-
-GG VOL 2:
-  Enero:    52.2%    (alto)
-  Febrero:  47.5%    (ok)
-  Marzo:    19.3%    (realista)
-  Abril:    35.3%    (ok)
-  Mayo:     38.6%    (ok)
-  Junio:    35.2%    (ok)
-
-GG VOL 4:
-  Enero:    93.2%    (MUY ALTO - revisar)
-  Febrero:  89.3%    (MUY ALTO - revisar)
-  Marzo:    66.0%    (muy alto)
-  Abril:    63.9%    (muy alto)
-  Mayo:     63.2%    (muy alto)
-  Junio:    62.2%    (muy alto)
+Ver detalle completo en: margenes_analisis_lila.csv
 
 
-OBSERVACIONES IMPORTANTES
+DATOS FALTANTES DETECTADOS (esto explica márgenes inflados)
 ================================================================================
 
-1. COLEGIO - MAYO: 7.1% (muy bajo)
-   ¿Error en datos de sueldos, CMV o costos fijos?
+1. CMV DE GG4 - AÑO 2026: NO EXISTE
+   Solo tenemos la planilla FC-Remitos de GG4 del año 2025.
+   Sin el costo de mercadería, GG4 da márgenes de 62-93% (imposible).
+   → Lila: ¿dónde está la planilla FC-Remitos 2026 de GG4?
 
-2. GG4: Márgenes 62-93% (consistentemente muy altos)
-   Posibles causas:
-   - CMV de GG4 podría estar incompleto/bajo
-   - Faltan costos operacionales
-   - Revisar si hay datos de 2025 mezclados con 2026
+2. COSTOS FIJOS ENERO Y FEBRERO: CASI VACÍOS
+   La planilla de costos solo tiene $292.000 (ADM) por mes en ene-feb.
+   Los costos de los locales empiezan a estar cargados desde marzo.
+   Por eso enero y febrero dan márgenes tan altos (46-93%).
+   → Lila: ¿enero y febrero están cargados en otra planilla?
 
-3. VIA VIEJA - ENERO: 63.1% (muy alto)
-   ¿Datos correctos para ese mes?
+3. SUELDOS JUNIO: PLANILLA SIN DATOS (ya sabemos, pendiente de carga)
 
-4. CAFE - MARZO: 26.4% (baja vs otros meses)
-   ¿Incremento real de costos en marzo?
+4. FRANCO DICE QUE EL MARGEN REAL ES MÁXIMO 20%
+   Aún en los meses con datos completos (marzo-mayo) los márgenes dan
+   19-66%. Posibles explicaciones a revisar con Lila:
+   - ¿Los ingresos de MaxiREST incluyen IVA? Si es así, habría que
+     restarlo (~17% del margen desaparece).
+   - ¿Falta algún gasto grande? (AFIP/931, cargas sociales están en la
+     planilla de costos, pero ¿está todo?)
+   - ¿El CMV de los remitos está completo? (proveedores sin factura, etc.)
 
-5. ABRIL: VIA VIEJA y COLEGIO tenían sueldos en 0 en archivo original
-   (Pero aparentemente se extrajeron correctamente ahora)
-
-
-PRÓXIMOS PASOS
-================================================================================
-
-1. REVISAR GG4: Los márgenes 62-93% sugieren datos incompletos
-   - ¿Falta CMV de GG4 para 2026?
-   - ¿Hay costos que no se están cargando?
-
-2. VERIFICAR COLEGIO - MAYO: 7.1% es muy bajo
-   - Revisar datos de sueldos, CMV y costos
-
-3. VALIDAR VIA VIEJA - ENERO: 63% es muy alto
-   - Revisar datos de ingresos, CMV y costos
-
-4. Una vez ajustados estos puntos, los márgenes deberían ser más consistentes
-
-
-ARCHIVOS GENERADOS
-================================================================================
-- margenes_analisis_lila.csv: Data detallada de ingresos, CMV, sueldos, costos, márgenes
-- dashboard_margin_data.json: Data en JSON para dashboard
-- ANALISIS_PARA_LILA.txt: Este archivo
+   Caso de referencia para validar con Lila: MARZO - GROWLER CAFE
+     Ingresos:      $79.252.367
+     CMV:           $28.947.372
+     Sueldos:       $15.977.738
+     Costos Fijos:  $13.393.413 (incluye 40% de ADM Central)
+     Margen:        $20.933.844 (26,4%)
+   ¿Qué le falta a esta cuenta para llegar al margen real?

@@ -9,3 +9,7 @@ node_modules/
 .netlify/
 config.secret.json
 .env.local
+
+# Datos sensibles de personal (nombres, DNI, sueldos) - NUNCA subir a repo público
+data_gastos/*Sueldos*
+data_gastos/*.xlsx
