@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /Users/francotosto/Documents/garage_ventas
+cd /Users/francotosto/Documents/garage_ventas || { echo "ERROR: sin acceso a la carpeta del proyecto (¿permiso Full Disk Access de cron?)"; exit 1; }
 
 # Cargar token de GitHub desde .env.local
 if [ -f .env.local ]; then
@@ -7,15 +7,15 @@ if [ -f .env.local ]; then
 fi
 
 # Ejecutar extracción de ventas
-venv/bin/python3 sales_extractor_v2.py
+venv/bin/python3 sales_extractor_v2.py || echo "ERROR: fallo el extractor"
 
 # Agregar cambios y hacer commit
-git add dashboard_data.json dashboard_pro.html sales_extractor_v2.py
+git add dashboard_data.json
 git commit -m "auto update" || true
 
-# Push automático con token
+# Push (dejar errores visibles en el log)
 if [ -n "$GITHUB_TOKEN" ]; then
-    git push https://colatinto:${GITHUB_TOKEN}@github.com/colatinto/garage_ventas.git main 2>/dev/null || true
+    git push "https://colatinto:${GITHUB_TOKEN}@github.com/colatinto/garage_ventas.git" main || echo "ERROR: fallo el push (token)"
 else
-    git push || true
+    git push || echo "ERROR: fallo el push"
 fi
