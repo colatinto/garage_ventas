@@ -3,240 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Márgenes - Growler Garage</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+    <title>Garage Bars · Foto Mensual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        :root {
+            --bg: #0c0f0c; --card: #141a14; --card-hover: #1a221a; --border: #1e2e1e;
+            --border-hover: #2e4a2e; --text: #e4ede4; --text2: #8fa88f; --muted: #5a7a5a;
+            --accent: #ff6b35; --accent-soft: rgba(255,107,53,0.1);
+            --teal: #5aedc5; --teal-soft: rgba(90,237,197,0.1);
+            --gold: #f0b860; --purple: #b07aff; --green: #4ad484; --red: #ff5a5a;
+            --r: 14px; --rs: 10px;
+            --font: 'DM Sans', -apple-system, sans-serif; --mono: 'Space Mono', monospace;
         }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 20px;
-        }
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        header {
-            background: rgba(255,255,255,0.95);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2d3748;
-            margin-bottom: 10px;
-        }
-        .timestamp {
-            color: #718096;
-            font-size: 14px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-bottom: 30px;
-        }
-        .card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .card-title {
-            font-size: 14px;
-            color: #718096;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 10px;
-        }
-        .card-value {
-            font-size: 28px;
-            font-weight: bold;
-            color: #2d3748;
-            margin-bottom: 5px;
-        }
-        .card-subvalue {
-            font-size: 14px;
-            color: #718096;
-        }
-        .positive { color: #22863a; }
-        .negative { color: #cb2431; }
-        .warning { color: #d39e00; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px; line-height: 1.5; }
+        .container { max-width: 1600px; margin: 0 auto; }
+        header { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 26px 30px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+        h1 { font-size: 1.65rem; font-weight: 700; letter-spacing: -0.02em; }
+        h1 span { color: var(--accent); }
+        .last-update { font-family: var(--mono); font-size: 0.76rem; color: var(--muted); margin-top: 5px; }
+        .nav-link { font-size: 0.86rem; color: var(--teal); text-decoration: none; border: 1px solid var(--border); padding: 9px 16px; border-radius: var(--rs); transition: all 0.2s; }
+        .nav-link:hover { border-color: var(--teal); background: var(--teal-soft); }
 
-        .chart-container {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-            position: relative;
-            height: 400px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        th {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-        td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #e2e8f0;
-        }
-        tr:hover {
-            background: #f7fafc;
-        }
-        .footer {
-            text-align: center;
-            color: white;
-            margin-top: 30px;
-            font-size: 14px;
-        }
+        .month-selector { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 22px; }
+        .month-pill { font-family: var(--font); font-size: 0.9rem; font-weight: 600; background: var(--card); border: 1px solid var(--border); color: var(--text2); padding: 10px 22px; border-radius: 100px; cursor: pointer; transition: all 0.2s; }
+        .month-pill:hover { border-color: var(--border-hover); color: var(--text); }
+        .month-pill.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+        .month-pill .warn-dot { color: var(--gold); margin-left: 6px; }
+
+        .warn-banner { background: rgba(240,184,96,0.08); border: 1px solid rgba(240,184,96,0.35); border-radius: var(--r); padding: 13px 18px; margin-bottom: 22px; font-size: 0.86rem; color: var(--gold); }
+        .warn-banner ul { margin: 4px 0 0 20px; }
+
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin-bottom: 26px; }
+        .kpi-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; }
+        .kpi-card.hi { border-color: var(--accent); background: linear-gradient(135deg, var(--accent-soft), transparent); }
+        .kpi-label { font-size: 0.74rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500; margin-bottom: 9px; }
+        .kpi-value { font-family: var(--mono); font-size: 1.6rem; font-weight: 700; color: var(--teal); letter-spacing: -0.02em; }
+        .kpi-value.or { color: var(--accent); }
+        .kpi-sub { font-size: 0.78rem; color: var(--muted); margin-top: 5px; }
+
+        .section-title { font-size: 1.05rem; font-weight: 600; margin: 34px 0 16px 0; letter-spacing: -0.01em; }
+
+        .bars-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+        .bar-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; transition: border-color 0.2s; }
+        .bar-card:hover { border-color: var(--border-hover); }
+        .bar-card-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+        .bar-card-name { font-weight: 700; font-size: 1rem; }
+        .bar-card-pct { font-family: var(--mono); font-size: 1.45rem; font-weight: 700; }
+        .pct-good { color: var(--green); }
+        .pct-mid { color: var(--gold); }
+        .pct-bad { color: var(--red); }
+        .pnl-row { display: flex; justify-content: space-between; font-size: 0.87rem; padding: 6px 0; border-bottom: 1px dashed var(--border); }
+        .pnl-row:last-of-type { border-bottom: none; }
+        .pnl-row .lbl { color: var(--text2); }
+        .pnl-row .val { font-family: var(--mono); font-size: 0.84rem; }
+        .pnl-row.total { border-top: 1px solid var(--border-hover); margin-top: 4px; padding-top: 9px; font-weight: 700; }
+        .pnl-row.total .lbl { color: var(--text); }
+        .pnl-neg { color: var(--text2); }
+        .compo-bar { display: flex; height: 9px; border-radius: 100px; overflow: hidden; margin-top: 14px; background: var(--bg); }
+        .compo-seg { height: 100%; }
+        .compo-legend { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 9px; font-size: 0.7rem; color: var(--muted); }
+        .compo-legend .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 4px; }
+        .card-warn { margin-top: 12px; font-size: 0.76rem; color: var(--gold); }
+
+        .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(560px, 1fr)); gap: 18px; }
+        @media (max-width: 640px) { .charts-grid { grid-template-columns: 1fr; } }
+        .chart-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 22px; }
+        .chart-title { font-size: 0.95rem; font-weight: 600; margin-bottom: 16px; }
+        .chart-container { position: relative; height: 360px; }
+
+        .footer { text-align: center; color: var(--muted); margin-top: 34px; font-size: 0.8rem; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📊 Dashboard de Márgenes</h1>
-            <p class="timestamp">Última actualización: <span id="updated"></span></p>
+            <div>
+                <h1>🍺 <span>Garage Bars</span> · Foto Mensual</h1>
+                <div class="last-update" id="lastUpdate">Cargando...</div>
+            </div>
+            <a class="nav-link" href="dashboard_pro.html">← Ventas diarias</a>
         </header>
 
-        <div class="grid">
-            <div class="card">
-                <div class="card-title">Margen Promedio Junio</div>
-                <div class="card-value" id="avg-margin">-</div>
-                <div class="card-subvalue">Todos los locales</div>
+        <div class="month-selector" id="monthSelector"></div>
+        <div id="warnBanner"></div>
+        <div class="kpi-grid" id="kpiGrid"></div>
+
+        <div class="section-title">💰 Resultado por bar</div>
+        <div class="bars-grid" id="barsGrid"></div>
+
+        <div class="section-title">📊 Análisis</div>
+        <div class="charts-grid">
+            <div class="chart-card">
+                <div class="chart-title">¿En qué se va la plata? (% de los ingresos del mes)</div>
+                <div class="chart-container"><canvas id="compoChart"></canvas></div>
             </div>
-            <div class="card">
-                <div class="card-title">Local Mejor Margen</div>
-                <div class="card-value" id="best-local">-</div>
-                <div class="card-subvalue" id="best-margin">-</div>
-            </div>
-            <div class="card">
-                <div class="card-title">Local Peor Margen</div>
-                <div class="card-value" id="worst-local">-</div>
-                <div class="card-subvalue" id="worst-margin">-</div>
+            <div class="chart-card">
+                <div class="chart-title">Evolución del margen % por mes</div>
+                <div class="chart-container"><canvas id="evoChart"></canvas></div>
             </div>
         </div>
 
-        <div class="chart-container">
-            <canvas id="marginChart"></canvas>
-        </div>
-
-        <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-            <h2 style="margin-bottom: 20px; color: #2d3748;">Detalle por Local y Mes</h2>
-            <table id="marginTable"></table>
-        </div>
-
-        <div class="footer">
-            <p>🏪 Growler Garage | Sistema de Análisis de Márgenes</p>
-        </div>
+        <div class="footer">Growler Garage · Ingresos (MaxiREST) − Mercadería (Remitos) − Sueldos (Liquidación) − Gastos (Costos Fijos, con ADM Central 40/30/20/5/5)</div>
     </div>
 
     <script>
-        async function loadData() {
-            try {
-                const response = await fetch('dashboard_margin_data.json');
-                const data = await response.json();
+        const FIRST_MONTH = '2026-04';  // la foto arranca en abril
+        const MES = {'04':'Abril','05':'Mayo','06':'Junio','07':'Julio','08':'Agosto','09':'Septiembre','10':'Octubre','11':'Noviembre','12':'Diciembre','01':'Enero','02':'Febrero','03':'Marzo'};
+        const ORDEN_LOCALES = ['GROWLER CAFE','GROWLER VIA VIEJA','COLEGIO','GG Vol 2','GG Vol 4'];
+        const fmt = n => '$' + Math.round(n).toLocaleString('es-AR');
+        const fmtM = n => '$' + (n/1e6).toLocaleString('es-AR', {maximumFractionDigits:1}) + 'M';
+        const C = { cmv:'#b07aff', sueldos:'#f0b860', costos:'#ff6b35', margen:'#4ad484' };
+        Chart.defaults.color = '#8fa88f';
+        Chart.defaults.borderColor = '#1e2e1e';
+        Chart.defaults.font.family = "'DM Sans', sans-serif";
 
-                // Actualizar timestamp
-                document.getElementById('updated').textContent =
-                    new Date(data.last_updated).toLocaleString('es-AR');
+        let DATA = null, selMonth = null, compoChart = null, evoChart = null;
 
-                // Procesar datos
-                const margins = data.margins;
-                const locales = Object.keys(margins);
-                const months = ['2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06'];
+        function monthName(m) { return MES[m.slice(5)] + ' ' + m.slice(0,4); }
+        function pctClass(p) { return p >= 15 ? 'pct-good' : p >= 5 ? 'pct-mid' : 'pct-bad'; }
 
-                // Gráfico
-                const ctx = document.getElementById('marginChart').getContext('2d');
-                const datasets = locales.map((local, idx) => {
-                    const values = months.map(m => margins[local][m]?.margen_pct || 0);
-                    const colors = ['#667eea', '#764ba2', '#f093fb', '#4facfe', '#43e97b'];
-                    return {
-                        label: local,
-                        data: values,
-                        borderColor: colors[idx % colors.length],
-                        backgroundColor: colors[idx % colors.length] + '22',
-                        tension: 0.4,
-                        fill: false
-                    };
-                });
-
-                new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                        labels: months.map(m => m.substring(5)),
-                        datasets: datasets
-                    },
-                    options: {
-                        responsive: true,
-                        maintainAspectRatio: false,
-                        plugins: {
-                            legend: { position: 'bottom' }
-                        },
-                        scales: {
-                            y: {
-                                beginAtZero: true,
-                                title: { display: true, text: 'Margen %' }
-                            }
-                        }
-                    }
-                });
-
-                // Estadísticas
-                const juneData = locales.map(local => ({
-                    local,
-                    margen: margins[local]['2026-06']?.margen || 0,
-                    margen_pct: margins[local]['2026-06']?.margen_pct || 0
-                }));
-
-                const avgMargin = (juneData.reduce((s, d) => s + d.margen_pct, 0) / juneData.length).toFixed(1);
-                const best = juneData.reduce((a, b) => a.margen_pct > b.margen_pct ? a : b);
-                const worst = juneData.reduce((a, b) => a.margen_pct < b.margen_pct ? a : b);
-
-                document.getElementById('avg-margin').textContent = avgMargin + '%';
-                document.getElementById('best-local').textContent = best.local;
-                document.getElementById('best-margin').textContent = '$' + best.margen.toLocaleString('es-AR');
-                document.getElementById('worst-local').textContent = worst.local;
-                document.getElementById('worst-margin').textContent = '$' + worst.margen.toLocaleString('es-AR');
-
-                // Tabla
-                const table = document.getElementById('marginTable');
-                table.innerHTML = '<tr><th>Local</th><th>Enero</th><th>Febrero</th><th>Marzo</th><th>Abril</th><th>Mayo</th><th>Junio</th></tr>';
-
-                locales.forEach(local => {
-                    const row = document.createElement('tr');
-                    row.innerHTML = '<td><strong>' + local + '</strong></td>';
-                    months.forEach(month => {
-                        const m = margins[local][month];
-                        const pct = m ? m.margen_pct.toFixed(1) : '-';
-                        const cls = m && m.margen_pct < 50 ? 'warning' : m && m.margen_pct < 20 ? 'negative' : 'positive';
-                        row.innerHTML += '<td class="' + cls + '">' + pct + '%</td>';
-                    });
-                    table.appendChild(row);
-                });
-
-            } catch (error) {
-                console.error('Error cargando datos:', error);
-                document.body.innerHTML = '<div style="padding: 40px; color: white; text-align: center;"><h2>⚠️ Error cargando datos</h2><p>' + error.message + '</p></div>';
-            }
+        function monthsAvailable() {
+            const set = new Set();
+            Object.values(DATA.margins).forEach(byMonth =>
+                Object.keys(byMonth).forEach(m => { if (m >= FIRST_MONTH) set.add(m); }));
+            return [...set].sort();
         }
 
+        function monthIssues(m) {
+            const issues = [];
+            ORDEN_LOCALES.forEach(loc => {
+                const d = DATA.margins[loc]?.[m];
+                if (!d) return;
+                if (!d.sueldos) issues.push(loc + ': sin sueldos cargados');
+                if (!d.cmv) issues.push(loc + ': sin mercadería (remitos) cargada');
+                if (!d.costos_fijos) issues.push(loc + ': sin costos fijos cargados');
+            });
+            return issues;
+        }
+
+        function render() {
+            const months = monthsAvailable();
+            // Selector de meses
+            document.getElementById('monthSelector').innerHTML = months.map(m =>
+                `<button class="month-pill ${m===selMonth?'active':''}" onclick="selectMonth('${m}')">${monthName(m)}${monthIssues(m).length ? ' <span class="warn-dot">●</span>' : ''}</button>`
+            ).join('');
+
+            // Banner de datos incompletos
+            const issues = monthIssues(selMonth);
+            document.getElementById('warnBanner').innerHTML = issues.length ?
+                `<div class="warn-banner">⚠️ <strong>Este mes tiene datos incompletos</strong> — el margen real es menor al que se muestra:<ul>${issues.map(i=>'<li>'+i+'</li>').join('')}</ul></div>` : '';
+
+            // KPIs del mes
+            let ing=0, marg=0, best=null, worst=null;
+            ORDEN_LOCALES.forEach(loc => {
+                const d = DATA.margins[loc]?.[selMonth];
+                if (!d) return;
+                ing += d.ingresos; marg += d.margen;
+                if (!best || d.margen_pct > best.pct) best = {loc, pct: d.margen_pct};
+                if (!worst || d.margen_pct < worst.pct) worst = {loc, pct: d.margen_pct};
+            });
+            document.getElementById('kpiGrid').innerHTML = `
+                <div class="kpi-card hi"><div class="kpi-label">Margen del grupo · ${monthName(selMonth)}</div>
+                    <div class="kpi-value or">${ing ? (marg/ing*100).toFixed(1) : '-'}%</div>
+                    <div class="kpi-sub">${fmt(marg)} sobre ${fmtM(ing)} de ingresos</div></div>
+                <div class="kpi-card"><div class="kpi-label">Ingresos del grupo</div>
+                    <div class="kpi-value">${fmtM(ing)}</div><div class="kpi-sub">los 5 bares</div></div>
+                <div class="kpi-card"><div class="kpi-label">Mejor margen</div>
+                    <div class="kpi-value">${best ? best.pct.toFixed(1)+'%' : '-'}</div><div class="kpi-sub">${best?.loc || ''}</div></div>
+                <div class="kpi-card"><div class="kpi-label">Peor margen</div>
+                    <div class="kpi-value or">${worst ? worst.pct.toFixed(1)+'%' : '-'}</div><div class="kpi-sub">${worst?.loc || ''}</div></div>`;
+
+            // Cards P&L por bar
+            document.getElementById('barsGrid').innerHTML = ORDEN_LOCALES.map(loc => {
+                const d = DATA.margins[loc]?.[selMonth];
+                if (!d) return '';
+                const segs = [
+                    {k:'cmv', v:d.cmv, lbl:'Mercadería'},
+                    {k:'sueldos', v:d.sueldos, lbl:'Sueldos'},
+                    {k:'costos', v:d.costos_fijos, lbl:'Gastos'},
+                    {k:'margen', v:Math.max(d.margen,0), lbl:'Margen'},
+                ];
+                const tot = segs.reduce((s,x)=>s+x.v,0) || 1;
+                const warns = [];
+                if (!d.sueldos) warns.push('⚠️ sin sueldos cargados — margen sobreestimado');
+                if (!d.cmv) warns.push('⚠️ sin remitos cargados — margen sobreestimado');
+                return `<div class="bar-card">
+                    <div class="bar-card-head">
+                        <div class="bar-card-name">${loc}</div>
+                        <div class="bar-card-pct ${pctClass(d.margen_pct)}">${d.margen_pct.toFixed(1)}%</div>
+                    </div>
+                    <div class="pnl-row"><span class="lbl">Ingresos</span><span class="val">${fmt(d.ingresos)}</span></div>
+                    <div class="pnl-row"><span class="lbl">− Mercadería (CMV)</span><span class="val pnl-neg">${fmt(d.cmv)}</span></div>
+                    <div class="pnl-row"><span class="lbl">− Sueldos</span><span class="val pnl-neg">${fmt(d.sueldos)}</span></div>
+                    <div class="pnl-row"><span class="lbl">− Gastos fijos</span><span class="val pnl-neg">${fmt(d.costos_fijos)}</span></div>
+                    <div class="pnl-row total"><span class="lbl">= Margen</span><span class="val ${pctClass(d.margen_pct)}">${fmt(d.margen)}</span></div>
+                    <div class="compo-bar">${segs.map(s=>`<div class="compo-seg" style="width:${(s.v/tot*100)}%;background:${C[s.k]}"></div>`).join('')}</div>
+                    <div class="compo-legend">${segs.map(s=>`<span><span class="dot" style="background:${C[s.k]}"></span>${s.lbl} ${(s.v/tot*100).toFixed(0)}%</span>`).join('')}</div>
+                    ${warns.length ? `<div class="card-warn">${warns.join('<br>')}</div>` : ''}
+                </div>`;
+            }).join('');
+
+            renderCompoChart();
+            renderEvoChart(months);
+        }
+
+        function renderCompoChart() {
+            const labels = ORDEN_LOCALES.filter(l => DATA.margins[l]?.[selMonth]);
+            const get = f => labels.map(l => { const d = DATA.margins[l][selMonth]; return (f(d)/d.ingresos*100); });
+            if (compoChart) compoChart.destroy();
+            compoChart = new Chart(document.getElementById('compoChart'), {
+                type: 'bar',
+                data: { labels: labels.map(l=>l.replace('GROWLER ','')),
+                    datasets: [
+                        {label:'Mercadería', data:get(d=>d.cmv), backgroundColor:C.cmv},
+                        {label:'Sueldos', data:get(d=>d.sueldos), backgroundColor:C.sueldos},
+                        {label:'Gastos fijos', data:get(d=>d.costos_fijos), backgroundColor:C.costos},
+                        {label:'Margen', data:get(d=>Math.max(d.margen,0)), backgroundColor:C.margen},
+                    ]},
+                options: { responsive:true, maintainAspectRatio:false,
+                    plugins:{ legend:{position:'bottom'}, tooltip:{callbacks:{label: c => ` ${c.dataset.label}: ${c.parsed.y.toFixed(1)}% de los ingresos`}} },
+                    scales:{ x:{stacked:true}, y:{stacked:true, max:100, ticks:{callback:v=>v+'%'}} } }
+            });
+        }
+
+        function renderEvoChart(months) {
+            const colors = ['#ff6b35','#5aedc5','#f0b860','#b07aff','#4ad484'];
+            if (evoChart) evoChart.destroy();
+            evoChart = new Chart(document.getElementById('evoChart'), {
+                type: 'line',
+                data: { labels: months.map(m=>MES[m.slice(5)]),
+                    datasets: ORDEN_LOCALES.map((loc,i)=>({
+                        label: loc.replace('GROWLER ',''),
+                        data: months.map(m => DATA.margins[loc]?.[m]?.margen_pct ?? null),
+                        borderColor: colors[i], backgroundColor: colors[i],
+                        tension: 0.35, pointRadius: 4,
+                    }))},
+                options: { responsive:true, maintainAspectRatio:false,
+                    plugins:{ legend:{position:'bottom'}, tooltip:{callbacks:{label: c => ` ${c.dataset.label}: ${c.parsed.y?.toFixed(1)}%`}} },
+                    scales:{ y:{ticks:{callback:v=>v+'%'}} } }
+            });
+        }
+
+        function selectMonth(m) { selMonth = m; render(); }
+
+        async function loadData() {
+            try {
+                const resp = await fetch(`dashboard_margin_data.json?t=${Date.now()}`);
+                DATA = await resp.json();
+                document.getElementById('lastUpdate').textContent =
+                    'Última actualización: ' + new Date(DATA.last_updated).toLocaleString('es-AR');
+                const months = monthsAvailable();
+                // Abrir en el último mes con datos completos (los incompletos quedan marcados con ●)
+                const completos = months.filter(m => monthIssues(m).length === 0);
+                selMonth = completos.length ? completos[completos.length-1] : months[months.length-1];
+                render();
+            } catch (e) {
+                console.error(e);
+                document.getElementById('lastUpdate').textContent = '⚠️ Error cargando datos: ' + e.message;
+            }
+        }
         loadData();
     </script>
 </body>
