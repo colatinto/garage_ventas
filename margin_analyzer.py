@@ -102,11 +102,15 @@ def read_ingresos():
 def read_sueldos():
     """Sueldos por local y mes desde las liquidaciones Excel de Lila.
 
-    Hoja RESUMEN LOCALES: col C = TOTAL MES $$, col D = Local, col E = Empleado.
-    Se excluye personal de administración (local 'adm').
+    Hoja RESUMEN LOCALES: col Z = 'TOTAL COSTO SALARIAL (P&L)' (costo real:
+    incluye adelantos, feriados, licencias, vacaciones/SAC y eventuales),
+    col D = Local, col E = Empleado.
+    Se excluye administración (local 'adm'): esos sueldos ya están en la
+    planilla de Costos Fijos como 'Sueldos Administracion: ...' (ADM Central).
     """
     sueldos = defaultdict(lambda: defaultdict(float))
     warnings = []
+    COL_TOTAL = 25  # col Z (0-based): TOTAL COSTO SALARIAL (P&L)
 
     for filepath in sorted(DATA_GASTOS_DIR.glob('GROWLER - Liquidación Sueldos - * 2026.xlsx')):
         mes_nombre = filepath.stem.replace('GROWLER - Liquidación Sueldos - ', '').replace(' 2026', '').strip().upper()
@@ -119,15 +123,18 @@ def read_sueldos():
         ws = wb['RESUMEN LOCALES']
         total_mes = 0
         for row in ws.iter_rows(min_row=5, values_only=True):
-            if len(row) < 5:
+            if len(row) <= COL_TOTAL:
                 continue
-            monto, local_raw, empleado = row[2], row[3], row[4]
+            local_raw, empleado, monto = row[3], row[4], row[COL_TOTAL]
             if not (empleado and local_raw and isinstance(local_raw, str)):
                 continue
             local_raw = local_raw.strip().upper()
             if local_raw not in LOCAL_CANONICO:
                 continue  # excluye 'adm' y otros
             if isinstance(monto, (int, float)) and monto > 0:
+                if monto > 5_000_000:
+                    warnings.append(f"{mes_nombre} {local_raw}: sueldo sospechoso {empleado} ${monto:,.0f} (¿DNI pegado como monto?)")
+                    continue
                 sueldos[LOCAL_CANONICO[local_raw]][month] += monto
                 total_mes += monto
         if total_mes == 0:
@@ -137,32 +144,52 @@ def read_sueldos():
 
 
 def read_costos_fijos():
-    """Costos fijos por local y mes desde la planilla de Lila.
+    """Costos fijos por local y mes.
 
-    Hoja 'COSTOS FIJOS Y OG ': col A = Mes, col D = Local, col E = Importe.
+    Prioridad 1: planilla nueva 'GROWLER - Gastos - 2026.xlsx' (hoja GASTOS,
+    una fila = un gasto, con desplegables).
+    Fallback: planilla vieja 'GROWLER - Costos Fijos - AÑO 2026.xlsx'.
     Los gastos de ADM Central se distribuyen según ADM_DISTRIBUCION.
     """
     costos = defaultdict(lambda: defaultdict(float))
     adm_por_mes = defaultdict(float)
 
-    filepath = DATA_GASTOS_DIR / 'GROWLER - Costos Fijos - AÑO 2026.xlsx'
-    wb = load_workbook(filepath, data_only=True)
-    ws = wb['COSTOS FIJOS Y OG ']
-
-    for row in ws.iter_rows(min_row=2, values_only=True):
-        if len(row) < 5:
-            continue
-        mes_raw, local_raw, importe = row[0], row[3], row[4]
-        month = MES_PLANILLA.get(str(mes_raw).strip()) if mes_raw else None
-        if not month or month not in MONTHS:
-            continue
-        if not (isinstance(importe, (int, float)) and importe > 0):
-            continue
-        local_raw = str(local_raw).strip() if local_raw else ''
-        if local_raw in LOCAL_CANONICO:
-            costos[LOCAL_CANONICO[local_raw]][month] += importe
-        elif local_raw == 'ADM Central':
-            adm_por_mes[month] += importe
+    nueva = DATA_GASTOS_DIR / 'GROWLER - Gastos - 2026.xlsx'
+    if nueva.exists():
+        wb = load_workbook(nueva, data_only=True)
+        ws = wb['GASTOS']
+        for row in ws.iter_rows(min_row=2, values_only=True):
+            if len(row) < 5:
+                continue
+            mes_raw, local_raw, importe = row[0], row[1], row[4]
+            month = NOMBRE_MES.get(str(mes_raw).strip().upper()) if mes_raw else None
+            if not month or month not in MONTHS:
+                continue
+            if not (isinstance(importe, (int, float)) and importe > 0):
+                continue
+            local_raw = str(local_raw).strip().upper() if local_raw else ''
+            if local_raw in LOCAL_CANONICO:
+                costos[LOCAL_CANONICO[local_raw]][month] += importe
+            elif local_raw == 'ADM CENTRAL':
+                adm_por_mes[month] += importe
+    else:
+        filepath = DATA_GASTOS_DIR / 'GROWLER - Costos Fijos - AÑO 2026.xlsx'
+        wb = load_workbook(filepath, data_only=True)
+        ws = wb['COSTOS FIJOS Y OG ']
+        for row in ws.iter_rows(min_row=2, values_only=True):
+            if len(row) < 5:
+                continue
+            mes_raw, local_raw, importe = row[0], row[3], row[4]
+            month = MES_PLANILLA.get(str(mes_raw).strip()) if mes_raw else None
+            if not month or month not in MONTHS:
+                continue
+            if not (isinstance(importe, (int, float)) and importe > 0):
+                continue
+            local_raw = str(local_raw).strip() if local_raw else ''
+            if local_raw in LOCAL_CANONICO:
+                costos[LOCAL_CANONICO[local_raw]][month] += importe
+            elif local_raw == 'ADM Central':
+                adm_por_mes[month] += importe
 
     # Distribuir ADM Central
     for month, adm_total in adm_por_mes.items():

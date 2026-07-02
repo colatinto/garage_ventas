@@ -14,3 +14,4 @@ config.secret.json
 data_gastos/*Sueldos*
 data_gastos/*.xlsx
 .claude/
+GROWLER - Gastos - 2026 (migrado).xlsx
