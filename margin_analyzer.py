@@ -62,13 +62,14 @@ ADM_DISTRIBUCION = {
     'GG Vol 4': 0.05,
 }
 
-# Archivos de remitos (CMV) por local (.csv o .xlsx con hoja LOCAL)
+# Archivos de remitos (CMV) por local, en orden de preferencia:
+# primero el xlsx que baja sync_drive.sh, después el snapshot CSV manual.
 CMV_FILES = {
-    'GROWLER CAFE': 'MORENO - FC-Remitos - AÑO 2026 - LOCAL.csv',
-    'GROWLER VIA VIEJA': 'VIA VIEJA - FC-Remitos - AÑO 2026 - LOCAL.csv',
-    'COLEGIO': 'FC-Remitos - AÑO 2026 Colegio - LOCAL.csv',
-    'GG Vol 2': 'GG2 - FC-Remitos - AÑO 2026  - LOCAL.csv',
-    'GG Vol 4': 'GG4 - FC-Remitos - AÑO 2026.xlsx',
+    'GROWLER CAFE': ['MORENO - FC-Remitos - AÑO 2026.xlsx', 'MORENO - FC-Remitos - AÑO 2026 - LOCAL.csv'],
+    'GROWLER VIA VIEJA': ['VIA VIEJA - FC-Remitos - AÑO 2026.xlsx', 'VIA VIEJA - FC-Remitos - AÑO 2026 - LOCAL.csv'],
+    'COLEGIO': ['COLEGIO - FC-Remitos - AÑO 2026.xlsx', 'FC-Remitos - AÑO 2026 Colegio - LOCAL.csv'],
+    'GG Vol 2': ['GG2 - FC-Remitos - AÑO 2026.xlsx', 'GG2 - FC-Remitos - AÑO 2026  - LOCAL.csv'],
+    'GG Vol 4': ['GG4 - FC-Remitos - AÑO 2026.xlsx'],
 }
 
 
@@ -212,10 +213,10 @@ def read_cmv():
     cmv = defaultdict(lambda: defaultdict(float))
     warnings = []
 
-    for local, filename in CMV_FILES.items():
-        filepath = DATA_GASTOS_DIR / filename
-        if not filepath.exists():
-            warnings.append(f"CMV {local}: falta archivo {filename}")
+    for local, candidates in CMV_FILES.items():
+        filepath = next((DATA_GASTOS_DIR / f for f in candidates if (DATA_GASTOS_DIR / f).exists()), None)
+        if filepath is None:
+            warnings.append(f"CMV {local}: falta archivo ({candidates[0]})")
             continue
 
         count = 0
@@ -267,7 +268,7 @@ def read_cmv():
                         count += 1
 
         if count == 0:
-            warnings.append(f"CMV {local}: 0 registros 2026 en {filename}")
+            warnings.append(f"CMV {local}: 0 registros 2026 en {filepath.name}")
 
     return cmv, warnings
 
