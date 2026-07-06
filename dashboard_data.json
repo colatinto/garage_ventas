@@ -1,6 +1,42 @@
 {
   "sales_data": [
     {
+      "id": 1148,
+      "date": "2026-07-06",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 514520.0,
+      "total_tickets": 31,
+      "cash_sales": 231120.0,
+      "card_sales": 38800.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 244600.0,
+      "salon_sales": 0.0,
+      "counter_sales": 0.0,
+      "opening_time": "07:41",
+      "closing_time": "14:32",
+      "closure_number": 2977
+    },
+    {
+      "id": 1149,
+      "date": "2026-07-06",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 481350.0,
+      "total_tickets": 24,
+      "cash_sales": 63650.0,
+      "card_sales": 57700.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 114600.0,
+      "salon_sales": 422250.0,
+      "counter_sales": 59100.0,
+      "opening_time": "07:31",
+      "closing_time": "14:41",
+      "closure_number": 534
+    },
+    {
       "id": 1145,
       "date": "2026-07-05",
       "location": "GROWLER VIA VIEJA",
@@ -20415,6 +20451,51 @@
   ],
   "alerts": [
     {
+      "id": 23,
+      "date": "2026-07-06",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 27.7% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 24,
+      "date": "2026-07-06",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -73.1% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 25,
+      "date": "2026-07-06",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -90.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 26,
+      "date": "2026-07-06",
+      "location": "GROWLER CAFE",
+      "alert_type": "low_sales",
+      "message": "GROWLER CAFE: Ventas -61.7% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 27,
+      "date": "2026-07-06",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -31.6% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 18,
       "date": "2026-07-06",
       "location": "COLEGIO",
@@ -20644,28 +20725,28 @@
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 3475.0,
-        "total_amount": 4187652.68
+        "quantity": 3481.0,
+        "total_amount": 4194612.68
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 2392.0,
-        "total_amount": 2879950.89
+        "quantity": 2399.0,
+        "total_amount": 2889070.89
       },
       {
         "name": "Menu Clasico",
-        "quantity": 1937.0,
-        "total_amount": 30542676.66
+        "quantity": 1941.0,
+        "total_amount": 30614876.66
+      },
+      {
+        "name": "Agua Sin Gas",
+        "quantity": 1344.0,
+        "total_amount": 2377587.48
       },
       {
         "name": "Vaso Limonada",
         "quantity": 1343.0,
         "total_amount": 2517487.74
-      },
-      {
-        "name": "Agua Sin Gas",
-        "quantity": 1342.0,
-        "total_amount": 2377587.48
       }
     ],
     "GROWLER VIA VIEJA": [
@@ -20696,7 +20777,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-06T12:11:56.492715",
+  "last_updated": "2026-07-06T16:09:57.455096",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
