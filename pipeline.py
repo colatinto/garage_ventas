@@ -43,9 +43,15 @@ def git_publish(files, msg):
 
 
 def copy_if_changed(src: Path, dest: Path) -> bool:
-    if not src.exists():
+    # Los archivos del Drive "en la nube" (no descargados) pueden fallar con
+    # EDEADLK bajo cron; en ese caso se sigue con el último snapshot local.
+    try:
+        if not src.exists():
+            return False
+        data = src.read_bytes()
+    except OSError as e:
+        print(f"· {src.name}: no se pudo leer del Drive ({e.strerror}) - se usa el snapshot local")
         return False
-    data = src.read_bytes()
     if dest.exists() and dest.read_bytes() == data:
         return False
     dest.write_bytes(data)
@@ -66,7 +72,12 @@ def margenes():
         sys.exit(1)
 
     # 1) Liquidaciones de sueldos (xlsx reales; normaliza espacios del nombre)
-    for f in (DRIVE / 'Sueldos').glob('GROWLER - Liquidación Sueldos - *2026*.xlsx'):
+    try:
+        liquidaciones = list((DRIVE / 'Sueldos').glob('GROWLER - Liquidación Sueldos - *2026*.xlsx'))
+    except OSError:
+        liquidaciones = []
+        print("· carpeta Sueldos del Drive no accesible - se usan los snapshots locales")
+    for f in liquidaciones:
         clean_name = ' '.join(f.name.replace(' .xlsx', '.xlsx').split())
         copy_if_changed(f, PROJECT / 'data_gastos' / clean_name)
 
