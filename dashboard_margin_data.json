@@ -1,12 +1,12 @@
 {
-  "last_updated": "2026-07-04T12:21:30.116953",
+  "last_updated": "2026-07-13T12:48:50.213427",
   "adm_central_por_mes": {
     "2026-03": 11697381.3727,
     "2026-01": 292000.0,
     "2026-02": 292000.0,
     "2026-04": 11332749.75,
     "2026-05": 11411785.375,
-    "2026-06": 4864984.1
+    "2026-06": 5184984.1
   },
   "adm_distribucion": {
     "GROWLER CAFE": 0.4,
@@ -64,9 +64,9 @@
         "ingresos": 84541845.0,
         "cmv": 23537691.03,
         "sueldos": 18053721.17,
-        "costos_fijos": 18118627.5,
-        "margen": 24831805.3,
-        "margen_pct": 29.37
+        "costos_fijos": 18246627.5,
+        "margen": 24703805.3,
+        "margen_pct": 29.22
       }
     },
     "GROWLER VIA VIEJA": {
@@ -114,9 +114,9 @@
         "ingresos": 48125985.0,
         "cmv": 14698284.57,
         "sueldos": 7547375.0,
-        "costos_fijos": 11975911.23,
-        "margen": 13904414.2,
-        "margen_pct": 28.89
+        "costos_fijos": 12071911.23,
+        "margen": 13808414.2,
+        "margen_pct": 28.69
       }
     },
     "COLEGIO": {
@@ -164,9 +164,9 @@
         "ingresos": 14300525.0,
         "cmv": 3957146.51,
         "sueldos": 3812075.0,
-        "costos_fijos": 3427725.82,
-        "margen": 3103577.67,
-        "margen_pct": 21.7
+        "costos_fijos": 3491725.82,
+        "margen": 3039577.67,
+        "margen_pct": 21.26
       }
     },
     "GG Vol 2": {
@@ -214,9 +214,9 @@
         "ingresos": 33087199.99,
         "cmv": 12611969.06,
         "sueldos": 3800000.0,
-        "costos_fijos": 8861389.21,
-        "margen": 7813841.72,
-        "margen_pct": 23.62
+        "costos_fijos": 8877389.21,
+        "margen": 7797841.72,
+        "margen_pct": 23.57
       }
     },
     "GG Vol 4": {
@@ -264,9 +264,9 @@
         "ingresos": 27999345.0,
         "cmv": 13017241.67,
         "sueldos": 7350287.5,
-        "costos_fijos": 10377157.72,
-        "margen": -2745341.89,
-        "margen_pct": -9.81
+        "costos_fijos": 10393157.72,
+        "margen": -2761341.89,
+        "margen_pct": -9.86
       }
     }
   }
