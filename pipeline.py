@@ -102,14 +102,24 @@ def margenes():
         else:
             print(f"· remitos {name}: sin acceso público (se usa el último snapshot)")
 
+    # 3b) Movimientos de caja (si Lila la carga en el Drive, viaja a data_gastos)
+    copy_if_changed(Path.home() / ('Library/CloudStorage/GoogleDrive-francototi@gmail.com/'
+                                   '.shortcut-targets-by-id/1FPzFtpVT-s--OaKjjbCoy7xtmIsBNG--/'
+                                   'Proyecto Consultoria Growler/0 - PLANTILLAS V2 (propuesta Franco)/'
+                                   'GROWLER - Movimientos de Caja - 2026.xlsx'),
+                    PROJECT / 'data_gastos' / 'GROWLER - Movimientos de Caja - 2026.xlsx')
+
     # 4) Regenerar y publicar si cambió
     import margin_analyzer
     margin_analyzer.main()
-    r = subprocess.run(['git', 'diff', '--quiet', 'dashboard_margin_data.json'], cwd=PROJECT)
+    import caja_analyzer
+    caja_analyzer.main()
+    r = subprocess.run(['git', 'diff', '--quiet', 'dashboard_margin_data.json', 'dashboard_caja_data.json'], cwd=PROJECT)
     if r.returncode != 0:
-        git_publish(['dashboard_margin_data.json', 'margenes_analisis_lila.csv'], 'auto update margins')
+        git_publish(['dashboard_margin_data.json', 'margenes_analisis_lila.csv', 'dashboard_caja_data.json'],
+                    'auto update margins & caja')
     else:
-        print("· sin cambios en márgenes")
+        print("· sin cambios en márgenes/caja")
 
 
 if __name__ == '__main__':

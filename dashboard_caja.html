@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Bars · Caja</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0c0f0c; --card: #141a14; --border: #1e2e1e; --border-hover: #2e4a2e;
+            --text: #e4ede4; --text2: #8fa88f; --muted: #5a7a5a;
+            --accent: #ff6b35; --accent-soft: rgba(255,107,53,0.1);
+            --teal: #5aedc5; --teal-soft: rgba(90,237,197,0.1);
+            --gold: #f0b860; --green: #4ad484; --red: #ff5a5a;
+            --r: 14px; --rs: 10px;
+            --font: 'DM Sans', -apple-system, sans-serif; --mono: 'Space Mono', monospace;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; padding: 24px; line-height: 1.5; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        header { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 26px 30px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; }
+        h1 { font-size: 1.65rem; font-weight: 700; letter-spacing: -0.02em; }
+        h1 span { color: var(--accent); }
+        .last-update { font-family: var(--mono); font-size: 0.76rem; color: var(--muted); margin-top: 5px; }
+        .nav-link { font-size: 0.86rem; color: var(--teal); text-decoration: none; border: 1px solid var(--border); padding: 9px 16px; border-radius: var(--rs); margin-left: 8px; }
+        .nav-link:hover { border-color: var(--teal); background: var(--teal-soft); }
+        .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-bottom: 26px; }
+        .kpi-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; }
+        .kpi-card.alert { border-color: var(--red); background: linear-gradient(135deg, rgba(255,90,90,0.08), transparent); }
+        .kpi-label { font-size: 0.74rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 500; margin-bottom: 9px; }
+        .kpi-value { font-family: var(--mono); font-size: 1.55rem; font-weight: 700; color: var(--teal); }
+        .kpi-value.red { color: var(--red); }
+        .kpi-sub { font-size: 0.78rem; color: var(--muted); margin-top: 5px; }
+        .section-title { font-size: 1.05rem; font-weight: 600; margin: 32px 0 14px 0; }
+        .card { background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 20px; overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { font-size: 0.74rem; font-weight: 600; color: var(--text2); text-transform: uppercase; letter-spacing: 0.05em; padding: 9px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        th.num, td.num { text-align: right; font-family: var(--mono); font-size: 0.86rem; }
+        td { padding: 9px 12px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:last-child td { border-bottom: none; }
+        .tag-vencida { color: var(--red); font-size: 0.72rem; font-weight: 700; }
+        .notice { background: rgba(240,184,96,0.08); border: 1px solid rgba(240,184,96,0.35); border-radius: var(--r); padding: 14px 18px; margin-top: 26px; font-size: 0.87rem; color: var(--gold); }
+        .footer { text-align: center; color: var(--muted); margin-top: 32px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>💸 <span>Garage Bars</span> · Caja</h1>
+                <div class="last-update" id="lastUpdate">Cargando...</div>
+            </div>
+            <div>
+                <a class="nav-link" href="dashboard_pro.html">Ventas</a>
+                <a class="nav-link" href="dashboard_margin.html">Foto Mensual</a>
+            </div>
+        </header>
+
+        <div class="kpi-grid" id="kpis"></div>
+
+        <div class="section-title">🏦 Deuda a proveedores por bar</div>
+        <div class="card"><table id="tablaBares"></table></div>
+
+        <div class="section-title">📄 Facturas pendientes más grandes</div>
+        <div class="card"><table id="tablaDetalle"></table></div>
+
+        <div id="movimientos"></div>
+
+        <div class="footer">Fuente: estados de pago de las planillas FC-Remitos · Se actualiza todas las mañanas</div>
+    </div>
+
+    <script>
+        const fmt = n => '$' + Math.round(n).toLocaleString('es-AR');
+        async function load() {
+            const d = await (await fetch(`dashboard_caja_data.json?t=${Date.now()}`)).json();
+            document.getElementById('lastUpdate').textContent =
+                'Última actualización: ' + new Date(d.last_updated).toLocaleString('es-AR');
+            const dp = d.deuda_proveedores;
+
+            document.getElementById('kpis').innerHTML = `
+                <div class="kpi-card"><div class="kpi-label">Deuda total a proveedores</div>
+                    <div class="kpi-value">${fmt(dp.total)}</div>
+                    <div class="kpi-sub">según estados cargados en remitos</div></div>
+                <div class="kpi-card alert"><div class="kpi-label">Vencido</div>
+                    <div class="kpi-value red">${fmt(dp.total_vencido)}</div>
+                    <div class="kpi-sub">${Object.values(dp.por_bar).reduce((s,b)=>s+b.vencidas,0)} facturas vencidas</div></div>
+                <div class="kpi-card"><div class="kpi-label">Al día (por vencer)</div>
+                    <div class="kpi-value">${fmt(dp.total - dp.total_vencido)}</div></div>`;
+
+            let t = '<tr><th>Bar</th><th class="num">Facturas</th><th class="num">Vencido</th><th class="num">Total adeudado</th></tr>';
+            Object.entries(dp.por_bar).sort((a,b)=>b[1].total-a[1].total).forEach(([bar, b]) => {
+                t += `<tr><td>${bar}</td><td class="num">${b.facturas}</td>
+                      <td class="num" style="color:${b.vencido?'var(--red)':'var(--muted)'}">${fmt(b.vencido)}</td>
+                      <td class="num"><b>${fmt(b.total)}</b></td></tr>`;
+            });
+            document.getElementById('tablaBares').innerHTML = t;
+
+            let det = '<tr><th>Bar</th><th>Proveedor</th><th>Recibida</th><th>Vencía</th><th class="num">Monto</th></tr>';
+            dp.detalle_top.forEach(f => {
+                det += `<tr><td>${f.bar.replace('GROWLER ','')}</td><td>${f.proveedor} ${f.vencida?'<span class="tag-vencida">VENCIDA</span>':''}</td>
+                        <td>${f.fecha}</td><td>${f.vencimiento||'-'}</td><td class="num">${fmt(f.monto)}</td></tr>`;
+            });
+            document.getElementById('tablaDetalle').innerHTML = det;
+
+            if (!d.movimientos) {
+                document.getElementById('movimientos').innerHTML = `<div class="notice">
+                    📋 <b>Falta la otra mitad de la foto:</b> los retiros de socios, pagos de deuda vieja e
+                    inversiones (GG3) todavía no se registran en ningún lado. Cuando se empiece a cargar la
+                    planilla <b>"GROWLER - Movimientos de Caja - 2026"</b> (está en la carpeta PLANTILLAS V2 del
+                    Drive), acá va a aparecer la conciliación completa: margen del mes vs. destino de la plata.</div>`;
+            } else {
+                const porTipo = {};
+                d.movimientos.forEach(m => { porTipo[m.tipo] = (porTipo[m.tipo]||0) + m.monto; });
+                let mv = '<div class="section-title">🧾 Movimientos de caja registrados</div><div class="card"><table>';
+                mv += '<tr><th>Tipo</th><th class="num">Total</th></tr>';
+                Object.entries(porTipo).sort((a,b)=>b[1]-a[1]).forEach(([tipo, tot]) => {
+                    mv += `<tr><td>${tipo}</td><td class="num">${fmt(tot)}</td></tr>`;
+                });
+                mv += '</table></div>';
+                document.getElementById('movimientos').innerHTML = mv;
+            }
+        }
+        load();
+    </script>
+</body>
+</html>

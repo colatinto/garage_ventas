@@ -1,0 +1,242 @@
+{
+  "last_updated": "2026-07-20T15:22:49.228703",
+  "deuda_proveedores": {
+    "por_bar": {
+      "GROWLER CAFE": {
+        "total": 14388398,
+        "facturas": 68,
+        "vencido": 11900352,
+        "vencidas": 50
+      },
+      "GROWLER VIA VIEJA": {
+        "total": 4396840,
+        "facturas": 34,
+        "vencido": 3287803,
+        "vencidas": 21
+      },
+      "COLEGIO": {
+        "total": 5997982,
+        "facturas": 66,
+        "vencido": 5094499,
+        "vencidas": 56
+      },
+      "GG Vol 2": {
+        "total": 23332855,
+        "facturas": 61,
+        "vencido": 22428681,
+        "vencidas": 59
+      },
+      "GG Vol 4": {
+        "total": 17903401,
+        "facturas": 67,
+        "vencido": 17456956,
+        "vencidas": 66
+      }
+    },
+    "total": 66019476,
+    "total_vencido": 60168291,
+    "detalle_top": [
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "26/05",
+        "vencimiento": "15/06",
+        "monto": 1304000,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "15/04",
+        "vencimiento": "05/05",
+        "monto": 1242750,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Vines & Co.",
+        "fecha": "25/06",
+        "vencimiento": "16/07",
+        "monto": 1236439,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "21/04",
+        "vencimiento": "11/05",
+        "monto": 1139500,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "16/03",
+        "vencimiento": "05/04",
+        "monto": 1058500,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "05/05",
+        "vencimiento": "25/05",
+        "monto": 1015250,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "25/03",
+        "vencimiento": "14/04",
+        "monto": 1011500,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Cabrales",
+        "fecha": "27/05",
+        "vencimiento": "26/06",
+        "monto": 976612,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "18/02",
+        "vencimiento": "10/03",
+        "monto": 961000,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Cabrales",
+        "fecha": "18/06",
+        "vencimiento": "18/07",
+        "monto": 956250,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Cabrales",
+        "fecha": "10/06",
+        "vencimiento": "10/07",
+        "monto": 949653,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Cabrales",
+        "fecha": "03/06",
+        "vencimiento": "03/07",
+        "monto": 937938,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "17/06",
+        "vencimiento": "07/07",
+        "monto": 929250,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Papelera del Sur",
+        "fecha": "29/05",
+        "vencimiento": "29/05",
+        "monto": 872701,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "09/06",
+        "vencimiento": "29/06",
+        "monto": 856750,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 4",
+        "proveedor": "Vines & Co.",
+        "fecha": "18/06",
+        "vencimiento": "09/07",
+        "monto": 856031,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "07/04",
+        "vencimiento": "27/04",
+        "monto": 836750,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Vines & Co.",
+        "fecha": "16/09",
+        "vencimiento": "07/10",
+        "monto": 831507,
+        "vencida": false
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "10/03",
+        "vencimiento": "30/03",
+        "monto": 828750,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 4",
+        "proveedor": "CCU",
+        "fecha": "23/03",
+        "vencimiento": "23/03",
+        "monto": 812675,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 4",
+        "proveedor": "CCU",
+        "fecha": "09/03",
+        "vencimiento": "09/03",
+        "monto": 805460,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "CCU",
+        "fecha": "29/05",
+        "vencimiento": "29/05",
+        "monto": 745156,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 4",
+        "proveedor": "CCU",
+        "fecha": "18/06",
+        "vencimiento": "18/06",
+        "monto": 744799,
+        "vencida": true
+      },
+      {
+        "bar": "GROWLER CAFE",
+        "proveedor": "Cabrales",
+        "fecha": "04/06",
+        "vencimiento": "04/07",
+        "monto": 741453,
+        "vencida": true
+      },
+      {
+        "bar": "GG Vol 2",
+        "proveedor": "Minga (Lecreba SA)",
+        "fecha": "04/02",
+        "vencimiento": "24/02",
+        "monto": 739250,
+        "vencida": true
+      }
+    ]
+  },
+  "movimientos": null
+}
