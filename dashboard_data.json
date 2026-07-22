@@ -22143,6 +22143,42 @@
   ],
   "alerts": [
     {
+      "id": 233,
+      "date": "2026-07-22",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -58.2% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 234,
+      "date": "2026-07-22",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -100.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 235,
+      "date": "2026-07-22",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -94.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 236,
+      "date": "2026-07-22",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -70.6% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 229,
       "date": "2026-07-22",
       "location": "COLEGIO",
@@ -24314,7 +24350,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-22T13:08:33.196799",
+  "last_updated": "2026-07-22T14:07:51.528332",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
