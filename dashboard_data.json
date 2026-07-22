@@ -1,6 +1,132 @@
 {
   "sales_data": [
     {
+      "id": 1246,
+      "date": "2026-07-21",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 426800.0,
+      "total_tickets": 21,
+      "cash_sales": 122000.0,
+      "card_sales": 163400.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 141400.0,
+      "salon_sales": 131200.0,
+      "counter_sales": 295600.0,
+      "opening_time": "16:05",
+      "closing_time": "23:31",
+      "closure_number": 1063
+    },
+    {
+      "id": 1242,
+      "date": "2026-07-21",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 1201920.0,
+      "total_tickets": 51,
+      "cash_sales": 411660.0,
+      "card_sales": 234000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 556260.0,
+      "salon_sales": 0.0,
+      "counter_sales": 26360.0,
+      "opening_time": "14:49",
+      "closing_time": "22:07",
+      "closure_number": 3007
+    },
+    {
+      "id": 1241,
+      "date": "2026-07-21",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 729030.0,
+      "total_tickets": 34,
+      "cash_sales": 260730.0,
+      "card_sales": 172500.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 295800.0,
+      "salon_sales": 0.0,
+      "counter_sales": 78030.0,
+      "opening_time": "07:09",
+      "closing_time": "14:48",
+      "closure_number": 3006
+    },
+    {
+      "id": 1245,
+      "date": "2026-07-21",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 63000.0,
+      "total_tickets": 5,
+      "cash_sales": 22000.0,
+      "card_sales": 41000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 0.0,
+      "salon_sales": 52000.0,
+      "counter_sales": 11000.0,
+      "opening_time": "18:18",
+      "closing_time": "23:22",
+      "closure_number": 287
+    },
+    {
+      "id": 1244,
+      "date": "2026-07-21",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 0.0,
+      "total_tickets": 0,
+      "cash_sales": 0.0,
+      "card_sales": 0.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 0.0,
+      "salon_sales": 0.0,
+      "counter_sales": 0.0,
+      "opening_time": "22:12",
+      "closing_time": "22:13",
+      "closure_number": 569
+    },
+    {
+      "id": 1247,
+      "date": "2026-07-21",
+      "location": "COLEGIO",
+      "shift": "Tarde",
+      "total_sales": 179970.0,
+      "total_tickets": 16,
+      "cash_sales": 68670.0,
+      "card_sales": 16200.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 80800.0,
+      "salon_sales": 156570.0,
+      "counter_sales": 23400.0,
+      "opening_time": "14:05",
+      "closing_time": "07:30",
+      "closure_number": 551
+    },
+    {
+      "id": 1240,
+      "date": "2026-07-21",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 515420.0,
+      "total_tickets": 41,
+      "cash_sales": 98420.0,
+      "card_sales": 92000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 108400.0,
+      "salon_sales": 444950.0,
+      "counter_sales": 70470.0,
+      "opening_time": "07:49",
+      "closing_time": "14:04",
+      "closure_number": 550
+    },
+    {
       "id": 1237,
       "date": "2026-07-20",
       "location": "GROWLER VIA VIEJA",
@@ -22017,6 +22143,42 @@
   ],
   "alerts": [
     {
+      "id": 229,
+      "date": "2026-07-22",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -58.2% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 230,
+      "date": "2026-07-22",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -100.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 231,
+      "date": "2026-07-22",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -94.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 232,
+      "date": "2026-07-22",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -70.6% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 225,
       "date": "2026-07-21",
       "location": "COLEGIO",
@@ -24100,35 +24262,35 @@
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 3717.0,
-        "total_amount": 4460292.68
+        "quantity": 3725.0,
+        "total_amount": 4467492.68
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 2555.0,
-        "total_amount": 3082750.89
+        "quantity": 2563.0,
+        "total_amount": 3092110.89
       },
       {
         "name": "Menu Clasico",
-        "quantity": 2050.0,
-        "total_amount": 32567886.66
+        "quantity": 2059.0,
+        "total_amount": 32729386.66
       },
       {
         "name": "Vaso Limonada",
-        "quantity": 1413.0,
-        "total_amount": 2644537.74
+        "quantity": 1418.0,
+        "total_amount": 2649487.74
       },
       {
         "name": "Agua Sin Gas",
-        "quantity": 1407.0,
-        "total_amount": 2511987.48
+        "quantity": 1415.0,
+        "total_amount": 2519967.48
       }
     ],
     "GROWLER VIA VIEJA": [
       {
         "name": "Pinta Heineken",
-        "quantity": 6198.0,
-        "total_amount": 34728850.3
+        "quantity": 6199.0,
+        "total_amount": 34734850.3
       },
       {
         "name": "Eugenio Dulce +",
@@ -24137,8 +24299,8 @@
       },
       {
         "name": "Promo Heineken",
-        "quantity": 3035.0,
-        "total_amount": 25643039.61
+        "quantity": 3038.0,
+        "total_amount": 25673039.61
       },
       {
         "name": "FERNET NOC",
@@ -24152,7 +24314,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-21T13:05:36.320375",
+  "last_updated": "2026-07-22T13:08:33.196799",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
