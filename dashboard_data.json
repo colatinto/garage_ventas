@@ -1,6 +1,24 @@
 {
   "sales_data": [
     {
+      "id": 1262,
+      "date": "2026-07-24",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 546350.0,
+      "total_tickets": 22,
+      "cash_sales": 67950.0,
+      "card_sales": 31000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 90000.0,
+      "salon_sales": 501080.0,
+      "counter_sales": 45270.0,
+      "opening_time": "08:10",
+      "closing_time": "14:17",
+      "closure_number": 556
+    },
+    {
       "id": 1258,
       "date": "2026-07-23",
       "location": "GROWLER VIA VIEJA",
@@ -22395,6 +22413,42 @@
   ],
   "alerts": [
     {
+      "id": 268,
+      "date": "2026-07-24",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 28.0% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 269,
+      "date": "2026-07-24",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -35.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 270,
+      "date": "2026-07-24",
+      "location": "GROWLER CAFE",
+      "alert_type": "high_sales",
+      "message": "GROWLER CAFE: Excelente! Ventas 29.6% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 271,
+      "date": "2026-07-24",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -36.9% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 264,
       "date": "2026-07-24",
       "location": "COLEGIO",
@@ -24881,7 +24935,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-24T14:07:08.858803",
+  "last_updated": "2026-07-24T15:08:57.444693",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
