@@ -1,6 +1,24 @@
 {
   "sales_data": [
     {
+      "id": 1263,
+      "date": "2026-07-24",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 1274815.0,
+      "total_tickets": 59,
+      "cash_sales": 569700.0,
+      "card_sales": 166575.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 538540.0,
+      "salon_sales": 0.0,
+      "counter_sales": 110550.0,
+      "opening_time": "07:40",
+      "closing_time": "15:18",
+      "closure_number": 3012
+    },
+    {
       "id": 1262,
       "date": "2026-07-24",
       "location": "COLEGIO",
@@ -22413,6 +22431,33 @@
   ],
   "alerts": [
     {
+      "id": 272,
+      "date": "2026-07-24",
+      "location": "COLEGIO",
+      "alert_type": "high_sales",
+      "message": "COLEGIO: Excelente! Ventas 28.0% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 273,
+      "date": "2026-07-24",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -35.8% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 274,
+      "date": "2026-07-24",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -36.9% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 268,
       "date": "2026-07-24",
       "location": "COLEGIO",
@@ -24883,28 +24928,28 @@
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 3751.0,
-        "total_amount": 4507572.68
+        "quantity": 3761.0,
+        "total_amount": 4523892.68
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 2589.0,
-        "total_amount": 3117550.89
+        "quantity": 2598.0,
+        "total_amount": 3136270.89
       },
       {
         "name": "Menu Clasico",
-        "quantity": 2086.0,
-        "total_amount": 33230644.32
-      },
-      {
-        "name": "Vaso Limonada",
-        "quantity": 1430.0,
-        "total_amount": 2649487.74
+        "quantity": 2091.0,
+        "total_amount": 33316144.32
       },
       {
         "name": "Agua Sin Gas",
-        "quantity": 1427.0,
-        "total_amount": 2539287.48
+        "quantity": 1433.0,
+        "total_amount": 2555247.48
+      },
+      {
+        "name": "Vaso Limonada",
+        "quantity": 1432.0,
+        "total_amount": 2654437.74
       }
     ],
     "GROWLER VIA VIEJA": [
@@ -24935,7 +24980,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-24T15:08:57.444693",
+  "last_updated": "2026-07-24T16:06:47.557170",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
