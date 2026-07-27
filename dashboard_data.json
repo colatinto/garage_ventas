@@ -22719,6 +22719,51 @@
   ],
   "alerts": [
     {
+      "id": 307,
+      "date": "2026-07-27",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -60.9% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 308,
+      "date": "2026-07-27",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -43.4% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 309,
+      "date": "2026-07-27",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -64.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 310,
+      "date": "2026-07-27",
+      "location": "GROWLER CAFE",
+      "alert_type": "high_sales",
+      "message": "GROWLER CAFE: Excelente! Ventas 99.2% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 311,
+      "date": "2026-07-27",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -23.6% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 302,
       "date": "2026-07-27",
       "location": "COLEGIO",
@@ -25556,7 +25601,7 @@
       }
     ]
   },
-  "last_updated": "2026-07-27T10:13:10.555749",
+  "last_updated": "2026-07-27T11:10:52.400933",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
