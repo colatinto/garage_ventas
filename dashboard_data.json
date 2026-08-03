@@ -1,6 +1,366 @@
 {
   "sales_data": [
     {
+      "id": 1323,
+      "date": "2026-08-02",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 904100.0,
+      "total_tickets": 58,
+      "cash_sales": 306800.0,
+      "card_sales": 240200.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 357100.0,
+      "salon_sales": 609800.0,
+      "counter_sales": 294300.0,
+      "opening_time": "17:27",
+      "closing_time": "23:25",
+      "closure_number": 1079
+    },
+    {
+      "id": 1321,
+      "date": "2026-08-02",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Mañana",
+      "total_sales": 298035.0,
+      "total_tickets": 27,
+      "cash_sales": 113700.0,
+      "card_sales": 44500.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 139835.0,
+      "salon_sales": 173535.0,
+      "counter_sales": 124500.0,
+      "opening_time": "11:06",
+      "closing_time": "17:21",
+      "closure_number": 1078
+    },
+    {
+      "id": 1322,
+      "date": "2026-08-02",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 2160160.0,
+      "total_tickets": 76,
+      "cash_sales": 560610.0,
+      "card_sales": 567100.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 1032450.0,
+      "salon_sales": 0.0,
+      "counter_sales": 35440.0,
+      "opening_time": "14:50",
+      "closing_time": "22:13",
+      "closure_number": 3031
+    },
+    {
+      "id": 1320,
+      "date": "2026-08-02",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 1622050.0,
+      "total_tickets": 84,
+      "cash_sales": 754020.0,
+      "card_sales": 338930.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 529100.0,
+      "salon_sales": 0.0,
+      "counter_sales": 0.0,
+      "opening_time": "07:25",
+      "closing_time": "14:37",
+      "closure_number": 3030
+    },
+    {
+      "id": 1324,
+      "date": "2026-08-02",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 411700.0,
+      "total_tickets": 12,
+      "cash_sales": 240700.0,
+      "card_sales": 122500.0,
+      "transfer_sales": 48500.0,
+      "mercadopago_sales": 94000.0,
+      "other_sales": 48500.0,
+      "salon_sales": 411700.0,
+      "counter_sales": 0.0,
+      "opening_time": "18:06",
+      "closing_time": "00:27",
+      "closure_number": 299
+    },
+    {
+      "id": 1325,
+      "date": "2026-08-02",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 1045800.0,
+      "total_tickets": 79,
+      "cash_sales": 240500.0,
+      "card_sales": 126000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 679300.0,
+      "salon_sales": 0.0,
+      "counter_sales": 1045800.0,
+      "opening_time": "18:50",
+      "closing_time": "02:14",
+      "closure_number": 581
+    },
+    {
+      "id": 1318,
+      "date": "2026-08-01",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 6641350.0,
+      "total_tickets": 357,
+      "cash_sales": 1972700.0,
+      "card_sales": 1176500.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 3461150.0,
+      "salon_sales": 5889350.0,
+      "counter_sales": 752000.0,
+      "opening_time": "17:34",
+      "closing_time": "03:32",
+      "closure_number": 1077
+    },
+    {
+      "id": 1315,
+      "date": "2026-08-01",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Mañana",
+      "total_sales": 490650.0,
+      "total_tickets": 26,
+      "cash_sales": 86190.0,
+      "card_sales": 63260.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 276200.0,
+      "salon_sales": 449150.0,
+      "counter_sales": 41500.0,
+      "opening_time": "11:01",
+      "closing_time": "17:31",
+      "closure_number": 1076
+    },
+    {
+      "id": 1316,
+      "date": "2026-08-01",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 2754970.0,
+      "total_tickets": 115,
+      "cash_sales": 984680.0,
+      "card_sales": 646190.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 1124100.0,
+      "salon_sales": 0.0,
+      "counter_sales": 147950.0,
+      "opening_time": "15:30",
+      "closing_time": "00:08",
+      "closure_number": 3029
+    },
+    {
+      "id": 1314,
+      "date": "2026-08-01",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 2032350.03,
+      "total_tickets": 81,
+      "cash_sales": 959460.03,
+      "card_sales": 572470.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 465220.0,
+      "salon_sales": 0.0,
+      "counter_sales": 0.0,
+      "opening_time": "08:06",
+      "closing_time": "15:30",
+      "closure_number": 3028
+    },
+    {
+      "id": 1317,
+      "date": "2026-08-01",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 3267550.0,
+      "total_tickets": 145,
+      "cash_sales": 2076050.0,
+      "card_sales": 913500.0,
+      "transfer_sales": 278000.0,
+      "mercadopago_sales": 947000.0,
+      "other_sales": 278000.0,
+      "salon_sales": 2430050.0,
+      "counter_sales": 837500.0,
+      "opening_time": "18:19",
+      "closing_time": "03:22",
+      "closure_number": 298
+    },
+    {
+      "id": 1319,
+      "date": "2026-08-01",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 5029050.0,
+      "total_tickets": 393,
+      "cash_sales": 1425850.0,
+      "card_sales": 119500.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 3450700.0,
+      "salon_sales": 0.0,
+      "counter_sales": 5029050.0,
+      "opening_time": "18:37",
+      "closing_time": "04:01",
+      "closure_number": 580
+    },
+    {
+      "id": 1313,
+      "date": "2026-07-31",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 3044000.0,
+      "total_tickets": 197,
+      "cash_sales": 1023600.0,
+      "card_sales": 912800.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 1107600.0,
+      "salon_sales": 2556900.0,
+      "counter_sales": 487100.0,
+      "opening_time": "16:05",
+      "closing_time": "03:28",
+      "closure_number": 1075
+    },
+    {
+      "id": 1310,
+      "date": "2026-07-31",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 1413130.0,
+      "total_tickets": 59,
+      "cash_sales": 650790.0,
+      "card_sales": 73800.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 672140.0,
+      "salon_sales": 0.0,
+      "counter_sales": 50740.0,
+      "opening_time": "15:33",
+      "closing_time": "23:15",
+      "closure_number": 3027
+    },
+    {
+      "id": 1308,
+      "date": "2026-07-31",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 1618620.0,
+      "total_tickets": 72,
+      "cash_sales": 735320.0,
+      "card_sales": 224800.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 616700.0,
+      "salon_sales": 0.0,
+      "counter_sales": 0.0,
+      "opening_time": "07:40",
+      "closing_time": "15:33",
+      "closure_number": 3026
+    },
+    {
+      "id": 1311,
+      "date": "2026-07-31",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 1060450.0,
+      "total_tickets": 22,
+      "cash_sales": 621950.0,
+      "card_sales": 168000.0,
+      "transfer_sales": 210500.0,
+      "mercadopago_sales": 284000.0,
+      "other_sales": 210500.0,
+      "salon_sales": 955650.0,
+      "counter_sales": 104800.0,
+      "opening_time": "18:24",
+      "closing_time": "01:53",
+      "closure_number": 297
+    },
+    {
+      "id": 1312,
+      "date": "2026-07-31",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 1026500.0,
+      "total_tickets": 99,
+      "cash_sales": 206500.0,
+      "card_sales": 38500.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 781500.0,
+      "salon_sales": 0.0,
+      "counter_sales": 1026500.0,
+      "opening_time": "18:54",
+      "closing_time": "02:54",
+      "closure_number": 579
+    },
+    {
+      "id": 1309,
+      "date": "2026-07-31",
+      "location": "COLEGIO",
+      "shift": "Tarde",
+      "total_sales": 208090.0,
+      "total_tickets": 8,
+      "cash_sales": 40590.0,
+      "card_sales": 113400.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 7700.0,
+      "salon_sales": 196160.0,
+      "counter_sales": 11930.0,
+      "opening_time": "14:18",
+      "closing_time": "18:40",
+      "closure_number": 566
+    },
+    {
+      "id": 1326,
+      "date": "2026-07-31",
+      "location": "COLEGIO",
+      "shift": "Noche",
+      "total_sales": 501700.0,
+      "total_tickets": 20,
+      "cash_sales": 234200.0,
+      "card_sales": 40000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 131000.0,
+      "salon_sales": 481700.0,
+      "counter_sales": 20000.0,
+      "opening_time": "18:41",
+      "closing_time": "08:31",
+      "closure_number": 567
+    },
+    {
+      "id": 1307,
+      "date": "2026-07-31",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 568230.0,
+      "total_tickets": 33,
+      "cash_sales": 91330.0,
+      "card_sales": 90000.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 200800.0,
+      "salon_sales": 472330.0,
+      "counter_sales": 95900.0,
+      "opening_time": "07:41",
+      "closing_time": "14:17",
+      "closure_number": 565
+    },
+    {
       "id": 1303,
       "date": "2026-07-30",
       "location": "GROWLER VIA VIEJA",
@@ -23205,6 +23565,51 @@
   ],
   "alerts": [
     {
+      "id": 414,
+      "date": "2026-08-03",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -51.2% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 415,
+      "date": "2026-08-03",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -21.0% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 416,
+      "date": "2026-08-03",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -65.5% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 417,
+      "date": "2026-08-03",
+      "location": "GROWLER CAFE",
+      "alert_type": "high_sales",
+      "message": "GROWLER CAFE: Excelente! Ventas 60.5% por encima del promedio",
+      "severity": "success",
+      "sent": 0
+    },
+    {
+      "id": 418,
+      "date": "2026-08-03",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -38.3% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 410,
       "date": "2026-07-31",
       "location": "GG Vol 2",
@@ -26926,86 +27331,86 @@
     "GG Vol 2": [
       {
         "name": "German Pils HB",
-        "quantity": 3266.0,
-        "total_amount": 14782609.38
+        "quantity": 3350.0,
+        "total_amount": 15202609.38
       },
       {
         "name": "Easy 5 Ipa",
-        "quantity": 2825.0,
-        "total_amount": 14274358.07
+        "quantity": 2888.0,
+        "total_amount": 14609708.07
       },
       {
         "name": "Honey",
-        "quantity": 687.0,
-        "total_amount": 3298815.89
+        "quantity": 688.0,
+        "total_amount": 3303815.89
       },
       {
         "name": "Heineken Lata",
-        "quantity": 604.0,
-        "total_amount": 3150955.54
+        "quantity": 639.0,
+        "total_amount": 3341263.22
       },
       {
         "name": "Coca Cola",
-        "quantity": 301.0,
-        "total_amount": 789499.25
+        "quantity": 307.0,
+        "total_amount": 807499.25
       }
     ],
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 3893.0,
-        "total_amount": 4684692.68
+        "quantity": 3944.0,
+        "total_amount": 4750692.68
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 2674.0,
-        "total_amount": 3231790.89
+        "quantity": 2726.0,
+        "total_amount": 3296830.89
       },
       {
         "name": "Menu Clasico",
-        "quantity": 2164.0,
-        "total_amount": 34644244.32
+        "quantity": 2182.0,
+        "total_amount": 34965344.32
       },
       {
         "name": "Agua Sin Gas",
-        "quantity": 1492.0,
-        "total_amount": 2690865.48
+        "quantity": 1509.0,
+        "total_amount": 2758485.48
       },
       {
         "name": "Vaso Limonada",
-        "quantity": 1464.0,
-        "total_amount": 2717137.74
+        "quantity": 1476.0,
+        "total_amount": 2753437.74
       }
     ],
     "GROWLER VIA VIEJA": [
       {
         "name": "Pinta Heineken",
-        "quantity": 6441.0,
-        "total_amount": 36186850.3
+        "quantity": 6648.0,
+        "total_amount": 37428850.3
       },
       {
         "name": "Eugenio Dulce +",
-        "quantity": 4296.0,
-        "total_amount": 5253000.0
+        "quantity": 4518.0,
+        "total_amount": 5649000.0
       },
       {
         "name": "Promo Heineken",
-        "quantity": 3203.0,
-        "total_amount": 27323039.61
+        "quantity": 3321.0,
+        "total_amount": 28503039.61
       },
       {
         "name": "FERNET NOC",
-        "quantity": 3065.0,
-        "total_amount": 25126878.46
+        "quantity": 3174.0,
+        "total_amount": 26053378.46
       },
       {
         "name": "Heineken Lata",
-        "quantity": 1601.0,
-        "total_amount": 8169138.16
+        "quantity": 1646.0,
+        "total_amount": 8412638.17
       }
     ]
   },
-  "last_updated": "2026-07-31T16:50:13.009190",
+  "last_updated": "2026-08-03T09:10:27.534707",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
