@@ -27,8 +27,20 @@ DB_PATH = PROJECT_DIR / 'sales_data.db'
 OUTPUT_FILE = PROJECT_DIR / 'dashboard_margin_data.json'
 CSV_LILA = PROJECT_DIR / 'margenes_analisis_lila.csv'
 
-# Meses a reportar (agregar meses acá a medida que avanza el año)
-MONTHS = ['2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06']
+# Meses a reportar: de enero 2026 hasta el último mes CERRADO (automático).
+def _meses_hasta_ultimo_cerrado():
+    from datetime import date
+    hoy = date.today()
+    fin_y, fin_m = (hoy.year, hoy.month - 1) if hoy.month > 1 else (hoy.year - 1, 12)
+    meses, y, m = [], 2026, 1
+    while (y, m) <= (fin_y, fin_m):
+        meses.append(f"{y:04d}-{m:02d}")
+        m += 1
+        if m > 12:
+            m, y = 1, y + 1
+    return meses
+
+MONTHS = _meses_hasta_ultimo_cerrado()
 
 MES_NOMBRE = {
     '2026-01': 'ENERO', '2026-02': 'FEBRERO', '2026-03': 'MARZO',
