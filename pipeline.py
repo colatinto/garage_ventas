@@ -71,14 +71,17 @@ def margenes():
         print("ERROR: carpeta de Drive no disponible (¿app de Google Drive corriendo?)")
         sys.exit(1)
 
-    # 1) Liquidaciones de sueldos (xlsx reales; normaliza espacios del nombre)
+    # 1) Liquidaciones de sueldos (xlsx reales; normaliza espacios y unicode del nombre)
+    # OJO: el patrón NO debe llevar acentos — Google Drive guarda los nombres en
+    # NFD ("Liquidación" descompuesta) y un glob NFC no matchea nunca.
+    import unicodedata
     try:
-        liquidaciones = list((DRIVE / 'Sueldos').glob('GROWLER - Liquidación Sueldos - *2026*.xlsx'))
+        liquidaciones = list((DRIVE / 'Sueldos').glob('*Sueldos*2026*.xlsx'))
     except OSError:
         liquidaciones = []
         print("· carpeta Sueldos del Drive no accesible - se usan los snapshots locales")
     for f in liquidaciones:
-        clean_name = ' '.join(f.name.replace(' .xlsx', '.xlsx').split())
+        clean_name = unicodedata.normalize('NFC', ' '.join(f.name.replace(' .xlsx', '.xlsx').split()))
         copy_if_changed(f, PROJECT / 'data_gastos' / clean_name)
 
     # 2) Costos Fijos (y futura planilla GASTOS si aparece en el Drive)
@@ -122,6 +125,47 @@ def margenes():
         print("· sin cambios en márgenes/caja")
 
 
+def tick():
+    """Corrida horaria auto-recuperable: siempre ventas; márgenes y reporte
+    una vez al día en la primera corrida disponible (la Mac puede haber
+    estado dormida a las 7:30/9:00 — cron no recupera, esto sí)."""
+    import json as _json
+    from datetime import date as _date
+    state_file = PROJECT / '.pipeline_state.json'
+    state = {}
+    if state_file.exists():
+        try:
+            state = _json.loads(state_file.read_text())
+        except Exception:
+            state = {}
+    hoy = _date.today().isoformat()
+
+    try:
+        ventas()
+    except Exception as e:
+        print(f"ERROR en ventas: {e}")
+
+    if state.get('margenes') != hoy:
+        try:
+            margenes()
+            state['margenes'] = hoy
+        except SystemExit:
+            print("· margenes pospuesto (Drive no disponible)")
+        except Exception as e:
+            print(f"ERROR en margenes: {e}")
+
+    if state.get('reporte') != hoy:
+        r = subprocess.run([sys.executable, str(PROJECT / 'reporte_diario.py')], cwd=PROJECT)
+        if r.returncode == 0:
+            state['reporte'] = hoy
+        elif r.returncode == 2:
+            print("· reporte pospuesto (datos de ayer incompletos), se reintenta en 1 hora")
+        else:
+            print("ERROR en reporte_diario")
+
+    state_file.write_text(_json.dumps(state))
+
+
 if __name__ == '__main__':
     os.chdir(PROJECT)
     sys.path.insert(0, str(PROJECT))
@@ -130,6 +174,8 @@ if __name__ == '__main__':
         ventas()
     elif mode == 'margenes':
         margenes()
+    elif mode == 'tick':
+        tick()
     else:
-        print("Uso: pipeline.py [ventas|margenes]")
+        print("Uso: pipeline.py [ventas|margenes|tick]")
         sys.exit(1)

@@ -149,7 +149,28 @@ def armar_html():
     return asunto, html
 
 
+def datos_de_ayer_completos():
+    """El reporte solo sale si ayer tiene datos de todos los bares esperados
+    (COLEGIO no abre sábados ni domingos). Si no, se reintenta en la próxima
+    corrida horaria en vez de mandar un '-100%' mentiroso."""
+    conn = sqlite3.connect(PROJECT / 'sales_data.db')
+    cur = conn.cursor()
+    ayer = date.today() - timedelta(days=1)
+    cur.execute("SELECT COUNT(DISTINCT location) FROM sales_data WHERE date = ? AND total_sales > 0",
+                (ayer.isoformat(),))
+    bares = cur.fetchone()[0]
+    conn.close()
+    esperados = 4 if ayer.weekday() >= 5 else 5
+    if bares < esperados:
+        print(f"· reporte pospuesto: ayer ({ayer}) hay datos de {bares}/{esperados} bares")
+        return False
+    return True
+
+
 def enviar():
+    if not datos_de_ayer_completos():
+        raise SystemExit(2)  # código 2 = reintentar más tarde
+
     cfg = json.load(open(PROJECT / 'config.secret.json'))
     email_cfg = cfg['email']
     destinos = cfg.get('reporte', {}).get('to', ['francototi@gmail.com'])
