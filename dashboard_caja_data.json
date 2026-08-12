@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-11T13:13:27.713099",
+  "last_updated": "2026-08-12T09:12:03.167983",
   "deuda_proveedores": {
     "por_bar": {
       "GROWLER CAFE": {
@@ -11,8 +11,8 @@
       "GROWLER VIA VIEJA": {
         "total": 4396840,
         "facturas": 34,
-        "vencido": 3701872,
-        "vencidas": 25
+        "vencido": 3772352,
+        "vencidas": 26
       },
       "COLEGIO": {
         "total": 5997982,
@@ -34,7 +34,7 @@
       }
     },
     "total": 57207144,
-    "total_vencido": 51464422,
+    "total_vencido": 51534902,
     "detalle_top": [
       {
         "bar": "GG Vol 2",
