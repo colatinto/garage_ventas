@@ -1,6 +1,132 @@
 {
   "sales_data": [
     {
+      "id": 1384,
+      "date": "2026-08-11",
+      "location": "GROWLER VIA VIEJA",
+      "shift": "Tarde",
+      "total_sales": 401240.0,
+      "total_tickets": 29,
+      "cash_sales": 72500.0,
+      "card_sales": 127640.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 201100.0,
+      "salon_sales": 401240.0,
+      "counter_sales": 0.0,
+      "opening_time": "15:58",
+      "closing_time": "23:35",
+      "closure_number": 1090
+    },
+    {
+      "id": 1383,
+      "date": "2026-08-11",
+      "location": "GROWLER CAFE",
+      "shift": "Tarde",
+      "total_sales": 1328990.0,
+      "total_tickets": 58,
+      "cash_sales": 464940.0,
+      "card_sales": 201300.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 662750.0,
+      "salon_sales": 0.0,
+      "counter_sales": 81050.0,
+      "opening_time": "14:52",
+      "closing_time": "21:42",
+      "closure_number": 3049
+    },
+    {
+      "id": 1382,
+      "date": "2026-08-11",
+      "location": "GROWLER CAFE",
+      "shift": "Mañana",
+      "total_sales": 1155621.0,
+      "total_tickets": 59,
+      "cash_sales": 360021.0,
+      "card_sales": 140800.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 632200.0,
+      "salon_sales": 0.0,
+      "counter_sales": 71050.0,
+      "opening_time": "07:29",
+      "closing_time": "14:51",
+      "closure_number": 3048
+    },
+    {
+      "id": 1385,
+      "date": "2026-08-11",
+      "location": "GG Vol 4",
+      "shift": "Unico",
+      "total_sales": 317000.0,
+      "total_tickets": 8,
+      "cash_sales": 158500.0,
+      "card_sales": 131000.0,
+      "transfer_sales": 27500.0,
+      "mercadopago_sales": 113500.0,
+      "other_sales": 27500.0,
+      "salon_sales": 279500.0,
+      "counter_sales": 37500.0,
+      "opening_time": "18:32",
+      "closing_time": "23:56",
+      "closure_number": 308
+    },
+    {
+      "id": 1386,
+      "date": "2026-08-11",
+      "location": "GG Vol 2",
+      "shift": "Unico",
+      "total_sales": 176550.0,
+      "total_tickets": 14,
+      "cash_sales": 110550.0,
+      "card_sales": 0.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 66000.0,
+      "salon_sales": 0.0,
+      "counter_sales": 176550.0,
+      "opening_time": "18:43",
+      "closing_time": "00:14",
+      "closure_number": 590
+    },
+    {
+      "id": 1387,
+      "date": "2026-08-11",
+      "location": "COLEGIO",
+      "shift": "Tarde",
+      "total_sales": 105650.0,
+      "total_tickets": 13,
+      "cash_sales": 67050.0,
+      "card_sales": 6600.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 24100.0,
+      "salon_sales": 68080.0,
+      "counter_sales": 37570.0,
+      "opening_time": "14:21",
+      "closing_time": "08:42",
+      "closure_number": 582
+    },
+    {
+      "id": 1381,
+      "date": "2026-08-11",
+      "location": "COLEGIO",
+      "shift": "Mañana",
+      "total_sales": 439050.0,
+      "total_tickets": 39,
+      "cash_sales": 125550.0,
+      "card_sales": 36700.0,
+      "transfer_sales": 0.0,
+      "mercadopago_sales": 0.0,
+      "other_sales": 122100.0,
+      "salon_sales": 388850.0,
+      "counter_sales": 50200.0,
+      "opening_time": "07:50",
+      "closing_time": "14:20",
+      "closure_number": 581
+    },
+    {
       "id": 1377,
       "date": "2026-08-10",
       "location": "GROWLER VIA VIEJA",
@@ -24537,6 +24663,42 @@
   ],
   "alerts": [
     {
+      "id": 592,
+      "date": "2026-08-12",
+      "location": "COLEGIO",
+      "alert_type": "low_sales",
+      "message": "COLEGIO: Ventas -74.9% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 593,
+      "date": "2026-08-12",
+      "location": "GG Vol 2",
+      "alert_type": "low_sales",
+      "message": "GG Vol 2: Ventas -86.7% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 594,
+      "date": "2026-08-12",
+      "location": "GG Vol 4",
+      "alert_type": "low_sales",
+      "message": "GG Vol 4: Ventas -73.4% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
+      "id": 595,
+      "date": "2026-08-12",
+      "location": "GROWLER VIA VIEJA",
+      "alert_type": "low_sales",
+      "message": "GROWLER VIA VIEJA: Ventas -72.4% por debajo del promedio",
+      "severity": "warning",
+      "sent": 0
+    },
+    {
       "id": 588,
       "date": "2026-08-11",
       "location": "COLEGIO",
@@ -29860,13 +30022,13 @@
     "GG Vol 2": [
       {
         "name": "German Pils HB",
-        "quantity": 3444.0,
-        "total_amount": 15668895.09
+        "quantity": 3449.0,
+        "total_amount": 15693308.15
       },
       {
         "name": "Easy 5 Ipa",
-        "quantity": 3022.0,
-        "total_amount": 15340627.76
+        "quantity": 3026.0,
+        "total_amount": 15360137.42
       },
       {
         "name": "Heineken Lata",
@@ -29887,35 +30049,35 @@
     "GROWLER CAFE": [
       {
         "name": "Medialuna Dulce",
-        "quantity": 4081.0,
-        "total_amount": 4938612.68
+        "quantity": 4092.0,
+        "total_amount": 4950132.68
       },
       {
         "name": "Medialuna Salada",
-        "quantity": 2807.0,
-        "total_amount": 3391150.89
+        "quantity": 2817.0,
+        "total_amount": 3410350.89
       },
       {
         "name": "Menu Clasico",
-        "quantity": 2275.0,
-        "total_amount": 36625944.32
+        "quantity": 2282.0,
+        "total_amount": 36758944.32
       },
       {
         "name": "Agua Sin Gas",
-        "quantity": 1575.0,
-        "total_amount": 2896665.48
+        "quantity": 1584.0,
+        "total_amount": 2908845.48
       },
       {
         "name": "Vaso Limonada",
-        "quantity": 1516.0,
-        "total_amount": 2822737.74
+        "quantity": 1518.0,
+        "total_amount": 2827687.74
       }
     ],
     "GROWLER VIA VIEJA": [
       {
         "name": "Pinta Heineken",
-        "quantity": 6798.0,
-        "total_amount": 38328850.3
+        "quantity": 6799.0,
+        "total_amount": 38334850.3
       },
       {
         "name": "Eugenio Dulce +",
@@ -29924,8 +30086,8 @@
       },
       {
         "name": "Promo Heineken",
-        "quantity": 3393.0,
-        "total_amount": 29223039.61
+        "quantity": 3400.0,
+        "total_amount": 29293039.61
       },
       {
         "name": "FERNET NOC",
@@ -29934,12 +30096,12 @@
       },
       {
         "name": "Heineken Lata",
-        "quantity": 1710.0,
-        "total_amount": 8764638.17
+        "quantity": 1711.0,
+        "total_amount": 8770138.17
       }
     ]
   },
-  "last_updated": "2026-08-11T13:12:47.898974",
+  "last_updated": "2026-08-12T09:11:21.579807",
   "locations": {
     "GG Vol 4": {
       "display_name": "GG Vol 4",
