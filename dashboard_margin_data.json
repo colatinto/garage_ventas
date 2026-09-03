@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27T08:24:54.705143",
+  "last_updated": "2026-09-03T09:15:57.611821",
   "adm_central_por_mes": {
     "2026-03": 11697381.3727,
     "2026-01": 292000.0,
@@ -7,7 +7,8 @@
     "2026-04": 11332749.75,
     "2026-05": 11411785.375,
     "2026-06": 15660351.1,
-    "2026-07": 8376010.25
+    "2026-07": 8376010.25,
+    "2026-08": 740000.0
   },
   "adm_distribucion": {
     "GROWLER CAFE": 0.4,
@@ -76,6 +77,14 @@
         "costos_fijos": 8169303.1,
         "margen": 27897783.2,
         "margen_pct": 34.77
+      },
+      "2026-08": {
+        "ingresos": 90596584.03,
+        "cmv": 2387490.0,
+        "sueldos": 0,
+        "costos_fijos": 2936822.54,
+        "margen": 85272271.49,
+        "margen_pct": 94.12
       }
     },
     "GROWLER VIA VIEJA": {
@@ -134,6 +143,14 @@
         "costos_fijos": 3452448.07,
         "margen": 29168583.22,
         "margen_pct": 47.87
+      },
+      "2026-08": {
+        "ingresos": 57555230.0,
+        "cmv": 280664.0,
+        "sueldos": 0,
+        "costos_fijos": 4576437.47,
+        "margen": 52698128.53,
+        "margen_pct": 91.56
       }
     },
     "COLEGIO": {
@@ -162,12 +179,12 @@
         "margen_pct": 20.75
       },
       "2026-04": {
-        "ingresos": 14200711.0,
+        "ingresos": 14589841.0,
         "cmv": 4813331.45,
         "sueldos": 3905792.33,
         "costos_fijos": 3368737.87,
-        "margen": 2112849.35,
-        "margen_pct": 14.88
+        "margen": 2501979.35,
+        "margen_pct": 17.15
       },
       "2026-05": {
         "ingresos": 16042594.0,
@@ -192,6 +209,14 @@
         "costos_fijos": 3905064.89,
         "margen": 10330348.18,
         "margen_pct": 39.19
+      },
+      "2026-08": {
+        "ingresos": 14361645.0,
+        "cmv": 530462.79,
+        "sueldos": 0,
+        "costos_fijos": 201470.0,
+        "margen": 13629712.21,
+        "margen_pct": 94.9
       }
     },
     "GG Vol 2": {
@@ -244,12 +269,20 @@
         "margen_pct": 4.35
       },
       "2026-07": {
-        "ingresos": 37659574.99,
+        "ingresos": 32129874.98,
         "cmv": 22045693.81,
         "sueldos": 2914750.0,
         "costos_fijos": 3893345.51,
-        "margen": 8805785.67,
-        "margen_pct": 23.38
+        "margen": 3276085.66,
+        "margen_pct": 10.2
+      },
+      "2026-08": {
+        "ingresos": 47422345.0,
+        "cmv": 3085413.89,
+        "sueldos": 2500000.0,
+        "costos_fijos": 2450887.0,
+        "margen": 39386044.11,
+        "margen_pct": 83.05
       }
     },
     "GG Vol 4": {
@@ -308,6 +341,14 @@
         "costos_fijos": 5712311.79,
         "margen": 5497362.63,
         "margen_pct": 17.55
+      },
+      "2026-08": {
+        "ingresos": 39929104.51,
+        "cmv": 634250.0,
+        "sueldos": 0,
+        "costos_fijos": 573679.0,
+        "margen": 38721175.51,
+        "margen_pct": 96.97
       }
     }
   }
